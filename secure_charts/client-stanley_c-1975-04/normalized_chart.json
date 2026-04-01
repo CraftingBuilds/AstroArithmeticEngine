@@ -1,12 +1,22 @@
 {
+  "chart_id": "client-stanley_c-1975-04",
+  "chart_folder": "/mnt/storage/AstroArithmeticEngine/secure_charts/client-stanley_c-1975-04",
   "source": {
     "source_type": "Time Nomad export",
-    "raw_text_preserved": true
+    "raw_text_preserved": true,
+    "source_files": {
+      "raw_export_file": "raw_export.txt",
+      "normalized_chart_file": "normalized_chart.json",
+      "fixed_stars_file": "fixed_stars.json",
+      "parallels_file": "parallels.json",
+      "contra_parallels_file": "contra_parallels.json",
+      "aspects_file": "aspects.json"
+    }
   },
   "metadata": {
     "date_time": {
       "Date": "Fri, Apr 04, 1975, 02:25",
-      "Time Zone": "Pacific Daylight Time, PDT",
+      "Time Zone": "Pacific Daylight Time, PDT | GMT -07:00, Daylight Saving Active",
       "Date UTC": "Fri, Apr 04, 09:25",
       "Sun rise/set": "6:23 – 19:23",
       "Moon rise/set": "3:03 – 12:45"
@@ -693,31 +703,131 @@
         "house_number": "1",
         "sign": "Cap",
         "cusp_degree": "7º 08' 18\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Ascendant",
+            "sign": "Cap",
+            "degree": "7º 08' 18\""
+          },
+          {
+            "body": "Moon",
+            "sign": "Cap",
+            "degree": "23º 48' 00\""
+          },
+          {
+            "body": "Icarus",
+            "sign": "Aqu",
+            "degree": "13º 14' 30\""
+          }
+        ]
       },
       {
         "house_number": "2",
         "sign": "Aqu",
         "cusp_degree": "23º 21' 45\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Mars",
+            "sign": "Aqu",
+            "degree": "24º 21' 09\""
+          },
+          {
+            "body": "Vesta",
+            "sign": "Aqu",
+            "degree": "26º 35' 28\""
+          },
+          {
+            "body": "Black Moon",
+            "sign": "Pis",
+            "degree": "6º 29' 13\""
+          },
+          {
+            "body": "Pallas",
+            "sign": "Pis",
+            "degree": "13º 54' 41\""
+          },
+          {
+            "body": "Part of Fortune",
+            "sign": "Pis",
+            "degree": "27º 19' 27\""
+          },
+          {
+            "body": "Mercury",
+            "sign": "Pis",
+            "degree": "29º 46' 04\""
+          },
+          {
+            "body": "Jupiter",
+            "sign": "Ari",
+            "degree": "4º 01' 47\""
+          }
+        ]
       },
       {
         "house_number": "3",
         "sign": "Ari",
         "cusp_degree": "7º 26' 50\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Eris",
+            "sign": "Ari",
+            "degree": "13º 19' 22\""
+          },
+          {
+            "body": "Sun",
+            "sign": "Ari",
+            "degree": "13º 59' 08\""
+          },
+          {
+            "body": "Ceres",
+            "sign": "Ari",
+            "degree": "17º 51' 45\""
+          },
+          {
+            "body": "Chiron",
+            "sign": "Ari",
+            "degree": "23º 21' 23\""
+          },
+          {
+            "body": "Imum Coeli",
+            "sign": "Tau",
+            "degree": "8º 16' 37\""
+          }
+        ]
       },
       {
         "house_number": "4",
         "sign": "Tau",
         "cusp_degree": "8º 16' 37\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Juno",
+            "sign": "Tau",
+            "degree": "11º 35' 08\""
+          },
+          {
+            "body": "Hygiea",
+            "sign": "Tau",
+            "degree": "16º 16' 46\""
+          },
+          {
+            "body": "Venus",
+            "sign": "Tau",
+            "degree": "18º 39' 12\""
+          }
+        ]
       },
       {
         "house_number": "5",
         "sign": "Gem",
         "cusp_degree": "0º 12' 22\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "South Node",
+            "sign": "Gem",
+            "degree": "2º 10' 31\""
+          }
+        ]
       },
       {
         "house_number": "6",
@@ -729,7 +839,28 @@
         "house_number": "7",
         "sign": "Can",
         "cusp_degree": "7º 08' 18\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Descendant",
+            "sign": "Can",
+            "degree": "7º 08' 18\""
+          },
+          {
+            "body": "Saturn",
+            "sign": "Can",
+            "degree": "12º 20' 54\""
+          },
+          {
+            "body": "Vertex",
+            "sign": "Leo",
+            "degree": "18º 01' 43\""
+          },
+          {
+            "body": "Lilith",
+            "sign": "Leo",
+            "degree": "23º 10' 57\""
+          }
+        ]
       },
       {
         "house_number": "8",
@@ -741,19 +872,47 @@
         "house_number": "9",
         "sign": "Lib",
         "cusp_degree": "7º 26' 50\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Pluto",
+            "sign": "Lib",
+            "degree": "7º 43' 13\""
+          },
+          {
+            "body": "Uranus",
+            "sign": "Sco",
+            "degree": "1º 08' 49\""
+          }
+        ]
       },
       {
         "house_number": "10",
         "sign": "Sco",
         "cusp_degree": "8º 16' 37\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Midheaven",
+            "sign": "Sco",
+            "degree": "8º 16' 37\""
+          }
+        ]
       },
       {
         "house_number": "11",
         "sign": "Sag",
         "cusp_degree": "0º 12' 22\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "North Node",
+            "sign": "Sag",
+            "degree": "2º 10' 31\""
+          },
+          {
+            "body": "Neptune",
+            "sign": "Sag",
+            "degree": "11º 40' 22\""
+          }
+        ]
       },
       {
         "house_number": "12",
@@ -767,31 +926,131 @@
         "house_number": "1",
         "sign": "Sag",
         "cusp_degree": "12º 44' 22\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Ascendant",
+            "sign": "Sag",
+            "degree": "12º 44' 22\""
+          },
+          {
+            "body": "Moon",
+            "sign": "Sag",
+            "degree": "29º 24' 03\""
+          },
+          {
+            "body": "Icarus",
+            "sign": "Cap",
+            "degree": "18º 50' 33\""
+          }
+        ]
       },
       {
         "house_number": "2",
         "sign": "Cap",
         "cusp_degree": "28º 57' 48\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Mars",
+            "sign": "Cap",
+            "degree": "29º 57' 12\""
+          },
+          {
+            "body": "Vesta",
+            "sign": "Aqu",
+            "degree": "2º 11' 31\""
+          },
+          {
+            "body": "Black Moon",
+            "sign": "Aqu",
+            "degree": "12º 05' 17\""
+          },
+          {
+            "body": "Pallas",
+            "sign": "Aqu",
+            "degree": "19º 30' 45\""
+          },
+          {
+            "body": "Part of Fortune",
+            "sign": "Pis",
+            "degree": "2º 55' 30\""
+          },
+          {
+            "body": "Mercury",
+            "sign": "Pis",
+            "degree": "5º 22' 08\""
+          },
+          {
+            "body": "Jupiter",
+            "sign": "Pis",
+            "degree": "9º 37' 51\""
+          }
+        ]
       },
       {
         "house_number": "3",
         "sign": "Pis",
         "cusp_degree": "13º 02' 53\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Eris",
+            "sign": "Pis",
+            "degree": "18º 55' 26\""
+          },
+          {
+            "body": "Sun",
+            "sign": "Pis",
+            "degree": "19º 35' 12\""
+          },
+          {
+            "body": "Ceres",
+            "sign": "Pis",
+            "degree": "23º 27' 48\""
+          },
+          {
+            "body": "Chiron",
+            "sign": "Pis",
+            "degree": "28º 57' 26\""
+          },
+          {
+            "body": "Imum Coeli",
+            "sign": "Ari",
+            "degree": "13º 52' 40\""
+          }
+        ]
       },
       {
         "house_number": "4",
         "sign": "Ari",
         "cusp_degree": "13º 52' 40\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Juno",
+            "sign": "Ari",
+            "degree": "17º 11' 12\""
+          },
+          {
+            "body": "Hygiea",
+            "sign": "Ari",
+            "degree": "21º 52' 49\""
+          },
+          {
+            "body": "Venus",
+            "sign": "Ari",
+            "degree": "24º 15' 15\""
+          }
+        ]
       },
       {
         "house_number": "5",
         "sign": "Tau",
         "cusp_degree": "5º 48' 26\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "South Node",
+            "sign": "Tau",
+            "degree": "7º 46' 34\""
+          }
+        ]
       },
       {
         "house_number": "6",
@@ -803,7 +1062,28 @@
         "house_number": "7",
         "sign": "Gem",
         "cusp_degree": "12º 44' 22\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Descendant",
+            "sign": "Gem",
+            "degree": "12º 44' 22\""
+          },
+          {
+            "body": "Saturn",
+            "sign": "Gem",
+            "degree": "17º 56' 58\""
+          },
+          {
+            "body": "Vertex",
+            "sign": "Can",
+            "degree": "23º 37' 47\""
+          },
+          {
+            "body": "Lilith",
+            "sign": "Can",
+            "degree": "28º 47' 01\""
+          }
+        ]
       },
       {
         "house_number": "8",
@@ -815,19 +1095,47 @@
         "house_number": "9",
         "sign": "Vir",
         "cusp_degree": "13º 02' 53\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Pluto",
+            "sign": "Vir",
+            "degree": "13º 19' 16\""
+          },
+          {
+            "body": "Uranus",
+            "sign": "Lib",
+            "degree": "6º 44' 52\""
+          }
+        ]
       },
       {
         "house_number": "10",
         "sign": "Lib",
         "cusp_degree": "13º 52' 40\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "Midheaven",
+            "sign": "Lib",
+            "degree": "13º 52' 40\""
+          }
+        ]
       },
       {
         "house_number": "11",
         "sign": "Sco",
         "cusp_degree": "5º 48' 26\"",
-        "occupants": []
+        "occupants": [
+          {
+            "body": "North Node",
+            "sign": "Sco",
+            "degree": "7º 46' 34\""
+          },
+          {
+            "body": "Neptune",
+            "sign": "Sco",
+            "degree": "17º 16' 25\""
+          }
+        ]
       },
       {
         "house_number": "12",
@@ -842,148 +1150,303 @@
       {
         "house": "1",
         "cusp_sign": "Cap",
-        "ruler": "Saturn",
-        "ruler_sign": "Can"
+        "rulers": [
+          {
+            "ruler": "Saturn",
+            "ruler_sign": "Can",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "2",
         "cusp_sign": "Aqu",
-        "ruler": "Saturn",
-        "ruler_sign": "Can"
+        "rulers": [
+          {
+            "ruler": "Saturn",
+            "ruler_sign": "Can",
+            "role": "primary"
+          },
+          {
+            "ruler": "Uranus",
+            "ruler_sign": "Sco",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "3",
         "cusp_sign": "Ari",
-        "ruler": "Mars",
-        "ruler_sign": "Aqu"
+        "rulers": [
+          {
+            "ruler": "Mars",
+            "ruler_sign": "Aqu",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "4",
         "cusp_sign": "Tau",
-        "ruler": "Venus",
-        "ruler_sign": "Tau"
+        "rulers": [
+          {
+            "ruler": "Venus",
+            "ruler_sign": "Tau",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "5",
         "cusp_sign": "Gem",
-        "ruler": "Mercury",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Mercury",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "6",
         "cusp_sign": "Gem",
-        "ruler": "Mercury",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Mercury",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "7",
         "cusp_sign": "Can",
-        "ruler": "Moon",
-        "ruler_sign": "Cap"
+        "rulers": [
+          {
+            "ruler": "Moon",
+            "ruler_sign": "Cap",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "8",
         "cusp_sign": "Leo",
-        "ruler": "Sun",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Sun",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "9",
         "cusp_sign": "Lib",
-        "ruler": "Venus",
-        "ruler_sign": "Tau"
+        "rulers": [
+          {
+            "ruler": "Venus",
+            "ruler_sign": "Tau",
+            "role": "primary"
+          },
+          {
+            "ruler": "Eris",
+            "ruler_sign": "Ari",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "10",
         "cusp_sign": "Sco",
-        "ruler": "Mars",
-        "ruler_sign": "Aqu"
+        "rulers": [
+          {
+            "ruler": "Mars",
+            "ruler_sign": "Aqu",
+            "role": "primary"
+          },
+          {
+            "ruler": "Pluto",
+            "ruler_sign": "Lib",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "11",
         "cusp_sign": "Sag",
-        "ruler": "Jupiter",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Jupiter",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "12",
         "cusp_sign": "Sag",
-        "ruler": "Jupiter",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Jupiter",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          }
+        ]
       }
     ],
     "sidereal": [
       {
         "house": "1",
         "cusp_sign": "Sag",
-        "ruler": "Jupiter",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Jupiter",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "2",
         "cusp_sign": "Cap",
-        "ruler": "Saturn",
-        "ruler_sign": "Gem"
+        "rulers": [
+          {
+            "ruler": "Saturn",
+            "ruler_sign": "Gem",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "3",
         "cusp_sign": "Pis",
-        "ruler": "Jupiter",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Jupiter",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          },
+          {
+            "ruler": "Neptune",
+            "ruler_sign": "Sco",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "4",
         "cusp_sign": "Ari",
-        "ruler": "Mars",
-        "ruler_sign": "Cap"
+        "rulers": [
+          {
+            "ruler": "Mars",
+            "ruler_sign": "Cap",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "5",
         "cusp_sign": "Tau",
-        "ruler": "Venus",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Venus",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "6",
         "cusp_sign": "Tau",
-        "ruler": "Venus",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Venus",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "7",
         "cusp_sign": "Gem",
-        "ruler": "Mercury",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Mercury",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "8",
         "cusp_sign": "Can",
-        "ruler": "Moon",
-        "ruler_sign": "Sag"
+        "rulers": [
+          {
+            "ruler": "Moon",
+            "ruler_sign": "Sag",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "9",
         "cusp_sign": "Vir",
-        "ruler": "Mercury",
-        "ruler_sign": "Pis"
+        "rulers": [
+          {
+            "ruler": "Mercury",
+            "ruler_sign": "Pis",
+            "role": "primary"
+          }
+        ]
       },
       {
         "house": "10",
         "cusp_sign": "Lib",
-        "ruler": "Venus",
-        "ruler_sign": "Ari"
+        "rulers": [
+          {
+            "ruler": "Venus",
+            "ruler_sign": "Ari",
+            "role": "primary"
+          },
+          {
+            "ruler": "Eris",
+            "ruler_sign": "Pis",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "11",
         "cusp_sign": "Sco",
-        "ruler": "Mars",
-        "ruler_sign": "Cap"
+        "rulers": [
+          {
+            "ruler": "Mars",
+            "ruler_sign": "Cap",
+            "role": "primary"
+          },
+          {
+            "ruler": "Pluto",
+            "ruler_sign": "Vir",
+            "role": "secondary"
+          }
+        ]
       },
       {
         "house": "12",
         "cusp_sign": "Sco",
-        "ruler": "Mars",
-        "ruler_sign": "Cap"
+        "rulers": [
+          {
+            "ruler": "Mars",
+            "ruler_sign": "Cap",
+            "role": "primary"
+          },
+          {
+            "ruler": "Pluto",
+            "ruler_sign": "Vir",
+            "role": "secondary"
+          }
+        ]
       }
     ]
   },
@@ -1025,6 +1488,13 @@
         "accidental_dignity": null
       },
       {
+        "body": "Jupiter",
+        "sign": "Ari",
+        "essential_dignity": null,
+        "house": "H 2",
+        "accidental_dignity": null
+      },
+      {
         "body": "Saturn",
         "sign": "Can",
         "essential_dignity": "DETR",
@@ -1039,6 +1509,13 @@
         "accidental_dignity": null
       },
       {
+        "body": "Neptune",
+        "sign": "Sag",
+        "essential_dignity": null,
+        "house": "H 11",
+        "accidental_dignity": null
+      },
+      {
         "body": "Pluto",
         "sign": "Lib",
         "essential_dignity": "DETR",
@@ -1047,6 +1524,20 @@
       }
     ],
     "sidereal": [
+      {
+        "body": "Sun",
+        "sign": "Pis",
+        "essential_dignity": null,
+        "house": "H 3",
+        "accidental_dignity": null
+      },
+      {
+        "body": "Moon",
+        "sign": "Sag",
+        "essential_dignity": null,
+        "house": "H 1",
+        "accidental_dignity": null
+      },
       {
         "body": "Mercury",
         "sign": "Pis",
@@ -1081,6 +1572,27 @@
         "essential_dignity": "EXALT",
         "house": "H 7",
         "accidental_dignity": null
+      },
+      {
+        "body": "Uranus",
+        "sign": "Lib",
+        "essential_dignity": null,
+        "house": "H 9",
+        "accidental_dignity": null
+      },
+      {
+        "body": "Neptune",
+        "sign": "Sco",
+        "essential_dignity": null,
+        "house": "H 11",
+        "accidental_dignity": null
+      },
+      {
+        "body": "Pluto",
+        "sign": "Vir",
+        "essential_dignity": null,
+        "house": "H 9",
+        "accidental_dignity": null
       }
     ]
   },
@@ -1090,28 +1602,38 @@
         "group": "Fire",
         "count": "4",
         "bodies": [
-          "Sun"
+          "Sun",
+          "Jupiter",
+          "Neptune",
+          "North Node"
         ]
       },
       {
         "group": "Earth",
         "count": "3",
         "bodies": [
-          "Moon"
+          "Moon",
+          "Venus",
+          "Ascendant"
         ]
       },
       {
         "group": "Air",
         "count": "3",
         "bodies": [
-          "Mars"
+          "Mars",
+          "Pluto",
+          "South Node"
         ]
       },
       {
         "group": "Water",
         "count": "4",
         "bodies": [
-          "Mercury"
+          "Mercury",
+          "Saturn",
+          "Uranus",
+          "Midheaven"
         ]
       }
     ],
@@ -1120,28 +1642,38 @@
         "group": "Fire",
         "count": "3",
         "bodies": [
-          "Moon"
+          "Moon",
+          "Venus",
+          "Ascendant"
         ]
       },
       {
         "group": "Earth",
         "count": "3",
         "bodies": [
-          "Mars"
+          "Mars",
+          "Pluto",
+          "South Node"
         ]
       },
       {
         "group": "Air",
         "count": "3",
         "bodies": [
-          "Saturn"
+          "Saturn",
+          "Uranus",
+          "Midheaven"
         ]
       },
       {
         "group": "Water",
         "count": "5",
         "bodies": [
-          "Sun"
+          "Sun",
+          "Mercury",
+          "Jupiter",
+          "Neptune",
+          "North Node"
         ]
       }
     ]
@@ -1152,21 +1684,32 @@
         "group": "Cardinal",
         "count": "6",
         "bodies": [
-          "Sun"
+          "Sun",
+          "Moon",
+          "Jupiter",
+          "Saturn",
+          "Pluto",
+          "Ascendant"
         ]
       },
       {
         "group": "Fixed",
         "count": "4",
         "bodies": [
-          "Venus"
+          "Venus",
+          "Mars",
+          "Uranus",
+          "Midheaven"
         ]
       },
       {
         "group": "Mutable",
         "count": "4",
         "bodies": [
-          "Mercury"
+          "Mercury",
+          "Neptune",
+          "North Node",
+          "South Node"
         ]
       }
     ],
@@ -1175,21 +1718,32 @@
         "group": "Cardinal",
         "count": "4",
         "bodies": [
-          "Venus"
+          "Venus",
+          "Mars",
+          "Uranus",
+          "Midheaven"
         ]
       },
       {
         "group": "Fixed",
         "count": "3",
         "bodies": [
-          "Neptune"
+          "Neptune",
+          "North Node",
+          "South Node"
         ]
       },
       {
         "group": "Mutable",
         "count": "7",
         "bodies": [
-          "Sun"
+          "Sun",
+          "Moon",
+          "Mercury",
+          "Jupiter",
+          "Saturn",
+          "Pluto",
+          "Ascendant"
         ]
       }
     ]
@@ -1211,13 +1765,34 @@
     ],
     "sidereal": []
   },
-  "source_files": {
-    "raw_export_file": "raw_export.txt",
-    "fixed_stars_file": "fixed_stars.json",
-    "parallels_file": "parallels.json",
-    "contra_parallels_file": "contra_parallels.json",
-    "aspects_file": "aspects.json"
+  "fixed_star_conjunctions": {
+    "file_backed": true,
+    "file_name": "fixed_stars.json"
   },
-  "chart_id": "client-stanley_c-1975-04",
-  "chart_folder": "/mnt/storage/AstroArithmeticEngine/secure_charts/client-stanley_c-1975-04"
+  "parallels": {
+    "file_backed": true,
+    "file_name": "parallels.json"
+  },
+  "contra_parallels": {
+    "file_backed": true,
+    "file_name": "contra_parallels.json"
+  },
+  "aspects": {
+    "file_backed": true,
+    "file_name": "aspects.json"
+  },
+  "notes": [],
+  "parser_warnings": [],
+  "unresolved_values": [
+    {
+      "section": "Aspects",
+      "line": "On Mar 26, 2026, at 01:44, mikah.s98@icloud.com wrote:",
+      "reason": "could not parse aspect row; expected at least 4 columns"
+    },
+    {
+      "section": "Aspects",
+      "line": "﻿",
+      "reason": "could not parse aspect row; expected at least 4 columns"
+    }
+  ]
 }

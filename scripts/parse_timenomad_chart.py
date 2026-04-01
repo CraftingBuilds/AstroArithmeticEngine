@@ -326,26 +326,54 @@ def parse_house_rulers(block: str, section_name: str, parser_warnings: list, unr
         })
         return rulers
 
-    for line in split_lines(block):
-        raw_line = line
-        line = line.strip()
-        if not line or line.startswith("House cusp in"):
+    current = None
+
+    for raw_line in split_lines(block):
+        if not raw_line.strip():
+            continue
+        if raw_line.strip().startswith("House cusp in"):
             continue
 
-        parts = re.split(r"\t+", line)
+        parts = re.split(r"\t+", raw_line)
+
+        # Main ruler row
         if len(parts) >= 6 and parts[0].startswith("H "):
-            rulers.append({
+            if current:
+                rulers.append(current)
+
+            current = {
                 "house": parts[0].replace("H ", "").strip(),
                 "cusp_sign": parts[2].strip(),
-                "ruler": normalize_body_name(parts[4]),
-                "ruler_sign": parts[6].strip() if len(parts) > 6 else None
-            })
-        else:
-            unresolved_values.append({
-                "section": section_name,
-                "line": raw_line,
-                "reason": "could not parse house ruler row"
-            })
+                "rulers": [
+                    {
+                        "ruler": normalize_body_name(parts[4]),
+                        "ruler_sign": parts[6].strip() if len(parts) > 6 else None,
+                        "role": "primary"
+                    }
+                ]
+            }
+            continue
+
+        # Continuation row for co-rulers / secondary rulers
+        if current and len(parts) >= 3 and not parts[0].strip():
+            ruler = normalize_body_name(parts[1]) if len(parts) > 1 else ""
+            ruler_sign = parts[3].strip() if len(parts) > 3 else None
+            if ruler:
+                current["rulers"].append({
+                    "ruler": ruler,
+                    "ruler_sign": ruler_sign,
+                    "role": "secondary"
+                })
+                continue
+
+        unresolved_values.append({
+            "section": section_name,
+            "line": raw_line,
+            "reason": "could not parse house ruler row"
+        })
+
+    if current:
+        rulers.append(current)
 
     return rulers
 
@@ -360,23 +388,24 @@ def parse_dignities(block: str, section_name: str, parser_warnings: list, unreso
         })
         return rows
 
-    for line in split_lines(block):
-        raw_line = line
-        line = line.strip()
+    for raw_line in split_lines(block):
+        line = raw_line.strip()
         if not line or line.startswith("Body, Sign"):
             continue
 
-        parts = re.split(r"\t+", line)
-        if len(parts) < 4:
+        parts = re.split(r"\t+", raw_line)
+        parts = [p.strip() for p in parts if p.strip()]
+
+        if len(parts) < 3:
             unresolved_values.append({
                 "section": section_name,
                 "line": raw_line,
-                "reason": "could not parse dignity row; expected at least 4 columns"
+                "reason": "could not parse dignity row; expected at least 3 columns"
             })
             continue
 
         body = normalize_body_name(parts[0])
-        sign = parts[1].strip()
+        sign = parts[1]
 
         essential = None
         house = None
@@ -385,11 +414,10 @@ def parse_dignities(block: str, section_name: str, parser_warnings: list, unreso
         dignity_hits = []
 
         for p in parts[2:]:
-            ps = p.strip()
-            if ps.startswith("H "):
-                house = ps
-            elif ps in {"DIGN", "DETR", "EXALT", "FALL"}:
-                dignity_hits.append(ps)
+            if p.startswith("H "):
+                house = p
+            elif p in {"DIGN", "DETR", "EXALT", "FALL"}:
+                dignity_hits.append(p)
 
         if len(dignity_hits) >= 1:
             essential = dignity_hits[0]
@@ -425,30 +453,44 @@ def parse_element_or_modality(block: str, section_name: str, parser_warnings: li
 
     current = None
 
-    for line in split_lines(block):
-        raw_line = line
-        line = line.strip()
-        if not line or line.startswith("Element, Count") or line.startswith("Type, Count"):
+    for raw_line in split_lines(block):
+        if not raw_line.strip():
             continue
 
-        parts = re.split(r"\t+", line)
+        line = raw_line.strip()
+        if line.startswith("Element, Count") or line.startswith("Type, Count"):
+            continue
 
-        if len(parts) >= 3 and parts[0]:
+        parts = re.split(r"\t+", raw_line)
+
+        # New group row
+        if len(parts) >= 3 and parts[0].strip():
             if current:
                 groups.append(current)
+
             current = {
                 "group": parts[0].strip(),
                 "count": parts[1].strip(),
-                "bodies": [normalize_body_name(parts[2])]
+                "bodies": [normalize_body_name(parts[2].strip())]
             }
-        elif current and len(parts) >= 3 and not parts[0]:
-            current["bodies"].append(normalize_body_name(parts[2]))
-        else:
-            unresolved_values.append({
-                "section": section_name,
-                "line": raw_line,
-                "reason": "could not parse element/modality row"
-            })
+            continue
+
+        # Continuation body row like: \tJupiter
+        if current and len(parts) >= 2 and not parts[0].strip():
+            body = None
+            for p in parts[1:]:
+                if p.strip():
+                    body = normalize_body_name(p.strip())
+                    break
+            if body:
+                current["bodies"].append(body)
+                continue
+
+        unresolved_values.append({
+            "section": section_name,
+            "line": raw_line,
+            "reason": "could not parse element/modality row"
+        })
 
     if current:
         groups.append(current)

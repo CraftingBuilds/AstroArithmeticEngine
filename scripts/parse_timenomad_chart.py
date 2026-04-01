@@ -117,23 +117,37 @@ def parse_key_value_block(block: str, section_name: str, parser_warnings: list, 
         })
         return data
 
-    for line in split_lines(block):
-        raw_line = line
-        line = line.strip()
-        if not line:
+    last_key = None
+
+    for raw_line in split_lines(block):
+        if not raw_line.strip():
             continue
 
-        parts = re.split(r"\t+", line)
-        if len(parts) >= 2:
+        parts = re.split(r"\t+", raw_line)
+
+        # normal key/value row
+        if len(parts) >= 2 and parts[0].strip():
             key = parts[0].strip()
             value = " ".join(p.strip() for p in parts[1:] if p.strip())
             data[key] = value
-        else:
-            unresolved_values.append({
-                "section": section_name,
-                "line": raw_line,
-                "reason": "could not parse key/value row"
-            })
+            last_key = key
+            continue
+
+        # continuation row (like GMT line under Time Zone)
+        if last_key and len(parts) >= 1 and not parts[0].strip():
+            continuation = " ".join(p.strip() for p in parts if p.strip())
+            if continuation:
+                if data[last_key]:
+                    data[last_key] += " | " + continuation
+                else:
+                    data[last_key] = continuation
+                continue
+
+        unresolved_values.append({
+            "section": section_name,
+            "line": raw_line,
+            "reason": "could not parse key/value row"
+        })
 
     return data
 
@@ -251,17 +265,17 @@ def parse_houses(block: str, section_name: str, parser_warnings: list, unresolve
 
     current_house = None
 
-    for line in split_lines(block):
-        raw_line = line
-        line = line.strip()
-        if not line:
-            continue
-        if line.startswith("Placidus"):
+    for raw_line in split_lines(block):
+        if not raw_line.strip():
             continue
 
-        parts = re.split(r"\t+", line)
+        if raw_line.strip().startswith("Placidus"):
+            continue
 
-        if len(parts) >= 5 and parts[0].isdigit():
+        parts = re.split(r"\t+", raw_line)
+
+        # new house row
+        if len(parts) >= 5 and parts[0].strip().isdigit():
             if current_house:
                 houses.append(current_house)
 
@@ -273,13 +287,22 @@ def parse_houses(block: str, section_name: str, parser_warnings: list, unresolve
             }
             continue
 
-        if current_house and len(parts) >= 4 and parts[0] == "":
-            current_house["occupants"].append({
-                "body": normalize_body_name(parts[1]),
-                "sign": parts[2].strip(),
-                "degree": parts[3].strip()
-            })
-            continue
+        # occupant row
+        # examples:
+        # \tAscendant\t\tCap\t7º 08' 18"
+        # \tMoon\t\tCap\t23º 48' 00"
+        if current_house and len(parts) >= 4 and not parts[0].strip():
+            body = parts[1].strip() if len(parts) > 1 else ""
+            sign = parts[2].strip() if len(parts) > 2 else ""
+            degree = parts[3].strip() if len(parts) > 3 else ""
+
+            if body and sign and degree:
+                current_house["occupants"].append({
+                    "body": normalize_body_name(body),
+                    "sign": sign,
+                    "degree": degree
+                })
+                continue
 
         unresolved_values.append({
             "section": section_name,

@@ -6,12 +6,163 @@ ENGINE_ROOT = Path("/mnt/storage/AstroArithmeticEngine")
 DERIVED_DIR = ENGINE_ROOT / "derived"
 
 MASTER_INDEX_FILE = DERIVED_DIR / "building_blocks_master_index.json"
-OUTPUT_FILE = DERIVED_DIR / "structured_building_blocks.json"
+OUTPUT_FILE = DERIVED_DIR / "structured_building_blocks_v2.json"
 
 
-# =========================
+# =========================================================
+# GLYPH REGISTRY + SAFE RESOLUTION
+# =========================================================
+
+GLYPH_MAP = {
+    "Sun": "☉",
+    "Moon": "☽",
+    "Mercury": "☿",
+    "Venus": "♀",
+    "Earth": "♁",
+    "Mars": "♂",
+    "Jupiter": "♃",
+    "Saturn": "♄",
+    "Uranus": "♅",
+    "Neptune": "♆",
+    "Pluto": "♇",
+    "North Node": "☊",
+    "South Node": "☋",
+    "Ceres": "⚳",
+    "Eris": "⚴",
+    "Makemake": "⚵",
+    "Haumea": "⚶",
+    "Aries": "♈",
+    "Taurus": "♉",
+    "Gemini": "♊",
+    "Cancer": "♋",
+    "Leo": "♌",
+    "Virgo": "♍",
+    "Libra": "♎",
+    "Scorpio": "♏",
+    "Sagittarius": "♐",
+    "Capricorn": "♑",
+    "Aquarius": "♒",
+    "Pisces": "♓",
+}
+
+KNOWN_GLYPHS = set(GLYPH_MAP.values()) | {
+    "♈", "♉", "♊", "♋", "♌", "♍", "♎", "♏", "♐", "♑", "♒", "♓",
+    "☊", "☋", "⚳", "⚴", "⚵", "⚶", "⚸"
+}
+
+
+def generate_shortcode(name: str) -> str:
+    parts = re.split(r"[\s\-/]+", name.strip())
+    parts = [p for p in parts if p]
+    if not parts:
+        return "UNK"
+    if len(parts) == 1:
+        return parts[0][:3].upper()
+    return "".join(p[0] for p in parts[:3]).upper()
+
+
+def extract_explicit_glyph(text: str):
+    """
+    Only trust a dedicated 'Glyph:' field.
+    Do NOT treat random em dashes in prose as missing glyphs.
+    """
+    m = re.search(r'^\s*Glyph:\s*(.*?)\s*$', text, re.MULTILINE)
+    if not m:
+        return None
+    value = m.group(1).strip()
+    if value in ("", "—", "-", "N/A", "n/a", "None", "none"):
+        return None
+    return value
+
+
+def extract_inline_label_value(text: str, label: str, stop_labels=None):
+    """
+    Extract value for inline labels like:
+    Aspect Degree: 0 Glyph: ♂ Description: ...
+    """
+    if stop_labels is None:
+        stop_labels = []
+
+    pattern = re.escape(label) + r"\s*(.*)"
+    m = re.search(pattern, text, re.DOTALL)
+    if not m:
+        return None
+
+    remainder = m.group(1)
+
+    stop_index = None
+    for stop in stop_labels:
+        sm = re.search(r"\b" + re.escape(stop) + r"\s*", remainder)
+        if sm:
+            idx = sm.start()
+            if stop_index is None or idx < stop_index:
+                stop_index = idx
+
+    value = remainder if stop_index is None else remainder[:stop_index]
+    value = clean_text(value)
+    return value if value else None
+
+
+def extract_aspect_degree_and_glyph(text: str):
+    """
+    Handles both:
+    Aspect Degree: 0
+    Glyph: ♂
+
+    and:
+    Aspect Degree: 0 Glyph: ♂
+    """
+    degree = extract_inline_label_value(
+        text,
+        "Aspect Degree:",
+        stop_labels=["Glyph:", "Description:", "KeyTraits:", "Example Interpretation:", "Use in Practice:"]
+    )
+
+    glyph = extract_inline_label_value(
+        text,
+        "Glyph:",
+        stop_labels=["Description:", "KeyTraits:", "Example Interpretation:", "Use in Practice:"]
+    )
+
+    if glyph in ("", "—", "-", "N/A", "n/a", "None", "none"):
+        glyph = None
+
+    return degree, glyph
+
+
+def extract_title_leading_glyph(lines):
+    """
+    Check the first few meaningful lines for a leading glyph token only.
+    Example: '♃ Jupiter – The Expanding Flame of Wisdom'
+    """
+    for line in lines[:8]:
+        s = line.strip()
+        if not s:
+            continue
+        first = s.split()[0]
+        if first in KNOWN_GLYPHS:
+            return first
+    return None
+
+
+def resolve_glyph(name: str, text: str, lines):
+    explicit = extract_explicit_glyph(text)
+    if explicit:
+        return {"glyph": explicit, "glyph_class": "explicit_field"}
+
+    title_glyph = extract_title_leading_glyph(lines)
+    if title_glyph:
+        return {"glyph": title_glyph, "glyph_class": "title_glyph"}
+
+    if name in GLYPH_MAP:
+        return {"glyph": GLYPH_MAP[name], "glyph_class": "standard_unicode"}
+
+    return {"glyph": generate_shortcode(name), "glyph_class": "shortcode"}
+
+
+# =========================================================
 # BASIC HELPERS
-# =========================
+# =========================================================
 
 def load_index():
     if not MASTER_INDEX_FILE.exists():
@@ -28,80 +179,139 @@ def clean_text(text: str) -> str:
 
 
 def split_lines(text: str):
-    return [line.strip() for line in clean_text(text).split("\n")]
+    return [line.rstrip() for line in clean_text(text).split("\n")]
 
 
 def normalize_space(text: str) -> str:
     return re.sub(r"\s+", " ", clean_text(text))
 
 
-def extract_between(text: str, start_label: str, end_labels=None):
-    """
-    Extract block after start_label until next matching end label.
-    """
-    if end_labels is None:
-        end_labels = []
+def strip_md(text: str) -> str:
+    if text is None:
+        return ""
+    t = clean_text(text)
+    t = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", t)
+    t = re.sub(r"\[\[([^\]]+)\]\]", r"\1", t)
+    t = re.sub(r"[*_`>#]", "", t)
+    t = re.sub(r"^\s*[-•]\s*", "", t)
+    t = normalize_space(t)
+    return t
 
-    pattern = re.escape(start_label) + r"\s*(.*)"
-    start_match = re.search(pattern, text, re.DOTALL)
-    if not start_match:
+
+def clean_key(key: str) -> str:
+    return strip_md(key).strip(": ").strip()
+
+
+def is_heading_line(line: str) -> bool:
+    s = line.strip()
+    if not s:
+        return False
+    if s.startswith("#"):
+        return True
+    if s in ("---", "***", "___"):
+        return True
+    if re.match(r"^[#]{1,6}\s+", s):
+        return True
+    return False
+
+
+def heading_matches(line: str, heading: str) -> bool:
+    s = line.strip()
+    h = heading.strip()
+    if s == h:
+        return True
+    if strip_md(s) == strip_md(h):
+        return True
+    if s.startswith(h):
+        return True
+    return False
+
+
+def find_heading_index(lines, heading):
+    for i, line in enumerate(lines):
+        if heading_matches(line, heading):
+            return i
+    return None
+
+
+def collect_block(lines, start_heading, stop_headings=None):
+    """
+    Collect lines after a heading until next matching stop heading, or next markdown divider/major heading.
+    """
+    if stop_headings is None:
+        stop_headings = []
+
+    start_idx = find_heading_index(lines, start_heading)
+    if start_idx is None:
         return None
 
-    start_index = start_match.start(1)
-    remainder = text[start_index:]
+    collected = []
+    i = start_idx + 1
 
-    end_index = None
-    for label in end_labels:
-        m = re.search(r"\n\s*" + re.escape(label) + r"\s*", remainder)
-        if m:
-            candidate = m.start()
-            if end_index is None or candidate < end_index:
-                end_index = candidate
+    while i < len(lines):
+        line = lines[i]
+        s = line.strip()
 
-    if end_index is None:
-        return clean_text(remainder)
+        if any(heading_matches(line, h) for h in stop_headings):
+            break
 
-    return clean_text(remainder[:end_index])
+        if s in ("---", "***", "___"):
+            j = i + 1
+            while j < len(lines) and not lines[j].strip():
+                j += 1
+            if j < len(lines) and is_heading_line(lines[j]):
+                break
 
+        if collected and is_heading_line(line):
+            break
 
-def extract_line_value(text: str, label: str):
-    m = re.search(rf"^{re.escape(label)}\s*(.+)$", text, re.MULTILINE)
-    if m:
-        return clean_text(m.group(1))
-    return None
+        collected.append(line)
+        i += 1
 
-
-def extract_inline_after_label(text: str, label: str):
-    m = re.search(rf"{re.escape(label)}\s*(.+)", text)
-    if m:
-        return clean_text(m.group(1))
-    return None
+    return "\n".join(collected).strip()
 
 
-def extract_list_after_header(text: str, header: str, stop_headers=None):
-    block = extract_between(text, header, stop_headers or [])
+def parse_bullets(block: str):
     if not block:
         return []
-
-    items = []
+    out = []
     for line in split_lines(block):
-        line = line.strip("•*- \t")
-        if line:
-            items.append(line)
-    return items
+        s = line.strip()
+        if not s or s in ("---", "***", "___"):
+            continue
+        s = re.sub(r"^\s*[-•]\s*", "", s)
+        s = strip_md(s)
+        if s:
+            out.append(s)
+    return out
 
 
 def parse_colon_lines(block: str):
-    """
-    Parse lines like:
-    Label: Value
-    """
     data = {}
+    if not block:
+        return data
     for line in split_lines(block):
-        if ":" in line:
-            key, value = line.split(":", 1)
-            data[normalize_space(key)] = clean_text(value)
+        s = line.strip()
+        if not s or s in ("---", "***", "___") or is_heading_line(s):
+            continue
+        s = re.sub(r"^\s*[-•]\s*", "", s)
+        if ":" in s:
+            key, value = s.split(":", 1)
+            ck = clean_key(key)
+            cv = strip_md(value)
+            if ck:
+                data[ck] = cv
     return data
+
+
+def parse_tags_block(block: str):
+    if not block:
+        return []
+    tags = []
+    for token in block.replace("\n", " ").split():
+        if token.startswith("#"):
+            tags.append(token.strip("#"))
+    return tags
 
 
 def detect_family(entry):
@@ -109,19 +319,14 @@ def detect_family(entry):
 
     if "Fixed Stars" in path:
         return "fixed_star"
-
     if "Aspects" in path:
         return "aspect"
-
     if "Houses" in path:
         return "house"
-
     if "Signs" in path:
         return "sign"
-
     if "Planets (Classic and Modern)" in path:
         return "planet"
-
     if any(x in path for x in [
         "Asteroids",
         "Calculated Points",
@@ -136,256 +341,175 @@ def detect_family(entry):
     return "unknown"
 
 
-def parse_tags_from_block(text: str):
-    lines = split_lines(text)
-    tags = []
-
-    capture = False
-    for line in lines:
-        low = line.lower()
-        if low == "tags" or low == "🔖 tags":
-            capture = True
-            continue
-
-        if capture:
-            if not line:
-                break
-            if line.startswith("#"):
-                tags.extend([tag.strip("#") for tag in line.split() if tag.startswith("#")])
-            elif ":" not in line and len(line) < 80:
-                tags.append(line)
-            else:
-                # stop if we've moved into another section
-                break
-
-    return tags
-
-
-# =========================
-# ASPECT PARSER
-# =========================
+# =========================================================
+# PARSER FAMILIES
+# =========================================================
 
 def parse_aspect_note(entry):
     text = clean_text(entry["content"])
     lines = split_lines(text)
 
-    name = entry["name"]
-    aspect_degree = extract_line_value(text, "Aspect Degree:")
-    glyph = extract_line_value(text, "Glyph:")
+    aspect_degree, inline_glyph = extract_aspect_degree_and_glyph(text)
 
-    description = extract_between(
-        text,
-        "Description:",
-        ["KeyTraits:", "Example Interpretation:", "Use in Practice:"]
-    )
+    if inline_glyph:
+        glyph_info = {"glyph": inline_glyph, "glyph_class": "inline_field"}
+    else:
+        glyph_info = resolve_glyph(entry["name"], text, lines)
 
-    key_traits = extract_list_after_header(
-        text,
-        "KeyTraits:",
-        ["Example Interpretation:", "Use in Practice:"]
-    )
+    description = collect_block(lines, "Description:", ["KeyTraits:", "Example Interpretation:", "Use in Practice:"])
+    key_traits = parse_bullets(collect_block(lines, "KeyTraits:", ["Example Interpretation:", "Use in Practice:"]))
+    example_interpretation = collect_block(lines, "Example Interpretation:", ["Use in Practice:"])
+    use_in_practice = collect_block(lines, "Use in Practice:", [])
 
-    example_interpretation = extract_between(
-        text,
-        "Example Interpretation:",
-        ["Use in Practice:"]
-    )
+    if not description:
+        description = extract_inline_label_value(
+            text,
+            "Description:",
+            stop_labels=["KeyTraits:", "Example Interpretation:", "Use in Practice:"]
+        )
 
-    use_in_practice = extract_between(
-        text,
-        "Use in Practice:",
-        []
-    )
+    if not key_traits:
+        key_block = extract_inline_label_value(
+            text,
+            "KeyTraits:",
+            stop_labels=["Example Interpretation:", "Use in Practice:"]
+        )
+        if key_block:
+            pieces = re.split(r"\s+-\s+", " " + key_block)
+            key_traits = [strip_md(x) for x in pieces if strip_md(x)]
+
+    if not example_interpretation:
+        example_interpretation = extract_inline_label_value(
+            text,
+            "Example Interpretation:",
+            stop_labels=["Use in Practice:"]
+        )
+
+    if not use_in_practice:
+        use_in_practice = extract_inline_label_value(
+            text,
+            "Use in Practice:",
+            stop_labels=[]
+        )
 
     return {
-        "name": name,
+        "name": entry["name"],
         "family": "aspect",
-        "aspect_degree": aspect_degree,
-        "glyph": glyph,
-        "description": description,
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
+        "aspect_degree": strip_md(aspect_degree) if aspect_degree else None,
+        "description": strip_md(description) if description else None,
         "key_traits": key_traits,
-        "example_interpretation": example_interpretation,
-        "use_in_practice": use_in_practice,
+        "example_interpretation": strip_md(example_interpretation) if example_interpretation else None,
+        "use_in_practice": strip_md(use_in_practice) if use_in_practice else None,
     }
 
-
-# =========================
-# BODY / POINT PARSER
-# =========================
 
 def parse_body_point_note(entry):
     text = clean_text(entry["content"])
     lines = split_lines(text)
+    glyph_info = resolve_glyph(entry["name"], text, lines)
 
-    title_line = None
+    display_title = entry["name"]
+    epithet = None
     for line in lines[:12]:
-        if " – " in line or " - " in line:
-            title_line = line
+        s = strip_md(line)
+        if " – " in s:
+            display_title = s
+            _, right = s.split(" – ", 1)
+            epithet = right.strip()
+            break
+        if " - " in s:
+            display_title = s
+            _, right = s.split(" - ", 1)
+            epithet = right.strip()
             break
 
-    display_title = title_line if title_line else entry["name"]
+    tags = []
+    tags_idx = find_heading_index(lines, "tags")
+    if tags_idx is not None:
+        i = tags_idx + 1
+        while i < len(lines):
+            s = lines[i].strip()
+            if not s:
+                i += 1
+                continue
+            if is_heading_line(s) or s in ("Interpretive Basis", "Orbital Signature", "House and Aspect Relevance", "Backlinks"):
+                break
+            if ":" not in s and len(s) < 80:
+                tags.append(strip_md(s))
+                i += 1
+                continue
+            break
 
-    epithet = None
-    if title_line:
-        if " – " in title_line:
-            parts = title_line.split(" – ", 1)
-            epithet = clean_text(parts[1])
-        elif " - " in title_line:
-            parts = title_line.split(" - ", 1)
-            epithet = clean_text(parts[1])
+    mythic_root = collect_block(lines, "Mythic Root:", ["Core Function:", "Astrological Role:", "Orbital Signature"])
+    core_function = collect_block(lines, "Core Function:", ["Astrological Role:", "Orbital Signature"])
+    astrological_role = collect_block(lines, "Astrological Role:", ["Orbital Signature", "Keywords / Powerwords", "House and Aspect Relevance"])
 
-    tags = parse_tags_from_block(text)
+    orbital_signature = parse_colon_lines(collect_block(lines, "Orbital Signature", ["Keywords / Powerwords", "House and Aspect Relevance", "Use in Astrology Arith(m)etic", "Backlinks"]))
 
-    mythic_root = extract_between(
-        text,
-        "Mythic Root:",
-        ["Core Function:", "Astrological Role:", "Orbital Signature", "Keywords / Powerwords"]
-    )
-
-    core_function = extract_between(
-        text,
-        "Core Function:",
-        ["Astrological Role:", "Orbital Signature", "Keywords / Powerwords"]
-    )
-
-    astrological_role = extract_between(
-        text,
-        "Astrological Role:",
-        ["Orbital Signature", "Keywords / Powerwords"]
-    )
-
-    orbital_block = extract_between(
-        text,
-        "Orbital Signature",
-        ["Keywords / Powerwords", "House and Aspect Relevance", "Use in Astrology Arith(m)etic", "Backlinks"]
-    )
-    orbital_signature = parse_colon_lines(orbital_block) if orbital_block else {}
-
-    keywords_block = extract_between(
-        text,
-        "Keywords / Powerwords",
-        ["House and Aspect Relevance", "Use in Astrology Arith(m)etic", "Backlinks"]
-    )
+    keywords_block = collect_block(lines, "Keywords / Powerwords", ["House and Aspect Relevance", "Use in Astrology Arith(m)etic", "Backlinks"])
     keywords = []
     if keywords_block:
-        keywords = [clean_text(x) for x in re.split(r",|\n", keywords_block) if clean_text(x)]
+        keywords = [strip_md(x) for x in re.split(r",|\n", keywords_block) if strip_md(x)]
 
-    house_aspect_block = extract_between(
-        text,
-        "House and Aspect Relevance",
-        ["Use in Astrology Arith(m)etic", "Backlinks"]
-    )
-    house_aspect_relevance = parse_colon_lines(house_aspect_block) if house_aspect_block else {}
-
-    ai_usage = extract_between(
-        text,
-        "Use in Astrology Arith(m)etic",
-        ["Backlinks"]
-    )
-
-    backlinks_block = extract_between(
-        text,
-        "Backlinks",
-        []
-    )
-    backlinks = []
-    if backlinks_block:
-        for line in split_lines(backlinks_block):
-            if line:
-                backlinks.append(line)
+    house_aspect_relevance = parse_colon_lines(collect_block(lines, "House and Aspect Relevance", ["Use in Astrology Arith(m)etic", "Backlinks"]))
+    ai_usage = collect_block(lines, "Use in Astrology Arith(m)etic", ["Backlinks"])
+    backlinks = parse_bullets(collect_block(lines, "Backlinks", []))
 
     return {
         "name": entry["name"],
         "display_title": display_title,
         "epithet": epithet,
         "family": "body_point",
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
         "tags": tags,
-        "mythic_root": mythic_root,
-        "core_function": core_function,
-        "astrological_role": astrological_role,
+        "mythic_root": strip_md(mythic_root) if mythic_root else None,
+        "core_function": strip_md(core_function) if core_function else None,
+        "astrological_role": strip_md(astrological_role) if astrological_role else None,
         "orbital_signature": orbital_signature,
         "keywords": keywords,
         "house_aspect_relevance": house_aspect_relevance,
-        "ai_usage": ai_usage,
+        "ai_usage": strip_md(ai_usage) if ai_usage else None,
         "backlinks": backlinks,
     }
 
 
-# =========================
-# FIXED STAR PARSER
-# =========================
-
 def parse_fixed_star_note(entry):
     text = clean_text(entry["content"])
+    lines = split_lines(text)
+    glyph_info = resolve_glyph(entry["name"], text, lines)
 
-    keywords_line = extract_line_value(text, "Keywords:")
-    keywords = []
-    if keywords_line:
-        keywords = [clean_text(x) for x in keywords_line.split(",") if clean_text(x)]
+    kw_match = re.search(r'^\s*Keywords:\s*(.+)$', text, re.MULTILINE)
+    keywords = [strip_md(x) for x in kw_match.group(1).split(",")] if kw_match else []
 
-    general_meaning = extract_between(
-        text,
-        "General Meaning:",
-        ["High Expression:", "Shadow Expression:", "Metaphysical/Esoteric Layer:", "Ritual Application"]
-    )
+    general_meaning = collect_block(lines, "General Meaning:", ["High Expression:", "Shadow Expression:", f"{entry['name']} Conjunction:", "Metaphysical/Esoteric Layer:", "Ritual Application"])
+    high_expression = parse_bullets(collect_block(lines, "High Expression:", ["Shadow Expression:", f"{entry['name']} Conjunction:", "Metaphysical/Esoteric Layer:", "Ritual Application"]))
+    shadow_expression = parse_bullets(collect_block(lines, "Shadow Expression:", [f"{entry['name']} Conjunction:", "Metaphysical/Esoteric Layer:", "Ritual Application"]))
 
-    high_expression_block = extract_between(
-        text,
-        "High Expression:",
-        ["Shadow Expression:", "Metaphysical/Esoteric Layer:", "Ritual Application"]
-    )
-    high_expression = []
-    if high_expression_block:
-        high_expression = [line.strip("•*- \t") for line in split_lines(high_expression_block) if line]
+    conj_block = collect_block(lines, f"{entry['name']} Conjunction:", ["Description:", "Examples:", "Metaphysical/Esoteric Layer:", "Ritual Application"])
+    conjunction_rule = strip_md(conj_block) if conj_block else None
 
-    shadow_expression_block = extract_between(
-        text,
-        "Shadow Expression:",
-        [f"{entry['name']} Conjunction:", "Description:", "Metaphysical/Esoteric Layer:", "Ritual Application"]
-    )
-    shadow_expression = []
-    if shadow_expression_block:
-        shadow_expression = [line.strip("•*- \t") for line in split_lines(shadow_expression_block) if line]
-
-    conjunction_header = extract_line_value(text, f"{entry['name']} Conjunction:")
-    if conjunction_header is None:
-        m = re.search(rf"{re.escape(entry['name'])}\s+Conjunction:\s*(.+)", text)
-        conjunction_header = clean_text(m.group(1)) if m else None
-
-    conjunction_description = extract_between(
-        text,
-        "Description:",
-        ["Examples:", "Metaphysical/Esoteric Layer:", "Ritual Application"]
-    )
-
-    examples_block = extract_between(
-        text,
-        "Examples:",
-        ["Metaphysical/Esoteric Layer:", "Ritual Application"]
-    )
+    conjunction_description = collect_block(lines, "Description:", ["Examples:", "Metaphysical/Esoteric Layer:", "Ritual Application"])
+    examples_block = collect_block(lines, "Examples:", ["Metaphysical/Esoteric Layer:", "Ritual Application"])
     examples = []
     if examples_block:
         for line in split_lines(examples_block):
-            if ":" in line:
-                placement, meaning = line.split(":", 1)
+            s = line.strip()
+            if not s or is_heading_line(s):
+                continue
+            if ":" in s:
+                a, b = s.split(":", 1)
                 examples.append({
-                    "placement": clean_text(placement),
-                    "interpretation": clean_text(meaning)
+                    "placement": strip_md(a),
+                    "interpretation": strip_md(b)
                 })
-            elif line:
-                examples.append({"text": line})
+            else:
+                examples.append({"text": strip_md(s)})
 
-    metaphysical_layer = extract_between(
-        text,
-        "Metaphysical/Esoteric Layer:",
-        ["Ritual Application"]
-    )
-
-    ritual_block = extract_between(
-        text,
-        "Ritual Application",
-        []
-    )
+    metaphysical_layer = collect_block(lines, "Metaphysical/Esoteric Layer:", ["Ritual Application"])
+    ritual_block = collect_block(lines, "Ritual Application", [])
 
     ritual_application = {
         "overview": None,
@@ -396,433 +520,283 @@ def parse_fixed_star_note(entry):
     }
 
     if ritual_block:
-        ritual_lines = split_lines(ritual_block)
-        current_section = None
-        overview_lines = []
-
-        for line in ritual_lines:
-            low = line.lower().rstrip(":")
+        mode = None
+        overview = []
+        for line in split_lines(ritual_block):
+            s = line.strip()
+            ss = strip_md(s).rstrip(":")
+            if not s or s in ("---", "***", "___"):
+                continue
+            low = ss.lower()
             if low == "ideal for":
-                current_section = "ideal_for"
+                mode = "ideal_for"
                 continue
-            elif low == "not suited for":
-                current_section = "not_suited_for"
+            if low == "not suited for":
+                mode = "not_suited_for"
                 continue
-            elif low == "effective timing":
-                current_section = "effective_timing"
+            if low == "effective timing":
+                mode = "effective_timing"
                 continue
-            elif low == "affirmation":
-                current_section = "affirmation"
+            if low == "affirmation":
+                mode = "affirmation"
                 continue
 
-            if current_section is None:
-                if line:
-                    overview_lines.append(line)
-            elif current_section in ("ideal_for", "not_suited_for"):
-                if line:
-                    ritual_application[current_section].append(line.strip("•*- \t"))
-            elif current_section in ("effective_timing", "affirmation"):
-                if line:
-                    if ritual_application[current_section]:
-                        ritual_application[current_section] += " " + line
-                    else:
-                        ritual_application[current_section] = line
+            if mode is None:
+                overview.append(strip_md(s))
+            elif mode in ("ideal_for", "not_suited_for"):
+                ritual_application[mode].append(strip_md(s))
+            else:
+                if ritual_application[mode]:
+                    ritual_application[mode] += " " + strip_md(s)
+                else:
+                    ritual_application[mode] = strip_md(s)
 
-        if overview_lines:
-            ritual_application["overview"] = " ".join(overview_lines)
+        if overview:
+            ritual_application["overview"] = " ".join(overview)
 
     return {
         "name": entry["name"],
         "family": "fixed_star",
-        "keywords": keywords,
-        "general_meaning": general_meaning,
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
+        "keywords": [k for k in keywords if k],
+        "general_meaning": strip_md(general_meaning) if general_meaning else None,
         "high_expression": high_expression,
         "shadow_expression": shadow_expression,
-        "conjunction_rule": conjunction_header,
-        "conjunction_description": conjunction_description,
+        "conjunction_rule": conjunction_rule,
+        "conjunction_description": strip_md(conjunction_description) if conjunction_description else None,
         "examples": examples,
-        "metaphysical_layer": metaphysical_layer,
+        "metaphysical_layer": strip_md(metaphysical_layer) if metaphysical_layer else None,
         "ritual_application": ritual_application,
     }
 
 
-# =========================
-# HOUSE PARSER
-# =========================
-
 def parse_house_note(entry):
     text = clean_text(entry["content"])
     lines = split_lines(text)
+    glyph_info = resolve_glyph(entry["name"], text, lines)
 
     title = None
-    for line in lines[:10]:
-        if "House of" in line:
-            title = line
+    for line in lines[:12]:
+        s = strip_md(line)
+        if "House of" in s:
+            title = s
             break
 
-    basic_assoc_block = extract_between(
-        text,
-        "✧ Core Association",
-        ["🧭 Thematic Keywords", "🜂 House Description"]
-    )
-    basic_assoc = parse_colon_lines(basic_assoc_block) if basic_assoc_block else {}
+    core_association = parse_colon_lines(collect_block(lines, "✧ Core Association", ["🧭 Thematic Keywords", "## 🧭 Thematic Keywords", "🜂 House Description", "## 🜂 House Description"]))
+    thematic_keywords = parse_bullets(collect_block(lines, "🧭 Thematic Keywords", ["🜂 House Description", "## 🜂 House Description"]))
+    house_description = collect_block(lines, "🜂 House Description", ["✴️ Core Themes & Manifestations", "## ✴", "🜍 Physical / Material Correspondences", "## 🜍"])
+    core_themes = parse_colon_lines(collect_block(lines, "✴️ Core Themes & Manifestations", ["🜍 Physical / Material Correspondences", "## 🜍"]))
+    physical = parse_colon_lines(collect_block(lines, "🜍 Physical / Material Correspondences", ["💠 Metaphysical & Spiritual Layer", "## 💠"]))
+    metaphysical = parse_colon_lines(collect_block(lines, "💠 Metaphysical & Spiritual Layer", ["🔁 Opposing House Reflection", "## 🔁"]))
 
-    thematic_keywords = extract_list_after_header(
-        text,
-        "🧭 Thematic Keywords",
-        ["🜂 House Description", "✴️ Core Themes & Manifestations"]
-    )
+    opposing = collect_block(lines, "🔁 Opposing House Reflection", ["🪞 Example Interpretations", "## 🪞", "✍🏼 Journal Prompts", "## ✍🏼", "🕯️ Affirmation", "## 🕯️"])
+    opposing_lines = split_lines(opposing) if opposing else []
+    opposing_house_reflection = {}
+    axis_interpretation = None
+    if opposing_lines:
+        first_part = []
+        rest = []
+        seen_noncolon = False
+        for ln in opposing_lines:
+            if ":" in ln and not seen_noncolon:
+                first_part.append(ln)
+            else:
+                seen_noncolon = True
+                rest.append(ln)
+        opposing_house_reflection = parse_colon_lines("\n".join(first_part))
+        axis_interpretation = strip_md("\n".join(rest)) if rest else None
+        if axis_interpretation:
+            opposing_house_reflection["Axis Interpretation"] = axis_interpretation
 
-    house_description = extract_between(
-        text,
-        "🜂 House Description",
-        ["✴️ Core Themes & Manifestations", "🜍 Physical / Material Correspondences"]
-    )
-
-    core_themes_block = extract_between(
-        text,
-        "✴️ Core Themes & Manifestations",
-        ["🜍 Physical / Material Correspondences", "💠 Metaphysical & Spiritual Layer"]
-    )
-    core_themes = parse_colon_lines(core_themes_block) if core_themes_block else {}
-
-    physical_block = extract_between(
-        text,
-        "🜍 Physical / Material Correspondences",
-        ["💠 Metaphysical & Spiritual Layer", "🔁 Opposing House Reflection"]
-    )
-    physical_correspondences = parse_colon_lines(physical_block) if physical_block else {}
-
-    metaphysical_block = extract_between(
-        text,
-        "💠 Metaphysical & Spiritual Layer",
-        ["🔁 Opposing House Reflection", "🪞 Example Interpretations"]
-    )
-    metaphysical_spiritual_layer = parse_colon_lines(metaphysical_block) if metaphysical_block else {}
-
-    opposing_block = extract_between(
-        text,
-        "🔁 Opposing House Reflection",
-        ["🪞 Example Interpretations", "✍🏼 Journal Prompts", "🕯️ Affirmation"]
-    )
-    opposing_house_reflection = parse_colon_lines(opposing_block) if opposing_block else {}
-
-    example_block = extract_between(
-        text,
-        "🪞 Example Interpretations",
-        ["✍🏼 Journal Prompts", "🕯️ Affirmation", "🔖 Tags"]
-    )
+    examples_block = collect_block(lines, "🪞 Example Interpretations", ["✍🏼 Journal Prompts", "## ✍🏼", "🕯️ Affirmation", "## 🕯️"])
     example_interpretations = []
-    if example_block:
-        lines = split_lines(example_block)
+    if examples_block:
+        ex_lines = [ln.strip() for ln in split_lines(examples_block) if ln.strip() and ln.strip() not in ("---", "***", "___")]
         i = 0
-        while i < len(lines):
-            line = lines[i]
-            if line and i + 1 < len(lines):
-                nxt = lines[i + 1]
-                if nxt and ":" not in line and not line.startswith("🔖"):
-                    example_interpretations.append({
-                        "placement": line,
-                        "interpretation": nxt
-                    })
-                    i += 2
-                    continue
-            if line:
-                example_interpretations.append({"text": line})
-            i += 1
+        while i < len(ex_lines):
+            current = ex_lines[i]
+            nxt = ex_lines[i + 1] if i + 1 < len(ex_lines) else None
+            if current and nxt and not current.startswith(">") and nxt.startswith(">"):
+                example_interpretations.append({
+                    "placement": strip_md(current),
+                    "interpretation": strip_md(nxt.lstrip("> ").strip())
+                })
+                i += 2
+            else:
+                example_interpretations.append({"text": strip_md(current)})
+                i += 1
 
-    journal_prompts = extract_list_after_header(
-        text,
-        "✍🏼 Journal Prompts",
-        ["🕯️ Affirmation", "🔖 Tags"]
-    )
-
-    affirmation = extract_between(
-        text,
-        "🕯️ Affirmation",
-        ["🔖 Tags"]
-    )
-
-    tags = []
-    tags_block = extract_between(text, "🔖 Tags", [])
-    if tags_block:
-        tags = [tag.strip("#") for tag in tags_block.split() if tag.startswith("#")]
+    journal_prompts = parse_bullets(collect_block(lines, "✍🏼 Journal Prompts", ["🕯️ Affirmation", "## 🕯️", "🔖 Tags", "## 🔖"]))
+    affirmation = collect_block(lines, "🕯️ Affirmation", ["🔖 Tags", "## 🔖"])
+    tags = parse_tags_block(collect_block(lines, "🔖 Tags", []))
 
     return {
         "name": entry["name"],
         "title": title,
         "family": "house",
-        "core_association": basic_assoc,
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
+        "core_association": core_association,
         "thematic_keywords": thematic_keywords,
-        "house_description": house_description,
+        "house_description": strip_md(house_description) if house_description else None,
         "core_themes_manifestations": core_themes,
-        "physical_material_correspondences": physical_correspondences,
-        "metaphysical_spiritual_layer": metaphysical_spiritual_layer,
+        "physical_material_correspondences": physical,
+        "metaphysical_spiritual_layer": metaphysical,
         "opposing_house_reflection": opposing_house_reflection,
         "example_interpretations": example_interpretations,
         "journal_prompts": journal_prompts,
-        "affirmation": affirmation,
+        "affirmation": strip_md(affirmation) if affirmation else None,
         "tags": tags,
     }
 
-
-# =========================
-# SIGN PARSER
-# =========================
 
 def parse_sign_note(entry):
     text = clean_text(entry["content"])
     lines = split_lines(text)
 
+    basic_information = parse_colon_lines(collect_block(lines, "✧ Basic Information", ["🗣️ I AM Statement", "## 🗣️", "🔑 Core Traits", "## 🔑"]))
+
+    sign_symbol = basic_information.get("Symbol")
+    if sign_symbol and sign_symbol not in ("—", "-", "None", "none"):
+        glyph_info = {"glyph": sign_symbol, "glyph_class": "sign_symbol"}
+    else:
+        glyph_info = resolve_glyph(entry["name"], text, lines)
+
     subtitle = None
     for line in lines[:10]:
-        if "•" in line and entry["name"] in line:
-            subtitle = line
+        s = strip_md(line)
+        if entry["name"] in s and "•" in s:
+            subtitle = s
             break
 
-    basic_block = extract_between(
-        text,
-        "✧ Basic Information",
-        ["🗣️ I AM Statement", "🔑 Core Traits"]
-    )
-    basic_information = parse_colon_lines(basic_block) if basic_block else {}
+    iam_statement = collect_block(lines, "🗣️ I AM Statement", ["🔑 Core Traits", "## 🔑", "🌿 Strengths", "## 🌿"])
+    core_traits = parse_bullets(collect_block(lines, "🔑 Core Traits", ["🌿 Strengths", "## 🌿"]))
+    strengths = parse_bullets(collect_block(lines, "🌿 Strengths", ["🜄 Challenges / Shadow Aspects", "## 🜄"]))
+    challenges = parse_bullets(collect_block(lines, "🜄 Challenges / Shadow Aspects", ["🜚 Behavioral Patterns & Archetype", "## 🜚"]))
 
-    iam_statement = extract_between(
-        text,
-        "🗣️ I AM Statement",
-        ["🔑 Core Traits", "🌿 Strengths"]
-    )
-
-    core_traits = extract_list_after_header(
-        text,
-        "🔑 Core Traits",
-        ["🌿 Strengths", "🜄 Challenges / Shadow Aspects"]
-    )
-
-    strengths = extract_list_after_header(
-        text,
-        "🌿 Strengths",
-        ["🜄 Challenges / Shadow Aspects", "🜚 Behavioral Patterns & Archetype"]
-    )
-
-    challenges = extract_list_after_header(
-        text,
-        "🜄 Challenges / Shadow Aspects",
-        ["🜚 Behavioral Patterns & Archetype", "🌌 In Relationships"]
-    )
-
-    behavioral_block = extract_between(
-        text,
-        "🜚 Behavioral Patterns & Archetype",
-        ["🌌 In Relationships", "🪷 Spiritual Pathways"]
-    )
-    behavioral_patterns = parse_colon_lines(behavioral_block) if behavioral_block else {}
-    behavioral_summary = None
+    behavioral_block = collect_block(lines, "🜚 Behavioral Patterns & Archetype", ["🌌 In Relationships", "## 🌌", "🪷 Spiritual Pathways", "## 🪷"])
+    behavioral_patterns = parse_colon_lines(behavioral_block)
     if behavioral_block:
-        # keep non-colon prose too
-        non_colon_lines = [line for line in split_lines(behavioral_block) if ":" not in line]
-        if non_colon_lines:
-            behavioral_summary = " ".join(non_colon_lines)
+        non_colon = [strip_md(ln) for ln in split_lines(behavioral_block) if ln.strip() and ":" not in ln]
+        if non_colon:
+            behavioral_patterns["Summary"] = " ".join(non_colon)
 
-    relationships_block = extract_between(
-        text,
-        "🌌 In Relationships",
-        ["🪷 Spiritual Pathways", "✍🏼 Journal Prompts"]
-    )
-    relationships = parse_colon_lines(relationships_block) if relationships_block else {}
+    relationships = parse_colon_lines(collect_block(lines, "🌌 In Relationships", ["🪷 Spiritual Pathways", "## 🪷", "✍🏼 Journal Prompts", "## ✍🏼"]))
+    spiritual = parse_colon_lines(collect_block(lines, "🪷 Spiritual Pathways", ["✍🏼 Journal Prompts", "## ✍🏼", "🛠️ Use in Practice", "## 🛠️"]))
+    journal_prompts = parse_bullets(collect_block(lines, "✍🏼 Journal Prompts", ["🛠️ Use in Practice", "## 🛠️", "🌠 Fixed Stars & Notable Degrees", "## 🌠", "🕯️ Affirmation", "## 🕯️"]))
+    use_in_practice = collect_block(lines, "🛠️ Use in Practice", ["🌠 Fixed Stars & Notable Degrees", "## 🌠", "🕯️ Affirmation", "## 🕯️", "🔖 Tags", "## 🔖"])
 
-    spiritual_block = extract_between(
-        text,
-        "🪷 Spiritual Pathways",
-        ["✍🏼 Journal Prompts", "🛠️ Use in Practice"]
-    )
-    spiritual_pathways = parse_colon_lines(spiritual_block) if spiritual_block else {}
-
-    journal_prompts = extract_list_after_header(
-        text,
-        "✍🏼 Journal Prompts",
-        ["🛠️ Use in Practice", "🌠 Fixed Stars & Notable Degrees", "🕯️ Affirmation"]
-    )
-
-    use_in_practice = extract_between(
-        text,
-        "🛠️ Use in Practice",
-        ["🌠 Fixed Stars & Notable Degrees", "🕯️ Affirmation", "🔖 Tags"]
-    )
-
-    fixed_stars_block = extract_between(
-        text,
-        "🌠 Fixed Stars & Notable Degrees",
-        ["🕯️ Affirmation", "🔖 Tags"]
-    )
+    fixed_stars_block = collect_block(lines, "🌠 Fixed Stars & Notable Degrees", ["🕯️ Affirmation", "## 🕯️", "🔖 Tags", "## 🔖"])
     fixed_stars_notable_degrees = []
     if fixed_stars_block:
-        for line in split_lines(fixed_stars_block):
-            if line.lower().startswith("degree"):
+        for ln in split_lines(fixed_stars_block):
+            s = ln.strip()
+            if not s or s.lower().startswith("degree"):
                 continue
-            if line:
-                fixed_stars_notable_degrees.append(line)
+            fixed_stars_notable_degrees.append(strip_md(s))
 
-    affirmation = extract_between(
-        text,
-        "🕯️ Affirmation",
-        ["🔖 Tags"]
-    )
-
-    tags = []
-    tags_block = extract_between(text, "🔖 Tags", [])
-    if tags_block:
-        tags = [tag.strip("#") for tag in tags_block.split() if tag.startswith("#")]
+    affirmation = collect_block(lines, "🕯️ Affirmation", ["🔖 Tags", "## 🔖"])
+    tags = parse_tags_block(collect_block(lines, "🔖 Tags", []))
 
     return {
         "name": entry["name"],
         "subtitle": subtitle,
         "family": "sign",
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
         "basic_information": basic_information,
-        "iam_statement": iam_statement,
+        "iam_statement": strip_md(iam_statement) if iam_statement else None,
         "core_traits": core_traits,
         "strengths": strengths,
         "challenges": challenges,
-        "behavioral_patterns": {
-            **behavioral_patterns,
-            "summary": behavioral_summary,
-        },
+        "behavioral_patterns": behavioral_patterns,
         "relationships": relationships,
-        "spiritual_pathways": spiritual_pathways,
+        "spiritual_pathways": spiritual,
         "journal_prompts": journal_prompts,
-        "use_in_practice": use_in_practice,
+        "use_in_practice": strip_md(use_in_practice) if use_in_practice else None,
         "fixed_stars_notable_degrees": fixed_stars_notable_degrees,
-        "affirmation": affirmation,
+        "affirmation": strip_md(affirmation) if affirmation else None,
         "tags": tags,
     }
 
 
-# =========================
-# PLANET PARSER
-# =========================
-
 def parse_planet_note(entry):
     text = clean_text(entry["content"])
     lines = split_lines(text)
+    glyph_info = resolve_glyph(entry["name"], text, lines)
 
     subtitle = None
     for line in lines[:10]:
-        if " – " in line or " - " in line:
-            if entry["name"] in line:
-                subtitle = line
-                break
+        s = strip_md(line)
+        if entry["name"] in s and (" – " in s or " - " in s):
+            subtitle = s
+            break
 
-    description = extract_between(
-        text,
-        "Description:",
-        ["Natal Chart:", "Soul Path:", "Transit Influence:", "Progressed Expression:"]
-    )
+    description = collect_block(lines, "Description:", ["Natal Chart:", "Soul Path:", "Transit Influence:", "Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"])
+    natal_chart = collect_block(lines, "Natal Chart:", ["Soul Path:", "Transit Influence:", "Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"])
+    soul_path = collect_block(lines, "Soul Path:", ["Transit Influence:", "Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"])
+    transit_influence = collect_block(lines, "Transit Influence:", ["Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"])
+    progressed_expression = collect_block(lines, "Progressed Expression:", ["Mundane Astrology:", "Keywords / Powerwords:"])
+    mundane_astrology = collect_block(lines, "Mundane Astrology:", ["Keywords / Powerwords:", "Essential Dignitaries:", "Time-Table:", "Fixed Star Associations:", "Correspondences"])
 
-    natal_chart = extract_between(
-        text,
-        "Natal Chart:",
-        ["Soul Path:", "Transit Influence:", "Progressed Expression:", "Mundane Astrology:"]
-    )
-
-    soul_path = extract_between(
-        text,
-        "Soul Path:",
-        ["Transit Influence:", "Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"]
-    )
-
-    transit_influence = extract_between(
-        text,
-        "Transit Influence:",
-        ["Progressed Expression:", "Mundane Astrology:", "Keywords / Powerwords:"]
-    )
-
-    progressed_expression = extract_between(
-        text,
-        "Progressed Expression:",
-        ["Mundane Astrology:", "Keywords / Powerwords:"]
-    )
-
-    mundane_astrology = extract_between(
-        text,
-        "Mundane Astrology:",
-        ["Keywords / Powerwords:", "Essential Dignitaries:", "Time-Table:"]
-    )
-
-    keywords_block = extract_between(
-        text,
-        "Keywords / Powerwords:",
-        ["Essential Dignitaries:", "Time-Table:", "Fixed Star Associations:", "Correspondences"]
-    )
+    keywords_block = collect_block(lines, "Keywords / Powerwords:", ["Essential Dignitaries:", "Time-Table:", "Fixed Star Associations:", "Correspondences"])
     keywords = []
     if keywords_block:
-        keywords = [clean_text(x) for x in re.split(r",|\n", keywords_block) if clean_text(x)]
+        keywords = [strip_md(x) for x in re.split(r",|\n", keywords_block) if strip_md(x)]
 
-    dignities_block = extract_between(
-        text,
-        "Essential Dignitaries:",
-        ["Time-Table:", "Fixed Star Associations:", "Correspondences"]
-    )
-    essential_dignities = parse_colon_lines(dignities_block) if dignities_block else {}
+    essential_dignities = parse_colon_lines(collect_block(lines, "Essential Dignitaries:", ["Time-Table:", "Fixed Star Associations:", "Correspondences"]))
+    time_table = parse_colon_lines(collect_block(lines, "Time-Table:", ["Fixed Star Associations:", "Correspondences"]))
 
-    timetable_block = extract_between(
-        text,
-        "Time-Table:",
-        ["Fixed Star Associations:", "Correspondences"]
-    )
-    timetable = parse_colon_lines(timetable_block) if timetable_block else {}
-
-    fixed_star_block = extract_between(
-        text,
-        "Fixed Star Associations:",
-        ["Correspondences"]
-    )
+    fixed_star_block = collect_block(lines, "Fixed Star Associations:", ["Correspondences"])
     fixed_star_associations = []
     if fixed_star_block:
-        for line in split_lines(fixed_star_block):
-            if ":" in line:
-                star, meaning = line.split(":", 1)
+        for ln in split_lines(fixed_star_block):
+            s = ln.strip()
+            if not s or is_heading_line(s):
+                continue
+            if ":" in s:
+                star, meaning = s.split(":", 1)
                 fixed_star_associations.append({
-                    "star": clean_text(star),
-                    "meaning": clean_text(meaning)
+                    "star": strip_md(star),
+                    "meaning": strip_md(meaning)
                 })
-            elif line:
-                fixed_star_associations.append({"text": line})
+            else:
+                fixed_star_associations.append({"text": strip_md(s)})
 
-    correspondences_block = extract_between(
-        text,
-        "Correspondences",
-        []
-    )
-    correspondences = parse_colon_lines(correspondences_block) if correspondences_block else {}
+    correspondences = parse_colon_lines(collect_block(lines, "Correspondences", []))
 
     return {
         "name": entry["name"],
         "subtitle": subtitle,
         "family": "planet",
-        "description": description,
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
+        "description": strip_md(description) if description else None,
         "reading_modes": {
-            "natal_chart": natal_chart,
-            "soul_path": soul_path,
-            "transit_influence": transit_influence,
-            "progressed_expression": progressed_expression,
-            "mundane_astrology": mundane_astrology,
+            "natal_chart": strip_md(natal_chart) if natal_chart else None,
+            "soul_path": strip_md(soul_path) if soul_path else None,
+            "transit_influence": strip_md(transit_influence) if transit_influence else None,
+            "progressed_expression": strip_md(progressed_expression) if progressed_expression else None,
+            "mundane_astrology": strip_md(mundane_astrology) if mundane_astrology else None,
         },
         "keywords": keywords,
         "essential_dignities": essential_dignities,
-        "time_table": timetable,
+        "time_table": time_table,
         "fixed_star_associations": fixed_star_associations,
         "correspondences": correspondences,
     }
 
 
-# =========================
-# UNKNOWN / FALLBACK
-# =========================
-
 def parse_unknown(entry):
+    text = clean_text(entry["content"])
+    lines = split_lines(text)
+    glyph_info = resolve_glyph(entry["name"], text, lines)
     return {
         "name": entry["name"],
         "family": "unknown",
+        "glyph": glyph_info["glyph"],
+        "glyph_class": glyph_info["glyph_class"],
     }
 
 
@@ -858,7 +832,6 @@ def parse_entry(entry):
 def main():
     entries = load_index()
     structured = []
-
     family_counts = {}
 
     for entry in entries:

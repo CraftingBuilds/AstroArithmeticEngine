@@ -1,0 +1,255 @@
+## 2. Define the Unified Chart Schema
+- [x] Create one master chart-data schema that all inputs must resolve into
+- [x] Include chart metadata
+- [x] Include tropical zodiac data
+- [x] Include sidereal zodiac data
+- [x] Include heliocentric tropical data
+- [x] Include heliocentric sidereal data
+- [x] Include houses (tropical and sidereal)
+- [x] Include rulers of houses (tropical and sidereal)
+- [x] Include dignities (tropical and sidereal)
+- [x] Include triplicities / elements (tropical and sidereal)
+- [x] Include quadruplicities (tropical and sidereal)
+- [x] Include mutual receptions (tropical and sidereal)
+- [x] Include fixed star conjunctions
+- [x] Include parallels
+- [x] Include contra-parallels
+- [x] Include aspects
+- [x] Include raw-source text backup
+- [x] Include notes / parser warnings / unresolved values
+
+### Unified Chart Schema — Master Structure
+
+```json
+{
+  "chart_id": "client-stanley_c-1975-04",
+  "chart_folder": "/mnt/storage/AstroArithmeticEngine/secure_charts/client-stanley_c-1975-04",
+
+  "source": {
+    "source_type": "Time Nomad export",
+    "raw_text_preserved": true,
+    "source_files": {
+      "raw_export_file": "raw_export.txt",
+      "normalized_chart_file": "normalized_chart.json",
+      "fixed_stars_file": "fixed_stars.json",
+      "parallels_file": "parallels.json",
+      "contra_parallels_file": "contra_parallels.json",
+      "aspects_file": "aspects.json"
+    }
+  },
+
+  "metadata": {
+    "date_time": {
+      "date": "Fri, Apr 04, 1975, 02:25",
+      "time_zone": "Pacific Daylight Time, PDT",
+      "gmt_offset": "GMT -07:00, Daylight Saving Active",
+      "date_utc": "Fri, Apr 04, 09:25",
+      "sun_rise_set": "6:23 – 19:23",
+      "moon_rise_set": "3:03 – 12:45"
+    },
+    "geo_location": {
+      "location": "Spokane, WA, United States",
+      "coordinate": "47.66° N, 117.42° W"
+    },
+    "summary": {
+      "moon_phase": "Waning Crescent",
+      "solar_lunar_arc": "279°49' (80°11')",
+      "moon_illumination": "41.62%",
+      "moon_mansion": "23. Al Sa’d al Bula, The fortune of the swallower",
+      "moon_nakshatra": "21. Uttara Ashada, pada 1",
+      "inferior_planets": "None",
+      "planetary_hour": "Moon, 01:47 – 02:42"
+    },
+    "parameters": {
+      "julian_day": "2442506.8924",
+      "hour_angle": "+14h 23' 36.84\"",
+      "obliquity_of_ecliptic": "23.44°",
+      "ayanamsa": "Fagan/Bradley +24º 23' 56.60\""
+    }
+  },
+
+  "zodiac": {
+    "tropical": [
+      {
+        "body": "Sun",
+        "sign": "Ari",
+        "degree": "13º 59' 08\"",
+        "retrograde": false,
+        "latitude": "0º 00' 00\""
+      }
+    ],
+    "sidereal": [
+      {
+        "body": "Sun",
+        "sign": "Pis",
+        "degree": "19º 35' 12\"",
+        "retrograde": false,
+        "latitude": "0º 00' 00\""
+      }
+    ]
+  },
+
+  "heliocentric": {
+    "tropical": [
+      {
+        "body": "Earth",
+        "sign": "Lib",
+        "degree": "13º 59' 08\"",
+        "retrograde": false,
+        "latitude": "-0º 00' 00\""
+      }
+    ],
+    "sidereal": [
+      {
+        "body": "Earth",
+        "sign": "Vir",
+        "degree": "19º 35' 12\"",
+        "retrograde": false,
+        "latitude": "-0º 00' 00\""
+      }
+    ]
+  },
+
+  "houses": {
+    "tropical": [
+      {
+        "house_number": "1",
+        "sign": "Cap",
+        "cusp_degree": "7º 08' 18\"",
+        "occupants": [
+          {
+            "body": "Ascendant",
+            "sign": "Cap",
+            "degree": "7º 08' 18\""
+          }
+        ]
+      }
+    ],
+    "sidereal": [
+      {
+        "house_number": "1",
+        "sign": "Sag",
+        "cusp_degree": "12º 44' 22\"",
+        "occupants": [
+          {
+            "body": "Ascendant",
+            "sign": "Sag",
+            "degree": "12º 44' 22\""
+          }
+        ]
+      }
+    ]
+  },
+
+  "house_rulers": {
+    "tropical": [
+      {
+        "house": "1",
+        "cusp_sign": "Cap",
+        "ruler": "Saturn",
+        "ruler_sign": "Can"
+      }
+    ],
+    "sidereal": [
+      {
+        "house": "1",
+        "cusp_sign": "Sag",
+        "ruler": "Jupiter",
+        "ruler_sign": "Pis"
+      }
+    ]
+  },
+
+  "dignities": {
+    "tropical": [
+      {
+        "body": "Sun",
+        "sign": "Ari",
+        "essential_dignity": "EXALT",
+        "house": "H 3",
+        "accidental_dignity": null
+      }
+    ],
+    "sidereal": [
+      {
+        "body": "Jupiter",
+        "sign": "Pis",
+        "essential_dignity": "DIGN",
+        "house": "H 2",
+        "accidental_dignity": null
+      }
+    ]
+  },
+
+  "elements": {
+    "tropical": [
+      {
+        "group": "Fire",
+        "count": "4",
+        "bodies": ["Sun", "Jupiter", "Neptune", "North Node"]
+      }
+    ],
+    "sidereal": [
+      {
+        "group": "Water",
+        "count": "5",
+        "bodies": ["Sun", "Mercury", "Jupiter", "Neptune", "North Node"]
+      }
+    ]
+  },
+
+  "quadruplicities": {
+    "tropical": [
+      {
+        "group": "Cardinal",
+        "count": "6",
+        "bodies": ["Sun", "Moon", "Jupiter", "Saturn", "Pluto", "Ascendant"]
+      }
+    ],
+    "sidereal": [
+      {
+        "group": "Mutable",
+        "count": "7",
+        "bodies": ["Sun", "Moon", "Mercury", "Jupiter", "Saturn", "Pluto", "Ascendant"]
+      }
+    ]
+  },
+
+  "mutual_receptions": {
+    "tropical": [
+      {
+        "body_a": "Moon",
+        "sign_a": "Cap",
+        "body_b": "Saturn",
+        "sign_b": "Can"
+      }
+    ],
+    "sidereal": []
+  },
+
+  "fixed_star_conjunctions": {
+    "file_backed": true,
+    "file_name": "fixed_stars.json"
+  },
+
+  "parallels": {
+    "file_backed": true,
+    "file_name": "parallels.json"
+  },
+
+  "contra_parallels": {
+    "file_backed": true,
+    "file_name": "contra_parallels.json"
+  },
+
+  "aspects": {
+    "file_backed": true,
+    "file_name": "aspects.json"
+  },
+
+  "notes": [],
+
+  "parser_warnings": [],
+
+  "unresolved_values": []
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "body_a": "Venus",
+    "body_b": "Hygiea",
+    "dec_a": "18N 09'",
+    "dec_b": "18N 57'",
+    "orb": "0N 48'"
+  },
+  {
+    "body_a": "Mars",
+    "body_b": "Vesta",
+    "dec_a": "14S 36'",
+    "dec_b": "14S 48'",
+    "orb": "0N 12'"
+  },
+  {
+    "body_a": "Mars",
+    "body_b": "Midheaven",
+    "dec_a": "14S 36'",
+    "dec_b": "14S 16'",
+    "orb": "0N 20'"
+  },
+  {
+    "body_a": "Jupiter",
+    "body_b": "Ceres",
+    "dec_a": "0N 37'",
+    "dec_b": "0N 36'",
+    "orb": "0N 01'"
+  },
+  {
+    "body_a": "Saturn",
+    "body_b": "Descendant",
+    "dec_a": "22N 40'",
+    "dec_b": "23N 15'",
+    "orb": "0N 35'"
+  },
+  {
+    "body_a": "Neptune",
+    "body_b": "North Node",
+    "dec_a": "20S 37'",
+    "dec_b": "20S 36'",
+    "orb": "0N 01'"
+  },
+  {
+    "body_a": "Juno",
+    "body_b": "Lilith",
+    "dec_a": "7N 21'",
+    "dec_b": "6N 37'",
+    "orb": "0N 44'"
+  },
+  {
+    "body_a": "Vesta",
+    "body_b": "Midheaven",
+    "dec_a": "14S 48'",
+    "dec_b": "14S 16'",
+    "orb": "0N 32'"
+  }
+]

@@ -1,0 +1,1733 @@
+Date & Time
+
+Date	Fri, Apr 04, 1975, 02:25
+
+Time Zone	Pacific Daylight Time, PDT
+
+	GMT -07:00, Daylight Saving Active
+
+Date UTC	Fri, Apr 04, 09:25
+
+Sun rise/set	6:23 – 19:23
+
+Moon rise/set	3:03 – 12:45
+
+Geo Location
+
+Location	Spokane, WA, United States
+
+Coordinate	47.66° N, 117.42° W
+
+Summary
+
+Moon Phase	Waning Crescent
+
+Solar-Lunar Arc	279°49' (80°11')
+
+Moon Illumination	41.62%
+
+Moon Mansion	23. Al Sa’d al Bula, The fortune of the swallower
+
+Moon Nakshatra	21. Uttara Ashada, pada 1
+
+Inferior Planets	None
+
+Planetary Hour	Moon, 01:47 – 02:42
+
+Parameters
+
+Julian Day	2442506.8924
+
+Hour Angle	+14h 23' 36.84"
+
+Obl. of Elciptic	23.44°
+
+Ayanamsa	Fagan/Bradley +24º 23' 56.60"
+
+Zodiac: tropical
+
+Ecliptic longitude & latitude
+
+Sun	Ari	13º 59' 08"	0º 00' 00"
+
+Moon	Cap	23º 48' 00"	4º 01' 49"
+
+Mercury	Pis	29º 46' 04"	−2º 11' 37"
+
+Venus	Tau	18º 39' 12"	0º 48' 11"
+
+Mars	Aqu	24º 21' 09"	−1º 15' 39"
+
+Jupiter	Ari	4º 01' 47"	−1º 04' 43"
+
+Saturn	Can	12º 20' 54"	−0º 12' 27"
+
+Uranus	Sco	1º 08' 49"	R	0º 33' 46"
+
+Neptune	Sag	11º 40' 22"	R	1º 35' 07"
+
+Pluto	Lib	7º 43' 13"	R	17º 20' 20"
+
+Chiron	Ari	23º 21' 23"	0º 35' 57"
+
+Eris	Ari	13º 19' 22"	−19º 55' 37"
+
+Ceres	Ari	17º 51' 45"	−6º 56' 18"
+
+Pallas	Pis	13º 54' 41"	9º 48' 03"
+
+Juno	Tau	11º 35' 08"	−8º 20' 57"
+
+Vesta	Aqu	26º 35' 28"	−2º 16' 40"
+
+Hygiea	Tau	16º 16' 46"	2º 20' 18"
+
+Lilith	Leo	23º 10' 57"	R	−7º 34' 31"
+
+Icarus	Aqu	13º 14' 30"	−2º 29' 02"
+
+North Node	Sag	2º 10' 31"	
+
+South Node	Gem	2º 10' 31"	
+
+Black Moon	Pis	6º 29' 13"	5º 08' 21"
+
+Ascendant	Cap	7º 08' 18"	
+
+Midheaven	Sco	8º 16' 37"	
+
+Descendant	Can	7º 08' 18"	
+
+Imum Coeli	Tau	8º 16' 37"	
+
+Part of Fortune	Pis	27º 19' 27"	
+
+Vertex	Leo	18º 01' 43"	
+
+Zodiac: sidereal✦
+
+Ecliptic longitude & latitude
+
+Sun	Pis	19º 35' 12"	0º 00' 00"
+
+Moon	Sag	29º 24' 03"	4º 01' 49"
+
+Mercury	Pis	5º 22' 08"	−2º 11' 37"
+
+Venus	Ari	24º 15' 15"	0º 48' 11"
+
+Mars	Cap	29º 57' 12"	−1º 15' 39"
+
+Jupiter	Pis	9º 37' 51"	−1º 04' 43"
+
+Saturn	Gem	17º 56' 58"	−0º 12' 27"
+
+Uranus	Lib	6º 44' 52"	R	0º 33' 46"
+
+Neptune	Sco	17º 16' 25"	R	1º 35' 07"
+
+Pluto	Vir	13º 19' 16"	R	17º 20' 20"
+
+Chiron	Pis	28º 57' 26"	0º 35' 57"
+
+Eris	Pis	18º 55' 26"	−19º 55' 37"
+
+Ceres	Pis	23º 27' 48"	−6º 56' 18"
+
+Pallas	Aqu	19º 30' 45"	9º 48' 03"
+
+Juno	Ari	17º 11' 12"	−8º 20' 57"
+
+Vesta	Aqu	2º 11' 31"	−2º 16' 40"
+
+Hygiea	Ari	21º 52' 49"	2º 20' 18"
+
+Lilith	Can	28º 47' 01"	R	−7º 34' 31"
+
+Icarus	Cap	18º 50' 33"	−2º 29' 02"
+
+North Node	Sco	7º 46' 34"	
+
+South Node	Tau	7º 46' 34"	
+
+Black Moon	Aqu	12º 05' 17"	5º 08' 21"
+
+Ascendant	Sag	12º 44' 22"	
+
+Midheaven	Lib	13º 52' 40"	
+
+Descendant	Gem	12º 44' 22"	
+
+Imum Coeli	Ari	13º 52' 40"	
+
+Part of Fortune	Pis	2º 55' 30"	
+
+Vertex	Can	23º 37' 47"	
+
+Heliocentric chart: tropical
+
+Planet, celestial longitude, latitude
+
+Earth	Lib	13º 59' 08"	−0º 00' 00"
+
+Mercury	Aqu	22º 13' 16"	−6º 59' 10"
+
+Venus	Can	10º 58' 30"	1º 24' 36"
+
+Mars	Cap	21º 45' 49"	−1º 38' 22"
+
+Jupiter	Ari	2º 02' 12"	−1º 17' 33"
+
+Saturn	Can	18º 42' 02"	−0º 12' 25"
+
+Uranus	Sco	0º 13' 36"	0º 32' 01"
+
+Neptune	Sag	10º 04' 15"	1º 33' 24"
+
+Pluto	Lib	7º 55' 37"	16º 47' 14"
+
+Chiron	Ari	23º 52' 03"	0º 37' 53"
+
+Eris	Ari	13º 19' 18"	−20º 07' 37"
+
+Ceres	Ari	19º 13' 12"	−9º 18' 45"
+
+Pallas	Pis	4º 58' 20"	12º 14' 42"
+
+Juno	Tau	25º 21' 34"	−11º 49' 26"
+
+Vesta	Aqu	7º 16' 11"	−2º 50' 32"
+
+Hygiea	Tau	25º 04' 25"	2º 52' 30"
+
+Lilith	Vir	10º 00' 28"	−5º 28' 40"
+
+Icarus	Cap	4º 34' 57"	−2º 48' 31"
+
+Heliocentric chart: sidereal✦
+
+Planet, celestial longitude, latitude
+
+Earth	Vir	19º 35' 12"	−0º 00' 00"
+
+Mercury	Cap	27º 49' 19"	−6º 59' 10"
+
+Venus	Gem	16º 34' 34"	1º 24' 36"
+
+Mars	Sag	27º 21' 52"	−1º 38' 22"
+
+Jupiter	Pis	7º 38' 16"	−1º 17' 33"
+
+Saturn	Gem	24º 18' 06"	−0º 12' 25"
+
+Uranus	Lib	5º 49' 39"	0º 32' 01"
+
+Neptune	Sco	15º 40' 19"	1º 33' 24"
+
+Pluto	Vir	13º 31' 40"	16º 47' 14"
+
+Chiron	Pis	29º 28' 06"	0º 37' 53"
+
+Eris	Pis	18º 55' 21"	−20º 07' 37"
+
+Ceres	Pis	24º 49' 15"	−9º 18' 45"
+
+Pallas	Aqu	10º 34' 24"	12º 14' 42"
+
+Juno	Tau	0º 57' 38"	−11º 49' 26"
+
+Vesta	Cap	12º 52' 14"	−2º 50' 32"
+
+Hygiea	Tau	0º 40' 28"	2º 52' 30"
+
+Lilith	Leo	15º 36' 31"	−5º 28' 40"
+
+Icarus	Sag	10º 11' 00"	−2º 48' 31"
+
+Fixed Stars conjunctions
+
+Body, Star, Constellation, Orb
+
+Sun	Alpheratz	alf And	0N 01'
+
+Mars	Sadalsuud	bet Aqr	1N 18'
+
+Mars	Deneb Algedi	del Cap	1N 09'
+
+Jupiter	Difda	bet Cet	1N 48'
+
+Saturn	Sirius	alf CMa	1N 24'
+
+Saturn	Canopus	alf Car	2N 16'
+
+Neptune	Rastaban	bet Dra	0N 02'
+
+Neptune	Antares	alf Sco	2N 15'
+
+Pluto	Vindemiatrix	eps Vir	1N 53'
+
+Eris	Alpheratz	alf And	0N 38'
+
+Pallas	Achernar	alf Eri	1N 03'
+
+Icarus	Dorsum	tet Cap	0N 15'
+
+Icarus	Armus	eta Cap	0N 51'
+
+North Node	Graffias	bet01 Sco	0N 41'
+
+North Node	Yed Prior	del Oph	0N 13'
+
+North Node	Dschubbha	del Sco	0N 04'
+
+North Node	Bungula	alf Cen A	3N 00'
+
+Black Moon	Deneb Adige	alf Cyg	1N 30'
+
+Black Moon	Fomalhaut	alf PsA	2N 59'
+
+Ascendant	Kaus Borealis	lam Sgr	1N 10'
+
+Ascendant	Facies	M22	0N 57'
+
+Descendant	Alhena	gam Gem	1N 37'
+
+Imum Coeli	Hamal	alf Ari	0N 58'
+
+Imum Coeli	Schedar	alf Cas	0N 50'
+
+Houses: tropical
+
+Placidus
+
+1	┈┈┈	1	Cap	7º 08' 18"
+
+	Ascendant		Cap	7º 08' 18"
+
+	Moon		Cap	23º 48' 00"
+
+	Icarus		Aqu	13º 14' 30"
+
+2	┈┈┈	2	Aqu	23º 21' 45"
+
+	Mars		Aqu	24º 21' 09"
+
+	Vesta		Aqu	26º 35' 28"
+
+	Black Moon		Pis	6º 29' 13"
+
+	Pallas		Pis	13º 54' 41"
+
+	Part of Fortune		Pis	27º 19' 27"
+
+	Mercury		Pis	29º 46' 04"
+
+	Jupiter		Ari	4º 01' 47"
+
+3	┈┈┈	3	Ari	7º 26' 50"
+
+	Eris		Ari	13º 19' 22"
+
+	Sun		Ari	13º 59' 08"
+
+	Ceres		Ari	17º 51' 45"
+
+	Chiron		Ari	23º 21' 23"
+
+	Imum Coeli		Tau	8º 16' 37"
+
+4	┈┈┈	4	Tau	8º 16' 37"
+
+	Juno		Tau	11º 35' 08"
+
+	Hygiea		Tau	16º 16' 46"
+
+	Venus		Tau	18º 39' 12"
+
+5	┈┈┈	5	Gem	0º 12' 22"
+
+	South Node		Gem	2º 10' 31"
+
+6	┈┈┈	6	Gem	18º 06' 19"
+
+7	┈┈┈	7	Can	7º 08' 18"
+
+	Descendant		Can	7º 08' 18"
+
+	Saturn		Can	12º 20' 54"
+
+	Vertex		Leo	18º 01' 43"
+
+	Lilith		Leo	23º 10' 57"
+
+8	┈┈┈	8	Leo	23º 21' 45"
+
+9	┈┈┈	9	Lib	7º 26' 50"
+
+	Pluto		Lib	7º 43' 13"
+
+	Uranus		Sco	1º 08' 49"
+
+10	┈┈┈	10	Sco	8º 16' 37"
+
+	Midheaven		Sco	8º 16' 37"
+
+11	┈┈┈	11	Sag	0º 12' 22"
+
+	North Node		Sag	2º 10' 31"
+
+	Neptune		Sag	11º 40' 22"
+
+12	┈┈┈	12	Sag	18º 06' 19"
+
+Houses: sidereal✦
+
+Placidus
+
+1	┈┈┈	1	Sag	12º 44' 22"
+
+	Ascendant		Sag	12º 44' 22"
+
+	Moon		Sag	29º 24' 03"
+
+	Icarus		Cap	18º 50' 33"
+
+2	┈┈┈	2	Cap	28º 57' 48"
+
+	Mars		Cap	29º 57' 12"
+
+	Vesta		Aqu	2º 11' 31"
+
+	Black Moon		Aqu	12º 05' 17"
+
+	Pallas		Aqu	19º 30' 45"
+
+	Part of Fortune		Pis	2º 55' 30"
+
+	Mercury		Pis	5º 22' 08"
+
+	Jupiter		Pis	9º 37' 51"
+
+3	┈┈┈	3	Pis	13º 02' 53"
+
+	Eris		Pis	18º 55' 26"
+
+	Sun		Pis	19º 35' 12"
+
+	Ceres		Pis	23º 27' 48"
+
+	Chiron		Pis	28º 57' 26"
+
+	Imum Coeli		Ari	13º 52' 40"
+
+4	┈┈┈	4	Ari	13º 52' 40"
+
+	Juno		Ari	17º 11' 12"
+
+	Hygiea		Ari	21º 52' 49"
+
+	Venus		Ari	24º 15' 15"
+
+5	┈┈┈	5	Tau	5º 48' 26"
+
+	South Node		Tau	7º 46' 34"
+
+6	┈┈┈	6	Tau	23º 42' 22"
+
+7	┈┈┈	7	Gem	12º 44' 22"
+
+	Descendant		Gem	12º 44' 22"
+
+	Saturn		Gem	17º 56' 58"
+
+	Vertex		Can	23º 37' 47"
+
+	Lilith		Can	28º 47' 01"
+
+8	┈┈┈	8	Can	28º 57' 48"
+
+9	┈┈┈	9	Vir	13º 02' 53"
+
+	Pluto		Vir	13º 19' 16"
+
+	Uranus		Lib	6º 44' 52"
+
+10	┈┈┈	10	Lib	13º 52' 40"
+
+	Midheaven		Lib	13º 52' 40"
+
+11	┈┈┈	11	Sco	5º 48' 26"
+
+	North Node		Sco	7º 46' 34"
+
+	Neptune		Sco	17º 16' 25"
+
+12	┈┈┈	12	Sco	23º 42' 22"
+
+Rulers of Houses: tropical
+
+House cusp in, House ruler in
+
+H 1	in	Cap	ruled by	Saturn	in	Can
+
+H 2	in	Aqu	ruled by	Saturn	in	Can
+
+	Uranus	in	Sco
+
+H 3	in	Ari	ruled by	Mars	in	Aqu
+
+H 4	in	Tau	ruled by	Venus	in	Tau
+
+H 5	in	Gem	ruled by	Mercury	in	Pis
+
+H 6	in	Gem	ruled by	Mercury	in	Pis
+
+H 7	in	Can	ruled by	Moon	in	Cap
+
+H 8	in	Leo	ruled by	Sun	in	Ari
+
+H 9	in	Lib	ruled by	Venus	in	Tau
+
+	Eris	in	Ari
+
+H 10	in	Sco	ruled by	Mars	in	Aqu
+
+	Pluto	in	Lib
+
+H 11	in	Sag	ruled by	Jupiter	in	Ari
+
+H 12	in	Sag	ruled by	Jupiter	in	Ari
+
+Rulers of Houses: sidereal✦
+
+House cusp in, House ruler in
+
+H 1	in	Sag	ruled by	Jupiter	in	Pis
+
+H 2	in	Cap	ruled by	Saturn	in	Gem
+
+H 3	in	Pis	ruled by	Jupiter	in	Pis
+
+	Neptune	in	Sco
+
+H 4	in	Ari	ruled by	Mars	in	Cap
+
+H 5	in	Tau	ruled by	Venus	in	Ari
+
+H 6	in	Tau	ruled by	Venus	in	Ari
+
+H 7	in	Gem	ruled by	Mercury	in	Pis
+
+H 8	in	Can	ruled by	Moon	in	Sag
+
+H 9	in	Vir	ruled by	Mercury	in	Pis
+
+H 10	in	Lib	ruled by	Venus	in	Ari
+
+	Eris	in	Pis
+
+H 11	in	Sco	ruled by	Mars	in	Cap
+
+	Pluto	in	Vir
+
+H 12	in	Sco	ruled by	Mars	in	Cap
+
+	Pluto	in	Vir
+
+Dignities: tropical
+
+Body, Sign, Essential dign., House, Accidental dign.
+
+Sun	Ari	●●●	EXALT	H 3
+
+Moon	Cap	●●●	DETR	H 1
+
+Mercury	Pis	●●●	FALL	H 2
+
+Venus	Tau	●●●	DIGN	H 4
+
+Mars	Aqu	H 2	●●●	DETR
+
+Jupiter	Ari	H 2
+
+Saturn	Can	●●●	DETR	H 7	●●●	EXALT
+
+Uranus	Sco	●●●	EXALT	H 9
+
+Neptune	Sag	H 11
+
+Pluto	Lib	●●●	DETR	H 9
+
+Dignities: sidereal✦
+
+Body, Sign, Essential dign., House, Accidental dign.
+
+Sun	Pis	H 3
+
+Moon	Sag	H 1
+
+Mercury	Pis	●●●	FALL	H 2
+
+Venus	Ari	●●●	DETR	H 4
+
+Mars	Cap	●●●	EXALT	H 2	●●●	DETR
+
+Jupiter	Pis	●●●	DIGN	H 2
+
+Saturn	Gem	H 7	●●●	EXALT
+
+Uranus	Lib	H 9
+
+Neptune	Sco	H 11
+
+Pluto	Vir	H 9
+
+Triplicities / Elements: tropical
+
+Element, Count, Planet or point
+
+Fire	4	Sun
+
+	Jupiter
+
+	Neptune
+
+	North Node
+
+Earth	3	Moon
+
+	Venus
+
+	Ascendant
+
+Air	3	Mars
+
+	Pluto
+
+	South Node
+
+Water	4	Mercury
+
+	Saturn
+
+	Uranus
+
+	Midheaven
+
+Triplicities / Elements: sidereal✦
+
+Element, Count, Planet or point
+
+Fire	3	Moon
+
+	Venus
+
+	Ascendant
+
+Earth	3	Mars
+
+	Pluto
+
+	South Node
+
+Air	3	Saturn
+
+	Uranus
+
+	Midheaven
+
+Water	5	Sun
+
+	Mercury
+
+	Jupiter
+
+	Neptune
+
+	North Node
+
+Quadruplicities: tropical
+
+Type, Count, Planet or point
+
+Cardinal	6	Sun
+
+	Moon
+
+	Jupiter
+
+	Saturn
+
+	Pluto
+
+	Ascendant
+
+Fixed	4	Venus
+
+	Mars
+
+	Uranus
+
+	Midheaven
+
+Mutable	4	Mercury
+
+	Neptune
+
+	North Node
+
+	South Node
+
+Quadruplicities: sidereal✦
+
+Type, Count, Planet or point
+
+Cardinal	4	Venus
+
+	Mars
+
+	Uranus
+
+	Midheaven
+
+Fixed	3	Neptune
+
+	North Node
+
+	South Node
+
+Mutable	7	Sun
+
+	Moon
+
+	Mercury
+
+	Jupiter
+
+	Saturn
+
+	Pluto
+
+	Ascendant
+
+Mutual Receptions: tropical
+
+Body A, Sign, Body B, Sign
+
+Moon	in	Cap	⟷	Saturn	in	Can
+
+Mars	in	Aqu	⟷	Uranus	in	Sco
+
+Mutual Receptions: sidereal✦
+
+Body A, Sign, Body B, Sign
+
+None found
+
+Parallels
+
+Body A, Body B, Dec A, Dec B, Orb
+
+Venus	Hygiea	18N 09'	18N 57'	0N 48'
+
+Mars	Vesta	14S 36'	14S 48'	0N 12'
+
+Mars	MC	14S 36'	14S 16'	0N 20'
+
+Jupiter	Ceres	0N 37'	0N 36'	0N 01'
+
+Saturn	DSC	22N 40'	23N 15'	0N 35'
+
+Neptune	N.Node	20S 37'	20S 36'	0N 01'
+
+Juno	Lilith	7N 21'	6N 37'	0N 44'
+
+Vesta	MC	14S 48'	14S 16'	0N 32'
+
+Contra-Parallels
+
+Body A, Body B, Dec A, Dec B, Orb
+
+Moon	Venus	17S 22'	18N 09'	0N 47'
+
+Mercury	Pallas	2S 06'	2N 44'	0N 37'
+
+Mars	IC	14S 36'	14N 16'	0N 20'
+
+Saturn	ASC	22N 40'	23S 15'	0N 35'
+
+Neptune	S.Node	20S 37'	20N 36'	0N 01'
+
+Pluto	Eris	12N 51'	13S 05'	0N 14'
+
+Vesta	IC	14S 48'	14N 16'	0N 32'
+
+Hygiea	Icarus	18N 57'	19S 13'	0N 17'
+
+Aspects
+
+Moon	s/sex.	Mars	0º 33'	app	wan
+
+Moon	quin.	Jupiter	1º 46'	sep	wan
+
+Moon	s/sq.	Bl.Moon	2º 19'	sep	wan
+
+Moon	sext.	P/Fortune	3º 31'	sep	wax
+
+Moon	sq.	Chiron	0º 27'	sep	wan
+
+Moon	inconj.	Lilith	0º 37'	sep	wax
+
+Sun	sq.	Saturn	1º 38'	sep	wan
+
+Sun	tri.	Neptune	2º 19'	sep	wax
+
+Sun	tri.	Vertex	4º 03'	sep	wax
+
+Sun	conj.	Eris	0º 40'	sep	
+
+Sun	conj.	Ceres	3º 53'	app	
+
+Sun	s/sex.	Pallas	0º 04'	sep	wax
+
+Sun	s/sq.	Vesta	2º 24'	sep	wax
+
+Sun	sext.	Icarus	0º 45'	sep	wax
+
+Mercury	conj.	Jupiter	4º 16'	app	
+
+Mercury	inconj.	Uranus	1º 23'	app	wax
+
+Mercury	tri.	N.Node	2º 24'	app	wax
+
+Mercury	sext.	S.Node	2º 24'	app	wan
+
+Mercury	conj.	P/Fortune	2º 27'	app	
+
+Mercury	s/sq.	Hygiea	1º 31'	app	wan
+
+Mercury	biq.	Lilith	0º 35'	sep	wan
+
+Mercury	s/sq.	Icarus	1º 32'	sep	wax
+
+Venus	s/sq.	Jupiter	0º 23'	app	wax
+
+Venus	quin.	Bl.Moon	0º 10'	sep	wax
+
+Venus	sq.	Vertex	0º 37'	app	wax
+
+Venus	s/sex.	Ceres	0º 47'	sep	wax
+
+Venus	conj.	Hygiea	2º 22'	sep	
+
+Mars	s/sex.	Moon	0º 33'	app	wan
+
+Mars	quin.	Neptune	0º 41'	sep	wax
+
+Mars	sesq.	Pluto	1º 38'	sep	wax
+
+Mars	s/sq.	ASC	2º 13'	app	wan
+
+Mars	quin.	IC	1º 55'	sep	wax
+
+Mars	sext.	Chiron	1º 00'	sep	wan
+
+Mars	conj.	Vesta	2º 14'	app	
+
+Mars	opp.	Lilith	1º 10'	sep	
+
+Jupiter	quin.	Moon	1º 46'	sep	wan
+
+Jupiter	conj.	Mercury	4º 16'	app	
+
+Jupiter	s/sq.	Venus	0º 23'	app	wax
+
+Jupiter	opp.	Pluto	3º 41'	app	
+
+Jupiter	tri.	N.Node	1º 51'	sep	wax
+
+Jupiter	sext.	S.Node	1º 51'	sep	wan
+
+Jupiter	sq.	ASC	3º 07'	sep	wan
+
+Jupiter	sq.	DSC	3º 07'	sep	wax
+
+Jupiter	biq.	MC	1º 45'	app	wan
+
+Jupiter	sesq.	Vertex	1º 00'	app	wax
+
+Saturn	sq.	Sun	1º 38'	sep	wan
+
+Saturn	inconj.	Neptune	0º 41'	sep	wan
+
+Saturn	sq.	Eris	0º 58'	app	wax
+
+Saturn	tri.	Pallas	1º 34'	sep	wan
+
+Saturn	sext.	Juno	0º 46'	app	wan
+
+Saturn	sesq.	Vesta	0º 45'	app	wan
+
+Saturn	inconj.	Icarus	0º 54'	sep	wan
+
+Uranus	inconj.	Mercury	1º 23'	app	wax
+
+Uranus	s/sex.	N.Node	1º 02'	sep	wan
+
+Uranus	inconj.	S.Node	1º 02'	sep	wax
+
+Uranus	quin.	Vertex	1º 07'	app	wan
+
+Neptune	tri.	Sun	2º 19'	sep	wax
+
+Neptune	quin.	Mars	0º 41'	sep	wax
+
+Neptune	inconj.	Saturn	0º 41'	sep	wan
+
+Neptune	tri.	Eris	1º 39'	sep	wan
+
+Neptune	sq.	Pallas	2º 14'	sep	wax
+
+Neptune	inconj.	Juno	0º 05'	app	wax
+
+Neptune	sext.	Icarus	1º 34'	sep	wax
+
+Pluto	sesq.	Mars	1º 38'	sep	wax
+
+Pluto	opp.	Jupiter	3º 41'	app	
+
+Pluto	inconj.	Bl.Moon	1º 14'	app	wax
+
+Pluto	sq.	ASC	0º 35'	app	wax
+
+Pluto	sq.	DSC	0º 35'	app	wan
+
+Pluto	s/sex.	MC	0º 33'	sep	wax
+
+Pluto	inconj.	IC	0º 33'	sep	wan
+
+Pluto	s/sq.	Lilith	0º 28'	sep	wan
+
+N.Node	tri.	Mercury	2º 24'	app	wax
+
+N.Node	tri.	Jupiter	1º 51'	sep	wax
+
+N.Node	s/sex.	Uranus	1º 02'	sep	wan
+
+N.Node	biq.	DSC	1º 02'	app	wan
+
+N.Node	sesq.	Ceres	0º 41'	sep	wax
+
+N.Node	quin.	Icarus	0º 56'	app	wax
+
+S.Node	sext.	Mercury	2º 24'	app	wan
+
+S.Node	sext.	Jupiter	1º 51'	sep	wan
+
+S.Node	inconj.	Uranus	1º 02'	sep	wax
+
+S.Node	biq.	ASC	1º 02'	app	wan
+
+S.Node	s/sq.	Ceres	0º 41'	sep	wan
+
+Bl.Moon	s/sq.	Moon	2º 19'	sep	wan
+
+Bl.Moon	quin.	Venus	0º 10'	sep	wax
+
+Bl.Moon	inconj.	Pluto	1º 14'	app	wax
+
+Bl.Moon	sext.	ASC	0º 39'	sep	wan
+
+Bl.Moon	tri.	DSC	0º 39'	sep	wax
+
+Bl.Moon	tri.	MC	1º 47'	sep	wan
+
+Bl.Moon	sext.	IC	1º 47'	sep	wax
+
+Bl.Moon	s/sq.	Chiron	1º 52'	app	wan
+
+Chiron	sq.	Moon	0º 27'	sep	wan
+
+Chiron	sext.	Mars	1º 00'	sep	wan
+
+Chiron	s/sq.	Bl.Moon	1º 52'	app	wan
+
+Chiron	quin.	DSC	1º 47'	sep	wax
+
+Chiron	tri.	Lilith	0º 10'	sep	wax
+
+Chiron	quin.	Icarus	1º 53'	sep	wan
+
+Eris	conj.	Sun	0º 40'	sep	
+
+Eris	sq.	Saturn	0º 58'	app	wax
+
+Eris	tri.	Neptune	1º 39'	sep	wan
+
+Eris	conj.	Ceres	4º 32'	sep	
+
+Eris	s/sex.	Pallas	0º 35'	sep	wan
+
+Eris	s/sex.	Juno	1º 44'	app	wax
+
+Eris	s/sq.	Vesta	1º 44'	app	wan
+
+Eris	sext.	Icarus	0º 05'	app	wan
+
+Ceres	conj.	Sun	3º 53'	app	
+
+Ceres	s/sex.	Venus	0º 47'	sep	wax
+
+Ceres	sesq.	N.Node	0º 41'	sep	wax
+
+Ceres	s/sq.	S.Node	0º 41'	sep	wan
+
+Ceres	tri.	Vertex	0º 10'	sep	wax
+
+Ceres	conj.	Eris	4º 32'	sep	
+
+Ceres	s/sex.	Hygiea	1º 35'	sep	wan
+
+Pallas	s/sex.	Sun	0º 04'	sep	wax
+
+Pallas	tri.	Saturn	1º 34'	sep	wan
+
+Pallas	sq.	Neptune	2º 14'	sep	wax
+
+Pallas	s/sex.	Eris	0º 35'	sep	wan
+
+Pallas	sext.	Juno	2º 20'	app	wax
+
+Pallas	sext.	Hygiea	2º 22'	app	wan
+
+Pallas	s/sex.	Icarus	0º 40'	sep	wan
+
+Juno	sext.	Saturn	0º 46'	app	wan
+
+Juno	inconj.	Neptune	0º 05'	app	wax
+
+Juno	opp.	MC	3º 19'	app	
+
+Juno	conj.	IC	3º 19'	app	
+
+Juno	s/sq.	P/Fortune	0º 44'	sep	wan
+
+Juno	s/sex.	Eris	1º 44'	app	wax
+
+Juno	sext.	Pallas	2º 20'	app	wax
+
+Juno	conj.	Hygiea	4º 42'	app	
+
+Juno	sq.	Icarus	1º 39'	app	wan
+
+Vesta	s/sq.	Sun	2º 24'	sep	wax
+
+Vesta	conj.	Mars	2º 14'	app	
+
+Vesta	sesq.	Saturn	0º 45'	app	wan
+
+Vesta	quin.	IC	0º 19'	app	wax
+
+Vesta	s/sex.	P/Fortune	0º 44'	sep	wax
+
+Vesta	s/sq.	Eris	1º 44'	app	wan
+
+Vesta	opp.	Lilith	3º 25'	sep	
+
+Hygiea	s/sq.	Mercury	1º 31'	app	wan
+
+Hygiea	conj.	Venus	2º 22'	sep	
+
+Hygiea	sq.	Vertex	1º 45'	sep	wax
+
+Hygiea	s/sex.	Ceres	1º 35'	sep	wan
+
+Hygiea	sext.	Pallas	2º 22'	app	wan
+
+Hygiea	conj.	Juno	4º 42'	app	
+
+Hygiea	sq.	Icarus	3º 02'	sep	wan
+
+Lilith	inconj.	Moon	0º 37'	sep	wax
+
+Lilith	biq.	Mercury	0º 35'	sep	wan
+
+Lilith	opp.	Mars	1º 10'	sep	
+
+Lilith	s/sq.	Pluto	0º 28'	sep	wan
+
+Lilith	sesq.	ASC	1º 03'	app	wax
+
+Lilith	s/sq.	DSC	1º 03'	app	wan
+
+Lilith	biq.	P/Fortune	1º 52'	app	wan
+
+Lilith	tri.	Chiron	0º 10'	sep	wax
+
+Lilith	opp.	Vesta	3º 25'	sep	
+
+Icarus	sext.	Sun	0º 45'	sep	wax
+
+Icarus	s/sq.	Mercury	1º 32'	sep	wax
+
+Icarus	inconj.	Saturn	0º 54'	sep	wan
+
+Icarus	sext.	Neptune	1º 34'	sep	wax
+
+Icarus	quin.	N.Node	0º 56'	app	wax
+
+Icarus	biq.	DSC	0º 06'	sep	wax
+
+Icarus	opp.	Vertex	4º 47'	sep	
+
+Icarus	s/sq.	P/Fortune	0º 55'	app	wax
+
+Icarus	quin.	Chiron	1º 53'	sep	wan
+
+Icarus	sext.	Eris	0º 05'	app	wan
+
+Icarus	s/sex.	Pallas	0º 40'	sep	wan
+
+Icarus	sq.	Juno	1º 39'	app	wan
+
+Icarus	sq.	Hygiea	3º 02'	sep	wan
+
+ASC	s/sq.	Mars	2º 13'	app	wan
+
+ASC	sq.	Jupiter	3º 07'	sep	wan
+
+ASC	sq.	Pluto	0º 35'	app	wax
+
+ASC	biq.	S.Node	1º 02'	app	wan
+
+ASC	sext.	Bl.Moon	0º 39'	sep	wan
+
+ASC	sesq.	Lilith	1º 03'	app	wax
+
+DSC	sq.	Jupiter	3º 07'	sep	wax
+
+DSC	sq.	Pluto	0º 35'	app	wan
+
+DSC	biq.	N.Node	1º 02'	app	wan
+
+DSC	tri.	Bl.Moon	0º 39'	sep	wax
+
+DSC	quin.	Chiron	1º 47'	sep	wax
+
+DSC	s/sq.	Lilith	1º 03'	app	wan
+
+DSC	biq.	Icarus	0º 06'	sep	wax
+
+MC	biq.	Jupiter	1º 45'	app	wan
+
+MC	s/sex.	Pluto	0º 33'	sep	wax
+
+MC	tri.	Bl.Moon	1º 47'	sep	wan
+
+MC	opp.	Juno	3º 19'	app	
+
+IC	quin.	Mars	1º 55'	sep	wax
+
+IC	inconj.	Pluto	0º 33'	sep	wan
+
+IC	sext.	Bl.Moon	1º 47'	sep	wax
+
+IC	conj.	Juno	3º 19'	app	
+
+IC	quin.	Vesta	0º 19'	app	wax
+
+Vertex	tri.	Sun	4º 03'	sep	wax
+
+Vertex	sq.	Venus	0º 37'	app	wax
+
+Vertex	sesq.	Jupiter	1º 00'	app	wax
+
+Vertex	quin.	Uranus	1º 07'	app	wan
+
+Vertex	tri.	Ceres	0º 10'	sep	wax
+
+Vertex	sq.	Hygiea	1º 45'	sep	wax
+
+Vertex	opp.	Icarus	4º 47'	sep	
+
+
+
+
+On Mar 26, 2026, at 01:44, mikah.s98@icloud.com wrote:
+
+﻿Date & Time
+Date    Fri, Apr 04, 1975, 02:25
+Time Zone    Pacific Daylight Time, PDT
+   GMT -07:00, Daylight Saving Active
+Date UTC    Fri, Apr 04, 09:25
+Sun rise/set    6:23 – 19:23
+Moon rise/set    3:03 – 12:45
+Geo Location
+Location    Spokane, WA, United States
+Coordinate    47.66° N, 117.42° W
+Summary
+Moon Phase    Waning Crescent
+Solar-Lunar Arc    279°49' (80°11')
+Moon Illumination    41.62%
+Moon Mansion    23. Al Sa’d al Bula, The fortune of the swallower
+Moon Nakshatra    21. Uttara Ashada, pada 1
+Inferior Planets    None
+Planetary Hour    Moon, 01:47 – 02:42
+Parameters
+Julian Day    2442506.8924
+Hour Angle    +14h 23' 36.84"
+Obl. of Elciptic    23.44°
+Ayanamsa    Fagan/Bradley +24º 23' 56.60"
+Zodiac: tropical
+Ecliptic longitude & latitude
+Sun    Ari    13º 59' 08"        0º 00' 00"
+Moon    Cap    23º 48' 00"        4º 01' 49"
+Mercury    Pis    29º 46' 04"        −2º 11' 37"
+Venus    Tau    18º 39' 12"        0º 48' 11"
+Mars    Aqu    24º 21' 09"        −1º 15' 39"
+Jupiter    Ari    4º 01' 47"        −1º 04' 43"
+Saturn    Can    12º 20' 54"        −0º 12' 27"
+Uranus    Sco    1º 08' 49"    R    0º 33' 46"
+Neptune    Sag    11º 40' 22"    R    1º 35' 07"
+Pluto    Lib    7º 43' 13"    R    17º 20' 20"
+Chiron    Ari    23º 21' 23"        0º 35' 57"
+Eris    Ari    13º 19' 22"        −19º 55' 37"
+Ceres    Ari    17º 51' 45"        −6º 56' 18"
+Pallas    Pis    13º 54' 41"        9º 48' 03"
+Juno    Tau    11º 35' 08"        −8º 20' 57"
+Vesta    Aqu    26º 35' 28"        −2º 16' 40"
+Hygiea    Tau    16º 16' 46"        2º 20' 18"
+Lilith    Leo    23º 10' 57"    R    −7º 34' 31"
+Icarus    Aqu    13º 14' 30"        −2º 29' 02"
+North Node    Sag    2º 10' 31"    
+South Node    Gem    2º 10' 31"    
+Black Moon    Pis    6º 29' 13"        5º 08' 21"
+Ascendant    Cap    7º 08' 18"    
+Midheaven    Sco    8º 16' 37"    
+Descendant    Can    7º 08' 18"    
+Imum Coeli    Tau    8º 16' 37"    
+Part of Fortune    Pis    27º 19' 27"    
+Vertex    Leo    18º 01' 43"    
+Zodiac: sidereal✦
+Ecliptic longitude & latitude
+Sun    Pis    19º 35' 12"        0º 00' 00"
+Moon    Sag    29º 24' 03"        4º 01' 49"
+Mercury    Pis    5º 22' 08"        −2º 11' 37"
+Venus    Ari    24º 15' 15"        0º 48' 11"
+Mars    Cap    29º 57' 12"        −1º 15' 39"
+Jupiter    Pis    9º 37' 51"        −1º 04' 43"
+Saturn    Gem    17º 56' 58"        −0º 12' 27"
+Uranus    Lib    6º 44' 52"    R    0º 33' 46"
+Neptune    Sco    17º 16' 25"    R    1º 35' 07"
+Pluto    Vir    13º 19' 16"    R    17º 20' 20"
+Chiron    Pis    28º 57' 26"        0º 35' 57"
+Eris    Pis    18º 55' 26"        −19º 55' 37"
+Ceres    Pis    23º 27' 48"        −6º 56' 18"
+Pallas    Aqu    19º 30' 45"        9º 48' 03"
+Juno    Ari    17º 11' 12"        −8º 20' 57"
+Vesta    Aqu    2º 11' 31"        −2º 16' 40"
+Hygiea    Ari    21º 52' 49"        2º 20' 18"
+Lilith    Can    28º 47' 01"    R    −7º 34' 31"
+Icarus    Cap    18º 50' 33"        −2º 29' 02"
+North Node    Sco    7º 46' 34"    
+South Node    Tau    7º 46' 34"    
+Black Moon    Aqu    12º 05' 17"        5º 08' 21"
+Ascendant    Sag    12º 44' 22"    
+Midheaven    Lib    13º 52' 40"    
+Descendant    Gem    12º 44' 22"    
+Imum Coeli    Ari    13º 52' 40"    
+Part of Fortune    Pis    2º 55' 30"    
+Vertex    Can    23º 37' 47"    
+Heliocentric chart: tropical
+Planet, celestial longitude, latitude
+Earth    Lib    13º 59' 08"    −0º 00' 00"
+Mercury    Aqu    22º 13' 16"    −6º 59' 10"
+Venus    Can    10º 58' 30"    1º 24' 36"
+Mars    Cap    21º 45' 49"    −1º 38' 22"
+Jupiter    Ari    2º 02' 12"    −1º 17' 33"
+Saturn    Can    18º 42' 02"    −0º 12' 25"
+Uranus    Sco    0º 13' 36"    0º 32' 01"
+Neptune    Sag    10º 04' 15"    1º 33' 24"
+Pluto    Lib    7º 55' 37"    16º 47' 14"
+Chiron    Ari    23º 52' 03"    0º 37' 53"
+Eris    Ari    13º 19' 18"    −20º 07' 37"
+Ceres    Ari    19º 13' 12"    −9º 18' 45"
+Pallas    Pis    4º 58' 20"    12º 14' 42"
+Juno    Tau    25º 21' 34"    −11º 49' 26"
+Vesta    Aqu    7º 16' 11"    −2º 50' 32"
+Hygiea    Tau    25º 04' 25"    2º 52' 30"
+Lilith    Vir    10º 00' 28"    −5º 28' 40"
+Icarus    Cap    4º 34' 57"    −2º 48' 31"
+Heliocentric chart: sidereal✦
+Planet, celestial longitude, latitude
+Earth    Vir    19º 35' 12"    −0º 00' 00"
+Mercury    Cap    27º 49' 19"    −6º 59' 10"
+Venus    Gem    16º 34' 34"    1º 24' 36"
+Mars    Sag    27º 21' 52"    −1º 38' 22"
+Jupiter    Pis    7º 38' 16"    −1º 17' 33"
+Saturn    Gem    24º 18' 06"    −0º 12' 25"
+Uranus    Lib    5º 49' 39"    0º 32' 01"
+Neptune    Sco    15º 40' 19"    1º 33' 24"
+Pluto    Vir    13º 31' 40"    16º 47' 14"
+Chiron    Pis    29º 28' 06"    0º 37' 53"
+Eris    Pis    18º 55' 21"    −20º 07' 37"
+Ceres    Pis    24º 49' 15"    −9º 18' 45"
+Pallas    Aqu    10º 34' 24"    12º 14' 42"
+Juno    Tau    0º 57' 38"    −11º 49' 26"
+Vesta    Cap    12º 52' 14"    −2º 50' 32"
+Hygiea    Tau    0º 40' 28"    2º 52' 30"
+Lilith    Leo    15º 36' 31"    −5º 28' 40"
+Icarus    Sag    10º 11' 00"    −2º 48' 31"
+Fixed Stars conjunctions
+Body, Star, Constellation, Orb
+Sun    Alpheratz    alf And    0N 01'
+Mars    Sadalsuud    bet Aqr    1N 18'
+Mars    Deneb Algedi    del Cap    1N 09'
+Jupiter    Difda    bet Cet    1N 48'
+Saturn    Sirius    alf CMa    1N 24'
+Saturn    Canopus    alf Car    2N 16'
+Neptune    Rastaban    bet Dra    0N 02'
+Neptune    Antares    alf Sco    2N 15'
+Pluto    Vindemiatrix    eps Vir    1N 53'
+Eris    Alpheratz    alf And    0N 38'
+Pallas    Achernar    alf Eri    1N 03'
+Icarus    Dorsum    tet Cap    0N 15'
+Icarus    Armus    eta Cap    0N 51'
+North Node    Graffias    bet01 Sco    0N 41'
+North Node    Yed Prior    del Oph    0N 13'
+North Node    Dschubbha    del Sco    0N 04'
+North Node    Bungula    alf Cen A    3N 00'
+Black Moon    Deneb Adige    alf Cyg    1N 30'
+Black Moon    Fomalhaut    alf PsA    2N 59'
+Ascendant    Kaus Borealis    lam Sgr    1N 10'
+Ascendant    Facies    M22    0N 57'
+Descendant    Alhena    gam Gem    1N 37'
+Imum Coeli    Hamal    alf Ari    0N 58'
+Imum Coeli    Schedar    alf Cas    0N 50'
+Houses: tropical
+Placidus
+1    ┈┈┈    1    Cap    7º 08' 18"
+   Ascendant        Cap    7º 08' 18"
+   Moon        Cap    23º 48' 00"
+   Icarus        Aqu    13º 14' 30"
+2    ┈┈┈    2    Aqu    23º 21' 45"
+   Mars        Aqu    24º 21' 09"
+   Vesta        Aqu    26º 35' 28"
+   Black Moon        Pis    6º 29' 13"
+   Pallas        Pis    13º 54' 41"
+   Part of Fortune        Pis    27º 19' 27"
+   Mercury        Pis    29º 46' 04"
+   Jupiter        Ari    4º 01' 47"
+3    ┈┈┈    3    Ari    7º 26' 50"
+   Eris        Ari    13º 19' 22"
+   Sun        Ari    13º 59' 08"
+   Ceres        Ari    17º 51' 45"
+   Chiron        Ari    23º 21' 23"
+   Imum Coeli        Tau    8º 16' 37"
+4    ┈┈┈    4    Tau    8º 16' 37"
+   Juno        Tau    11º 35' 08"
+   Hygiea        Tau    16º 16' 46"
+   Venus        Tau    18º 39' 12"
+5    ┈┈┈    5    Gem    0º 12' 22"
+   South Node        Gem    2º 10' 31"
+6    ┈┈┈    6    Gem    18º 06' 19"
+7    ┈┈┈    7    Can    7º 08' 18"
+   Descendant        Can    7º 08' 18"
+   Saturn        Can    12º 20' 54"
+   Vertex        Leo    18º 01' 43"
+   Lilith        Leo    23º 10' 57"
+8    ┈┈┈    8    Leo    23º 21' 45"
+9    ┈┈┈    9    Lib    7º 26' 50"
+   Pluto        Lib    7º 43' 13"
+   Uranus        Sco    1º 08' 49"
+10    ┈┈┈    10    Sco    8º 16' 37"
+   Midheaven        Sco    8º 16' 37"
+11    ┈┈┈    11    Sag    0º 12' 22"
+   North Node        Sag    2º 10' 31"
+   Neptune        Sag    11º 40' 22"
+12    ┈┈┈    12    Sag    18º 06' 19"
+Houses: sidereal✦
+Placidus
+1    ┈┈┈    1    Sag    12º 44' 22"
+   Ascendant        Sag    12º 44' 22"
+   Moon        Sag    29º 24' 03"
+   Icarus        Cap    18º 50' 33"
+2    ┈┈┈    2    Cap    28º 57' 48"
+   Mars        Cap    29º 57' 12"
+   Vesta        Aqu    2º 11' 31"
+   Black Moon        Aqu    12º 05' 17"
+   Pallas        Aqu    19º 30' 45"
+   Part of Fortune        Pis    2º 55' 30"
+   Mercury        Pis    5º 22' 08"
+   Jupiter        Pis    9º 37' 51"
+3    ┈┈┈    3    Pis    13º 02' 53"
+   Eris        Pis    18º 55' 26"
+   Sun        Pis    19º 35' 12"
+   Ceres        Pis    23º 27' 48"
+   Chiron        Pis    28º 57' 26"
+   Imum Coeli        Ari    13º 52' 40"
+4    ┈┈┈    4    Ari    13º 52' 40"
+   Juno        Ari    17º 11' 12"
+   Hygiea        Ari    21º 52' 49"
+   Venus        Ari    24º 15' 15"
+5    ┈┈┈    5    Tau    5º 48' 26"
+   South Node        Tau    7º 46' 34"
+6    ┈┈┈    6    Tau    23º 42' 22"
+7    ┈┈┈    7    Gem    12º 44' 22"
+   Descendant        Gem    12º 44' 22"
+   Saturn        Gem    17º 56' 58"
+   Vertex        Can    23º 37' 47"
+   Lilith        Can    28º 47' 01"
+8    ┈┈┈    8    Can    28º 57' 48"
+9    ┈┈┈    9    Vir    13º 02' 53"
+   Pluto        Vir    13º 19' 16"
+   Uranus        Lib    6º 44' 52"
+10    ┈┈┈    10    Lib    13º 52' 40"
+   Midheaven        Lib    13º 52' 40"
+11    ┈┈┈    11    Sco    5º 48' 26"
+   North Node        Sco    7º 46' 34"
+   Neptune        Sco    17º 16' 25"
+12    ┈┈┈    12    Sco    23º 42' 22"
+Rulers of Houses: tropical
+House cusp in, House ruler in
+H 1    in    Cap    ruled by    Saturn    in    Can
+H 2    in    Aqu    ruled by    Saturn    in    Can
+               Uranus    in    Sco
+H 3    in    Ari    ruled by    Mars    in    Aqu
+H 4    in    Tau    ruled by    Venus    in    Tau
+H 5    in    Gem    ruled by    Mercury    in    Pis
+H 6    in    Gem    ruled by    Mercury    in    Pis
+H 7    in    Can    ruled by    Moon    in    Cap
+H 8    in    Leo    ruled by    Sun    in    Ari
+H 9    in    Lib    ruled by    Venus    in    Tau
+               Eris    in    Ari
+H 10    in    Sco    ruled by    Mars    in    Aqu
+               Pluto    in    Lib
+H 11    in    Sag    ruled by    Jupiter    in    Ari
+H 12    in    Sag    ruled by    Jupiter    in    Ari
+Rulers of Houses: sidereal✦
+House cusp in, House ruler in
+H 1    in    Sag    ruled by    Jupiter    in    Pis
+H 2    in    Cap    ruled by    Saturn    in    Gem
+H 3    in    Pis    ruled by    Jupiter    in    Pis
+               Neptune    in    Sco
+H 4    in    Ari    ruled by    Mars    in    Cap
+H 5    in    Tau    ruled by    Venus    in    Ari
+H 6    in    Tau    ruled by    Venus    in    Ari
+H 7    in    Gem    ruled by    Mercury    in    Pis
+H 8    in    Can    ruled by    Moon    in    Sag
+H 9    in    Vir    ruled by    Mercury    in    Pis
+H 10    in    Lib    ruled by    Venus    in    Ari
+               Eris    in    Pis
+H 11    in    Sco    ruled by    Mars    in    Cap
+               Pluto    in    Vir
+H 12    in    Sco    ruled by    Mars    in    Cap
+               Pluto    in    Vir
+Dignities: tropical
+Body, Sign, Essential dign., House, Accidental dign.
+Sun    Ari    ●●●    EXALT    H 3
+Moon    Cap    ●●●    DETR    H 1
+Mercury    Pis    ●●●    FALL    H 2
+Venus    Tau    ●●●    DIGN    H 4
+Mars    Aqu            H 2    ●●●    DETR
+Jupiter    Ari            H 2
+Saturn    Can    ●●●    DETR    H 7    ●●●    EXALT
+Uranus    Sco    ●●●    EXALT    H 9
+Neptune    Sag            H 11
+Pluto    Lib    ●●●    DETR    H 9
+Dignities: sidereal✦
+Body, Sign, Essential dign., House, Accidental dign.
+Sun    Pis            H 3
+Moon    Sag            H 1
+Mercury    Pis    ●●●    FALL    H 2
+Venus    Ari    ●●●    DETR    H 4
+Mars    Cap    ●●●    EXALT    H 2    ●●●    DETR
+Jupiter    Pis    ●●●    DIGN    H 2
+Saturn    Gem            H 7    ●●●    EXALT
+Uranus    Lib            H 9
+Neptune    Sco            H 11
+Pluto    Vir            H 9
+Triplicities / Elements: tropical
+Element, Count, Planet or point
+Fire    4    Sun
+       Jupiter
+       Neptune
+       North Node
+Earth    3    Moon
+       Venus
+       Ascendant
+Air    3    Mars
+       Pluto
+       South Node
+Water    4    Mercury
+       Saturn
+       Uranus
+       Midheaven
+Triplicities / Elements: sidereal✦
+Element, Count, Planet or point
+Fire    3    Moon
+       Venus
+       Ascendant
+Earth    3    Mars
+       Pluto
+       South Node
+Air    3    Saturn
+       Uranus
+       Midheaven
+Water    5    Sun
+       Mercury
+       Jupiter
+       Neptune
+       North Node
+Quadruplicities: tropical
+Type, Count, Planet or point
+Cardinal    6    Sun
+       Moon
+       Jupiter
+       Saturn
+       Pluto
+       Ascendant
+Fixed    4    Venus
+       Mars
+       Uranus
+       Midheaven
+Mutable    4    Mercury
+       Neptune
+       North Node
+       South Node
+Quadruplicities: sidereal✦
+Type, Count, Planet or point
+Cardinal    4    Venus
+       Mars
+       Uranus
+       Midheaven
+Fixed    3    Neptune
+       North Node
+       South Node
+Mutable    7    Sun
+       Moon
+       Mercury
+       Jupiter
+       Saturn
+       Pluto
+       Ascendant
+Mutual Receptions: tropical
+Body A, Sign, Body B, Sign
+Moon    in    Cap    ⟷    Saturn    in    Can
+Mars    in    Aqu    ⟷    Uranus    in    Sco
+Mutual Receptions: sidereal✦
+Body A, Sign, Body B, Sign
+None found
+Parallels
+Body A, Body B, Dec A, Dec B, Orb
+Venus    Hygiea    18N 09'    18N 57'    0N 48'
+Mars    Vesta    14S 36'    14S 48'    0N 12'
+Mars    MC    14S 36'    14S 16'    0N 20'
+Jupiter    Ceres    0N 37'    0N 36'    0N 01'
+Saturn    DSC    22N 40'    23N 15'    0N 35'
+Neptune    N.Node    20S 37'    20S 36'    0N 01'
+Juno    Lilith    7N 21'    6N 37'    0N 44'
+Vesta    MC    14S 48'    14S 16'    0N 32'
+Contra-Parallels
+Body A, Body B, Dec A, Dec B, Orb
+Moon    Venus    17S 22'    18N 09'    0N 47'
+Mercury    Pallas    2S 06'    2N 44'    0N 37'
+Mars    IC    14S 36'    14N 16'    0N 20'
+Saturn    ASC    22N 40'    23S 15'    0N 35'
+Neptune    S.Node    20S 37'    20N 36'    0N 01'
+Pluto    Eris    12N 51'    13S 05'    0N 14'
+Vesta    IC    14S 48'    14N 16'    0N 32'
+Hygiea    Icarus    18N 57'    19S 13'    0N 17'
+Aspects
+Moon    s/sex.    Mars    0º 33'    app    wan
+Moon    quin.    Jupiter    1º 46'    sep    wan
+Moon    s/sq.    Bl.Moon    2º 19'    sep    wan
+Moon    sext.    P/Fortune    3º 31'    sep    wax
+Moon    sq.    Chiron    0º 27'    sep    wan
+Moon    inconj.    Lilith    0º 37'    sep    wax
+Sun    sq.    Saturn    1º 38'    sep    wan
+Sun    tri.    Neptune    2º 19'    sep    wax
+Sun    tri.    Vertex    4º 03'    sep    wax
+Sun    conj.    Eris    0º 40'    sep    
+Sun    conj.    Ceres    3º 53'    app    
+Sun    s/sex.    Pallas    0º 04'    sep    wax
+Sun    s/sq.    Vesta    2º 24'    sep    wax
+Sun    sext.    Icarus    0º 45'    sep    wax
+Mercury    conj.    Jupiter    4º 16'    app    
+Mercury    inconj.    Uranus    1º 23'    app    wax
+Mercury    tri.    N.Node    2º 24'    app    wax
+Mercury    sext.    S.Node    2º 24'    app    wan
+Mercury    conj.    P/Fortune    2º 27'    app    
+Mercury    s/sq.    Hygiea    1º 31'    app    wan
+Mercury    biq.    Lilith    0º 35'    sep    wan
+Mercury    s/sq.    Icarus    1º 32'    sep    wax
+Venus    s/sq.    Jupiter    0º 23'    app    wax
+Venus    quin.    Bl.Moon    0º 10'    sep    wax
+Venus    sq.    Vertex    0º 37'    app    wax
+Venus    s/sex.    Ceres    0º 47'    sep    wax
+Venus    conj.    Hygiea    2º 22'    sep    
+Mars    s/sex.    Moon    0º 33'    app    wan
+Mars    quin.    Neptune    0º 41'    sep    wax
+Mars    sesq.    Pluto    1º 38'    sep    wax
+Mars    s/sq.    ASC    2º 13'    app    wan
+Mars    quin.    IC    1º 55'    sep    wax
+Mars    sext.    Chiron    1º 00'    sep    wan
+Mars    conj.    Vesta    2º 14'    app    
+Mars    opp.    Lilith    1º 10'    sep    
+Jupiter    quin.    Moon    1º 46'    sep    wan
+Jupiter    conj.    Mercury    4º 16'    app    
+Jupiter    s/sq.    Venus    0º 23'    app    wax
+Jupiter    opp.    Pluto    3º 41'    app    
+Jupiter    tri.    N.Node    1º 51'    sep    wax
+Jupiter    sext.    S.Node    1º 51'    sep    wan
+Jupiter    sq.    ASC    3º 07'    sep    wan
+Jupiter    sq.    DSC    3º 07'    sep    wax
+Jupiter    biq.    MC    1º 45'    app    wan
+Jupiter    sesq.    Vertex    1º 00'    app    wax
+Saturn    sq.    Sun    1º 38'    sep    wan
+Saturn    inconj.    Neptune    0º 41'    sep    wan
+Saturn    sq.    Eris    0º 58'    app    wax
+Saturn    tri.    Pallas    1º 34'    sep    wan
+Saturn    sext.    Juno    0º 46'    app    wan
+Saturn    sesq.    Vesta    0º 45'    app    wan
+Saturn    inconj.    Icarus    0º 54'    sep    wan
+Uranus    inconj.    Mercury    1º 23'    app    wax
+Uranus    s/sex.    N.Node    1º 02'    sep    wan
+Uranus    inconj.    S.Node    1º 02'    sep    wax
+Uranus    quin.    Vertex    1º 07'    app    wan
+Neptune    tri.    Sun    2º 19'    sep    wax
+Neptune    quin.    Mars    0º 41'    sep    wax
+Neptune    inconj.    Saturn    0º 41'    sep    wan
+Neptune    tri.    Eris    1º 39'    sep    wan
+Neptune    sq.    Pallas    2º 14'    sep    wax
+Neptune    inconj.    Juno    0º 05'    app    wax
+Neptune    sext.    Icarus    1º 34'    sep    wax
+Pluto    sesq.    Mars    1º 38'    sep    wax
+Pluto    opp.    Jupiter    3º 41'    app    
+Pluto    inconj.    Bl.Moon    1º 14'    app    wax
+Pluto    sq.    ASC    0º 35'    app    wax
+Pluto    sq.    DSC    0º 35'    app    wan
+Pluto    s/sex.    MC    0º 33'    sep    wax
+Pluto    inconj.    IC    0º 33'    sep    wan
+Pluto    s/sq.    Lilith    0º 28'    sep    wan
+N.Node    tri.    Mercury    2º 24'    app    wax
+N.Node    tri.    Jupiter    1º 51'    sep    wax
+N.Node    s/sex.    Uranus    1º 02'    sep    wan
+N.Node    biq.    DSC    1º 02'    app    wan
+N.Node    sesq.    Ceres    0º 41'    sep    wax
+N.Node    quin.    Icarus    0º 56'    app    wax
+S.Node    sext.    Mercury    2º 24'    app    wan
+S.Node    sext.    Jupiter    1º 51'    sep    wan
+S.Node    inconj.    Uranus    1º 02'    sep    wax
+S.Node    biq.    ASC    1º 02'    app    wan
+S.Node    s/sq.    Ceres    0º 41'    sep    wan
+Bl.Moon    s/sq.    Moon    2º 19'    sep    wan
+Bl.Moon    quin.    Venus    0º 10'    sep    wax
+Bl.Moon    inconj.    Pluto    1º 14'    app    wax
+Bl.Moon    sext.    ASC    0º 39'    sep    wan
+Bl.Moon    tri.    DSC    0º 39'    sep    wax
+Bl.Moon    tri.    MC    1º 47'    sep    wan
+Bl.Moon    sext.    IC    1º 47'    sep    wax
+Bl.Moon    s/sq.    Chiron    1º 52'    app    wan
+Chiron    sq.    Moon    0º 27'    sep    wan
+Chiron    sext.    Mars    1º 00'    sep    wan
+Chiron    s/sq.    Bl.Moon    1º 52'    app    wan
+Chiron    quin.    DSC    1º 47'    sep    wax
+Chiron    tri.    Lilith    0º 10'    sep    wax
+Chiron    quin.    Icarus    1º 53'    sep    wan
+Eris    conj.    Sun    0º 40'    sep    
+Eris    sq.    Saturn    0º 58'    app    wax
+Eris    tri.    Neptune    1º 39'    sep    wan
+Eris    conj.    Ceres    4º 32'    sep    
+Eris    s/sex.    Pallas    0º 35'    sep    wan
+Eris    s/sex.    Juno    1º 44'    app    wax
+Eris    s/sq.    Vesta    1º 44'    app    wan
+Eris    sext.    Icarus    0º 05'    app    wan
+Ceres    conj.    Sun    3º 53'    app    
+Ceres    s/sex.    Venus    0º 47'    sep    wax
+Ceres    sesq.    N.Node    0º 41'    sep    wax
+Ceres    s/sq.    S.Node    0º 41'    sep    wan
+Ceres    tri.    Vertex    0º 10'    sep    wax
+Ceres    conj.    Eris    4º 32'    sep    
+Ceres    s/sex.    Hygiea    1º 35'    sep    wan
+Pallas    s/sex.    Sun    0º 04'    sep    wax
+Pallas    tri.    Saturn    1º 34'    sep    wan
+Pallas    sq.    Neptune    2º 14'    sep    wax
+Pallas    s/sex.    Eris    0º 35'    sep    wan
+Pallas    sext.    Juno    2º 20'    app    wax
+Pallas    sext.    Hygiea    2º 22'    app    wan
+Pallas    s/sex.    Icarus    0º 40'    sep    wan
+Juno    sext.    Saturn    0º 46'    app    wan
+Juno    inconj.    Neptune    0º 05'    app    wax
+Juno    opp.    MC    3º 19'    app    
+Juno    conj.    IC    3º 19'    app    
+Juno    s/sq.    P/Fortune    0º 44'    sep    wan
+Juno    s/sex.    Eris    1º 44'    app    wax
+Juno    sext.    Pallas    2º 20'    app    wax
+Juno    conj.    Hygiea    4º 42'    app    
+Juno    sq.    Icarus    1º 39'    app    wan
+Vesta    s/sq.    Sun    2º 24'    sep    wax
+Vesta    conj.    Mars    2º 14'    app    
+Vesta    sesq.    Saturn    0º 45'    app    wan
+Vesta    quin.    IC    0º 19'    app    wax
+Vesta    s/sex.    P/Fortune    0º 44'    sep    wax
+Vesta    s/sq.    Eris    1º 44'    app    wan
+Vesta    opp.    Lilith    3º 25'    sep    
+Hygiea    s/sq.    Mercury    1º 31'    app    wan
+Hygiea    conj.    Venus    2º 22'    sep    
+Hygiea    sq.    Vertex    1º 45'    sep    wax
+Hygiea    s/sex.    Ceres    1º 35'    sep    wan
+Hygiea    sext.    Pallas    2º 22'    app    wan
+Hygiea    conj.    Juno    4º 42'    app    
+Hygiea    sq.    Icarus    3º 02'    sep    wan
+Lilith    inconj.    Moon    0º 37'    sep    wax
+Lilith    biq.    Mercury    0º 35'    sep    wan
+Lilith    opp.    Mars    1º 10'    sep    
+Lilith    s/sq.    Pluto    0º 28'    sep    wan
+Lilith    sesq.    ASC    1º 03'    app    wax
+Lilith    s/sq.    DSC    1º 03'    app    wan
+Lilith    biq.    P/Fortune    1º 52'    app    wan
+Lilith    tri.    Chiron    0º 10'    sep    wax
+Lilith    opp.    Vesta    3º 25'    sep    
+Icarus    sext.    Sun    0º 45'    sep    wax
+Icarus    s/sq.    Mercury    1º 32'    sep    wax
+Icarus    inconj.    Saturn    0º 54'    sep    wan
+Icarus    sext.    Neptune    1º 34'    sep    wax
+Icarus    quin.    N.Node    0º 56'    app    wax
+Icarus    biq.    DSC    0º 06'    sep    wax
+Icarus    opp.    Vertex    4º 47'    sep    
+Icarus    s/sq.    P/Fortune    0º 55'    app    wax
+Icarus    quin.    Chiron    1º 53'    sep    wan
+Icarus    sext.    Eris    0º 05'    app    wan
+Icarus    s/sex.    Pallas    0º 40'    sep    wan
+Icarus    sq.    Juno    1º 39'    app    wan
+Icarus    sq.    Hygiea    3º 02'    sep    wan
+ASC    s/sq.    Mars    2º 13'    app    wan
+ASC    sq.    Jupiter    3º 07'    sep    wan
+ASC    sq.    Pluto    0º 35'    app    wax
+ASC    biq.    S.Node    1º 02'    app    wan
+ASC    sext.    Bl.Moon    0º 39'    sep    wan
+ASC    sesq.    Lilith    1º 03'    app    wax
+DSC    sq.    Jupiter    3º 07'    sep    wax
+DSC    sq.    Pluto    0º 35'    app    wan
+DSC    biq.    N.Node    1º 02'    app    wan
+DSC    tri.    Bl.Moon    0º 39'    sep    wax
+DSC    quin.    Chiron    1º 47'    sep    wax
+DSC    s/sq.    Lilith    1º 03'    app    wan
+DSC    biq.    Icarus    0º 06'    sep    wax
+MC    biq.    Jupiter    1º 45'    app    wan
+MC    s/sex.    Pluto    0º 33'    sep    wax
+MC    tri.    Bl.Moon    1º 47'    sep    wan
+MC    opp.    Juno    3º 19'    app    
+IC    quin.    Mars    1º 55'    sep    wax
+IC    inconj.    Pluto    0º 33'    sep    wan
+IC    sext.    Bl.Moon    1º 47'    sep    wax
+IC    conj.    Juno    3º 19'    app    
+IC    quin.    Vesta    0º 19'    app    wax
+Vertex    tri.    Sun    4º 03'    sep    wax
+Vertex    sq.    Venus    0º 37'    app    wax
+Vertex    sesq.    Jupiter    1º 00'    app    wax
+Vertex    quin.    Uranus    1º 07'    app    wan
+Vertex    tri.    Ceres    0º 10'    sep    wax
+Vertex    sq.    Hygiea    1º 45'    sep    wax
+Vertex    opp.    Icarus    4º 47'    sep  

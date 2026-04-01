@@ -1,0 +1,1282 @@
+{
+  "Aspects": {
+    "1 Major": {
+      "_files": [
+        {
+          "name": "Conjunction",
+          "relative_path": "Aspects/1 Major/Conjunction.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/1 Major/Conjunction.md"
+        },
+        {
+          "name": "Opposition",
+          "relative_path": "Aspects/1 Major/Opposition.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/1 Major/Opposition.md"
+        },
+        {
+          "name": "Sextile",
+          "relative_path": "Aspects/1 Major/Sextile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/1 Major/Sextile.md"
+        },
+        {
+          "name": "Square",
+          "relative_path": "Aspects/1 Major/Square.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/1 Major/Square.md"
+        },
+        {
+          "name": "Trine",
+          "relative_path": "Aspects/1 Major/Trine.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/1 Major/Trine.md"
+        }
+      ]
+    },
+    "2 Minor": {
+      "_files": [
+        {
+          "name": "Inconjunction (Quincunx)",
+          "relative_path": "Aspects/2 Minor/Inconjunction (Quincunx).md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/2 Minor/Inconjunction (Quincunx).md"
+        },
+        {
+          "name": "Quindecile",
+          "relative_path": "Aspects/2 Minor/Quindecile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/2 Minor/Quindecile.md"
+        },
+        {
+          "name": "Semisextile",
+          "relative_path": "Aspects/2 Minor/Semisextile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/2 Minor/Semisextile.md"
+        },
+        {
+          "name": "Semisquare",
+          "relative_path": "Aspects/2 Minor/Semisquare.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/2 Minor/Semisquare.md"
+        },
+        {
+          "name": "Sesquiquadrate (Sesquisquare)",
+          "relative_path": "Aspects/2 Minor/Sesquiquadrate (Sesquisquare).md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/2 Minor/Sesquiquadrate (Sesquisquare).md"
+        }
+      ]
+    },
+    "3 Harmonic": {
+      "_files": [
+        {
+          "name": "Biquintile",
+          "relative_path": "Aspects/3 Harmonic/Biquintile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/3 Harmonic/Biquintile.md"
+        },
+        {
+          "name": "Decile",
+          "relative_path": "Aspects/3 Harmonic/Decile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/3 Harmonic/Decile.md"
+        },
+        {
+          "name": "Quintile",
+          "relative_path": "Aspects/3 Harmonic/Quintile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/3 Harmonic/Quintile.md"
+        },
+        {
+          "name": "Tridecile",
+          "relative_path": "Aspects/3 Harmonic/Tridecile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/3 Harmonic/Tridecile.md"
+        },
+        {
+          "name": "Vigintile",
+          "relative_path": "Aspects/3 Harmonic/Vigintile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/3 Harmonic/Vigintile.md"
+        }
+      ]
+    },
+    "4 Septile Family": {
+      "_files": [
+        {
+          "name": "Biseptile",
+          "relative_path": "Aspects/4 Septile Family/Biseptile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/4 Septile Family/Biseptile.md"
+        },
+        {
+          "name": "Septile",
+          "relative_path": "Aspects/4 Septile Family/Septile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/4 Septile Family/Septile.md"
+        },
+        {
+          "name": "Triseptile",
+          "relative_path": "Aspects/4 Septile Family/Triseptile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/4 Septile Family/Triseptile.md"
+        }
+      ]
+    },
+    "5 Novile Family": {
+      "_files": [
+        {
+          "name": "Binovile",
+          "relative_path": "Aspects/5 Novile Family/Binovile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/5 Novile Family/Binovile.md"
+        },
+        {
+          "name": "Novile",
+          "relative_path": "Aspects/5 Novile Family/Novile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/5 Novile Family/Novile.md"
+        },
+        {
+          "name": "Quadrinovile",
+          "relative_path": "Aspects/5 Novile Family/Quadrinovile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/5 Novile Family/Quadrinovile.md"
+        }
+      ]
+    },
+    "6 Decile Family": {
+      "_files": [
+        {
+          "name": "Decile",
+          "relative_path": "Aspects/6 Decile Family/Decile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/6 Decile Family/Decile.md"
+        },
+        {
+          "name": "Quindecile",
+          "relative_path": "Aspects/6 Decile Family/Quindecile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/6 Decile Family/Quindecile.md"
+        }
+      ]
+    },
+    "9 Custom": {
+      "_files": [
+        {
+          "name": "Undecile",
+          "relative_path": "Aspects/9 Custom/Undecile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/9 Custom/Undecile.md"
+        },
+        {
+          "name": "Vadecile",
+          "relative_path": "Aspects/9 Custom/Vadecile.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/9 Custom/Vadecile.md"
+        }
+      ]
+    },
+    "_files": [
+      {
+        "name": "Aspect Index",
+        "relative_path": "Aspects/Aspect Index.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Aspects/Aspect Index.md"
+      }
+    ]
+  },
+  "Celestial Bodies & Calculation Points": {
+    "Asteroids": {
+      "_files": [
+        {
+          "name": "Amor",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Amor.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Amor.md"
+        },
+        {
+          "name": "Ceres",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Ceres.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Ceres.md"
+        },
+        {
+          "name": "Chiron",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Chiron.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Chiron.md"
+        },
+        {
+          "name": "Euphrosyne",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Euphrosyne.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Euphrosyne.md"
+        },
+        {
+          "name": "Hygeia",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Hygeia.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Hygeia.md"
+        },
+        {
+          "name": "Juno",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Juno.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Juno.md"
+        },
+        {
+          "name": "Lilith",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Lilith.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Lilith.md"
+        },
+        {
+          "name": "Lucifer",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Lucifer.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Lucifer.md"
+        },
+        {
+          "name": "Pallas",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Pallas.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Pallas.md"
+        },
+        {
+          "name": "Psyche",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Psyche.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Psyche.md"
+        },
+        {
+          "name": "Vesta",
+          "relative_path": "Celestial Bodies & Calculation Points/Asteroids/Vesta.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Asteroids/Vesta.md"
+        }
+      ]
+    },
+    "Calculated Points": {
+      "_files": [
+        {
+          "name": "Anti-Vertex",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Anti-Vertex.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Anti-Vertex.md"
+        },
+        {
+          "name": "Ascendant",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Ascendant.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Ascendant.md"
+        },
+        {
+          "name": "Black Moon Lilith",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Black Moon Lilith.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Black Moon Lilith.md"
+        },
+        {
+          "name": "Descendant",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Descendant.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Descendant.md"
+        },
+        {
+          "name": "Imum Coeli",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Imum Coeli.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Imum Coeli.md"
+        },
+        {
+          "name": "Midheaven",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Midheaven.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Midheaven.md"
+        },
+        {
+          "name": "North Node",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/North Node.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/North Node.md"
+        },
+        {
+          "name": "Part of Fortune",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Part of Fortune.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Part of Fortune.md"
+        },
+        {
+          "name": "Part of Spirit",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Part of Spirit.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Part of Spirit.md"
+        },
+        {
+          "name": "South Node",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/South Node.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/South Node.md"
+        },
+        {
+          "name": "Vertex",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/Vertex.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/Vertex.md"
+        },
+        {
+          "name": "White Moon Selene",
+          "relative_path": "Celestial Bodies & Calculation Points/Calculated Points/White Moon Selene.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Calculated Points/White Moon Selene.md"
+        }
+      ]
+    },
+    "_files": [
+      {
+        "name": "Celestial Bodies and Calculated Points Index",
+        "relative_path": "Celestial Bodies & Calculation Points/Celestial Bodies and Calculated Points Index.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Celestial Bodies and Calculated Points Index.md"
+      }
+    ],
+    "Centaurs & Deep Space Bodies": {
+      "_files": [
+        {
+          "name": "Asbolus",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Asbolus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Asbolus.md"
+        },
+        {
+          "name": "Bienor",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Bienor.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Bienor.md"
+        },
+        {
+          "name": "Chariklo",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Chariklo.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Chariklo.md"
+        },
+        {
+          "name": "Chiron",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Chiron.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Chiron.md"
+        },
+        {
+          "name": "Elatus",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Elatus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Elatus.md"
+        },
+        {
+          "name": "Hylonome",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Hylonome.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Hylonome.md"
+        },
+        {
+          "name": "Nessus",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Nessus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Nessus.md"
+        },
+        {
+          "name": "Pholus",
+          "relative_path": "Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Pholus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Centaurs & Deep Space Bodies/Pholus.md"
+        }
+      ]
+    },
+    "Dwarf Planets & Distant Bodies": {
+      "_files": [
+        {
+          "name": "Gonggong – The Tidal Lord of Unleashed Power",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Gonggong – The Tidal Lord of Unleashed Power.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Gonggong – The Tidal Lord of Unleashed Power.md"
+        },
+        {
+          "name": "Ixion – The Transgressor of Sacred Trust",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Ixion – The Transgressor of Sacred Trust.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Ixion – The Transgressor of Sacred Trust.md"
+        },
+        {
+          "name": "Orcus – The Keeper of Oaths and Consequence",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Orcus – The Keeper of Oaths and Consequence.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Orcus – The Keeper of Oaths and Consequence.md"
+        },
+        {
+          "name": "Quaoar – The Harmonic Architect of Form",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Quaoar – The Harmonic Architect of Form.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Quaoar – The Harmonic Architect of Form.md"
+        },
+        {
+          "name": "Sedna – The Deep Time Siren",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Sedna – The Deep Time Siren.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Sedna – The Deep Time Siren.md"
+        },
+        {
+          "name": "Varuna – The Cosmic Arbiter of Moral Law",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Varuna – The Cosmic Arbiter of Moral Law.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/Varuna – The Cosmic Arbiter of Moral Law.md"
+        },
+        {
+          "name": "⚳ Ceres – The Keeper of Nourishment and Loss",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚳ Ceres – The Keeper of Nourishment and Loss.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚳ Ceres – The Keeper of Nourishment and Loss.md"
+        },
+        {
+          "name": "⚴ Eris The Disruptor of False Harmony",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚴ Eris The Disruptor of False Harmony.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚴ Eris The Disruptor of False Harmony.md"
+        },
+        {
+          "name": "⚵ Makemake – The Architect of Wild Order",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚵ Makemake – The Architect of Wild Order.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚵ Makemake – The Architect of Wild Order.md"
+        },
+        {
+          "name": "⚶ Haumea – The Shaper of Sacred Cycles",
+          "relative_path": "Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚶ Haumea – The Shaper of Sacred Cycles.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Dwarf Planets & Distant Bodies/⚶ Haumea – The Shaper of Sacred Cycles.md"
+        }
+      ]
+    },
+    "Esoteric and Hypothetical Points": {
+      "_files": [
+        {
+          "name": "Admetos – The Anchor of Endurance",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Admetos – The Anchor of Endurance.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Admetos – The Anchor of Endurance.md"
+        },
+        {
+          "name": "Apollon – The Ray of Expansive Vision",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Apollon – The Ray of Expansive Vision.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Apollon – The Ray of Expansive Vision.md"
+        },
+        {
+          "name": "Cupido – The Spark of Archetypal Union",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Cupido – The Spark of Archetypal Union.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Cupido – The Spark of Archetypal Union.md"
+        },
+        {
+          "name": "Hades – The Depths of Ancestral Memory",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Hades – The Depths of Ancestral Memory.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Hades – The Depths of Ancestral Memory.md"
+        },
+        {
+          "name": "Kronos – The Law of Time’s Structure",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Kronos – The Law of Time’s Structure.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Kronos – The Law of Time’s Structure.md"
+        },
+        {
+          "name": "Persephone – The Bloom of Underworld Passage",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Persephone – The Bloom of Underworld Passage.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Persephone – The Bloom of Underworld Passage.md"
+        },
+        {
+          "name": "Poseidon – The Tide of Mystical Truth",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Poseidon – The Tide of Mystical Truth.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Poseidon – The Tide of Mystical Truth.md"
+        },
+        {
+          "name": "Transpluto – The Blade of Perfection",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Transpluto – The Blade of Perfection.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Transpluto – The Blade of Perfection.md"
+        },
+        {
+          "name": "Vulcan – The Forge of Inner Steel",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Vulcan – The Forge of Inner Steel.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Vulcan – The Forge of Inner Steel.md"
+        },
+        {
+          "name": "Zeus – The Bolt of Creative Command",
+          "relative_path": "Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Zeus – The Bolt of Creative Command.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Esoteric and Hypothetical Points/Zeus – The Bolt of Creative Command.md"
+        }
+      ]
+    },
+    "Lunar Nodes & Moons": {
+      "_files": [
+        {
+          "name": "Black Moon Lilith",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Black Moon Lilith.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Black Moon Lilith.md"
+        },
+        {
+          "name": "Dark Moon Lilith",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Dark Moon Lilith.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Dark Moon Lilith.md"
+        },
+        {
+          "name": "Deimos",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Deimos.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Deimos.md"
+        },
+        {
+          "name": "Earth's Moon",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Earth's Moon.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Earth's Moon.md"
+        },
+        {
+          "name": "North Node",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/North Node.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/North Node.md"
+        },
+        {
+          "name": "Phobos",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Phobos.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/Phobos.md"
+        },
+        {
+          "name": "South Node",
+          "relative_path": "Celestial Bodies & Calculation Points/Lunar Nodes & Moons/South Node.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Lunar Nodes & Moons/South Node.md"
+        }
+      ]
+    },
+    "Planets (Classic and Modern)": {
+      "_files": [
+        {
+          "name": "Earth",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Earth.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Earth.md"
+        },
+        {
+          "name": "Jupiter",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Jupiter.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Jupiter.md"
+        },
+        {
+          "name": "Mars",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Mars.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Mars.md"
+        },
+        {
+          "name": "Mercury",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Mercury.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Mercury.md"
+        },
+        {
+          "name": "Moon",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Moon.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Moon.md"
+        },
+        {
+          "name": "Neptune",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Neptune.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Neptune.md"
+        },
+        {
+          "name": "Pluto",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Pluto.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Pluto.md"
+        },
+        {
+          "name": "Saturn",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Saturn.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Saturn.md"
+        },
+        {
+          "name": "Sun",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Sun.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Sun.md"
+        },
+        {
+          "name": "Uranus",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Uranus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Uranus.md"
+        },
+        {
+          "name": "Venus",
+          "relative_path": "Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Venus.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Planets (Classic and Modern)/Venus.md"
+        }
+      ]
+    },
+    "Special Points in Advanced Systems": {
+      "_files": [
+        {
+          "name": "Earth (Heliocentric)",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Earth (Heliocentric).md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Earth (Heliocentric).md"
+        },
+        {
+          "name": "Galactic Center",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Galactic Center.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Galactic Center.md"
+        },
+        {
+          "name": "Great Attractor",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Great Attractor.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Great Attractor.md"
+        },
+        {
+          "name": "Lunar Apogee (Black Moon)",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Lunar Apogee (Black Moon).md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Lunar Apogee (Black Moon).md"
+        },
+        {
+          "name": "Lunar Perigree",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Lunar Perigree.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Lunar Perigree.md"
+        },
+        {
+          "name": "Shapley Attractor",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Shapley Attractor.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Shapley Attractor.md"
+        },
+        {
+          "name": "Sun-Moon Midpoint",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Sun-Moon Midpoint.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Sun-Moon Midpoint.md"
+        },
+        {
+          "name": "Super Galactic Center",
+          "relative_path": "Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Super Galactic Center.md",
+          "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Celestial Bodies & Calculation Points/Special Points in Advanced Systems/Super Galactic Center.md"
+        }
+      ]
+    }
+  },
+  "Fixed Stars": {
+    "_files": [
+      {
+        "name": "#features",
+        "relative_path": "Fixed Stars/#features.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/#features.md"
+      },
+      {
+        "name": "Achernar",
+        "relative_path": "Fixed Stars/Achernar.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Achernar.md"
+      },
+      {
+        "name": "Acrux",
+        "relative_path": "Fixed Stars/Acrux.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Acrux.md"
+      },
+      {
+        "name": "Acubens",
+        "relative_path": "Fixed Stars/Acubens.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Acubens.md"
+      },
+      {
+        "name": "Aculeus",
+        "relative_path": "Fixed Stars/Aculeus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Aculeus.md"
+      },
+      {
+        "name": "Acumen",
+        "relative_path": "Fixed Stars/Acumen.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Acumen.md"
+      },
+      {
+        "name": "Adhafera",
+        "relative_path": "Fixed Stars/Adhafera.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Adhafera.md"
+      },
+      {
+        "name": "Agena",
+        "relative_path": "Fixed Stars/Agena.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Agena.md"
+      },
+      {
+        "name": "Ain",
+        "relative_path": "Fixed Stars/Ain.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Ain.md"
+      },
+      {
+        "name": "Al Hecka",
+        "relative_path": "Fixed Stars/Al Hecka.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Al Hecka.md"
+      },
+      {
+        "name": "Al Jabhah",
+        "relative_path": "Fixed Stars/Al Jabhah.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Al Jabhah.md"
+      },
+      {
+        "name": "Al Pherg",
+        "relative_path": "Fixed Stars/Al Pherg.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Al Pherg.md"
+      },
+      {
+        "name": "Albireo",
+        "relative_path": "Fixed Stars/Albireo.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Albireo.md"
+      },
+      {
+        "name": "Alcyone",
+        "relative_path": "Fixed Stars/Alcyone.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alcyone.md"
+      },
+      {
+        "name": "Alcyoneus",
+        "relative_path": "Fixed Stars/Alcyoneus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alcyoneus.md"
+      },
+      {
+        "name": "Aldebaran",
+        "relative_path": "Fixed Stars/Aldebaran.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Aldebaran.md"
+      },
+      {
+        "name": "Alderamin",
+        "relative_path": "Fixed Stars/Alderamin.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alderamin.md"
+      },
+      {
+        "name": "Algenib",
+        "relative_path": "Fixed Stars/Algenib.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Algenib.md"
+      },
+      {
+        "name": "Algenubi",
+        "relative_path": "Fixed Stars/Algenubi.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Algenubi.md"
+      },
+      {
+        "name": "Algiedi",
+        "relative_path": "Fixed Stars/Algiedi.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Algiedi.md"
+      },
+      {
+        "name": "Algol",
+        "relative_path": "Fixed Stars/Algol.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Algol.md"
+      },
+      {
+        "name": "Algorab",
+        "relative_path": "Fixed Stars/Algorab.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Algorab.md"
+      },
+      {
+        "name": "Alhena",
+        "relative_path": "Fixed Stars/Alhena.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alhena.md"
+      },
+      {
+        "name": "Alkaid",
+        "relative_path": "Fixed Stars/Alkaid.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alkaid.md"
+      },
+      {
+        "name": "Alkes",
+        "relative_path": "Fixed Stars/Alkes.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alkes.md"
+      },
+      {
+        "name": "Almach",
+        "relative_path": "Fixed Stars/Almach.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Almach.md"
+      },
+      {
+        "name": "Alnilam",
+        "relative_path": "Fixed Stars/Alnilam.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alnilam.md"
+      },
+      {
+        "name": "Alphard",
+        "relative_path": "Fixed Stars/Alphard.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alphard.md"
+      },
+      {
+        "name": "Alphecca",
+        "relative_path": "Fixed Stars/Alphecca.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alphecca.md"
+      },
+      {
+        "name": "Alpheratz",
+        "relative_path": "Fixed Stars/Alpheratz.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alpheratz.md"
+      },
+      {
+        "name": "Alrescha",
+        "relative_path": "Fixed Stars/Alrescha.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Alrescha.md"
+      },
+      {
+        "name": "Altair",
+        "relative_path": "Fixed Stars/Altair.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Altair.md"
+      },
+      {
+        "name": "Aludra",
+        "relative_path": "Fixed Stars/Aludra.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Aludra.md"
+      },
+      {
+        "name": "Andromeda Galaxy",
+        "relative_path": "Fixed Stars/Andromeda Galaxy.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Andromeda Galaxy.md"
+      },
+      {
+        "name": "Ankaa",
+        "relative_path": "Fixed Stars/Ankaa.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Ankaa.md"
+      },
+      {
+        "name": "Antares",
+        "relative_path": "Fixed Stars/Antares.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Antares.md"
+      },
+      {
+        "name": "Arcturus",
+        "relative_path": "Fixed Stars/Arcturus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Arcturus.md"
+      },
+      {
+        "name": "Armus",
+        "relative_path": "Fixed Stars/Armus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Armus.md"
+      },
+      {
+        "name": "Ascella",
+        "relative_path": "Fixed Stars/Ascella.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Ascella.md"
+      },
+      {
+        "name": "Asellus Australis",
+        "relative_path": "Fixed Stars/Asellus Australis.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Asellus Australis.md"
+      },
+      {
+        "name": "Asellus Borealis",
+        "relative_path": "Fixed Stars/Asellus Borealis.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Asellus Borealis.md"
+      },
+      {
+        "name": "Baten Kaitos",
+        "relative_path": "Fixed Stars/Baten Kaitos.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Baten Kaitos.md"
+      },
+      {
+        "name": "Bellatrix",
+        "relative_path": "Fixed Stars/Bellatrix.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Bellatrix.md"
+      },
+      {
+        "name": "Betelgeuse",
+        "relative_path": "Fixed Stars/Betelgeuse.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Betelgeuse.md"
+      },
+      {
+        "name": "Bungula",
+        "relative_path": "Fixed Stars/Bungula.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Bungula.md"
+      },
+      {
+        "name": "Canopus",
+        "relative_path": "Fixed Stars/Canopus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Canopus.md"
+      },
+      {
+        "name": "Capella",
+        "relative_path": "Fixed Stars/Capella.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Capella.md"
+      },
+      {
+        "name": "Castor",
+        "relative_path": "Fixed Stars/Castor.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Castor.md"
+      },
+      {
+        "name": "Castra",
+        "relative_path": "Fixed Stars/Castra.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Castra.md"
+      },
+      {
+        "name": "Copula",
+        "relative_path": "Fixed Stars/Copula.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Copula.md"
+      },
+      {
+        "name": "Dabih",
+        "relative_path": "Fixed Stars/Dabih.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Dabih.md"
+      },
+      {
+        "name": "Deneb Adige",
+        "relative_path": "Fixed Stars/Deneb Adige.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Deneb Adige.md"
+      },
+      {
+        "name": "Deneb Algedi",
+        "relative_path": "Fixed Stars/Deneb Algedi.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Deneb Algedi.md"
+      },
+      {
+        "name": "Denebola",
+        "relative_path": "Fixed Stars/Denebola.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Denebola.md"
+      },
+      {
+        "name": "Dheneb",
+        "relative_path": "Fixed Stars/Dheneb.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Dheneb.md"
+      },
+      {
+        "name": "Difda",
+        "relative_path": "Fixed Stars/Difda.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Difda.md"
+      },
+      {
+        "name": "Dorsum",
+        "relative_path": "Fixed Stars/Dorsum.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Dorsum.md"
+      },
+      {
+        "name": "El Nath",
+        "relative_path": "Fixed Stars/El Nath.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/El Nath.md"
+      },
+      {
+        "name": "Enif",
+        "relative_path": "Fixed Stars/Enif.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Enif.md"
+      },
+      {
+        "name": "Facies",
+        "relative_path": "Fixed Stars/Facies.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Facies.md"
+      },
+      {
+        "name": "Fixed Stars Time Nomad",
+        "relative_path": "Fixed Stars/Fixed Stars Time Nomad.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Fixed Stars Time Nomad.md"
+      },
+      {
+        "name": "Fomalhaut",
+        "relative_path": "Fixed Stars/Fomalhaut.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Fomalhaut.md"
+      },
+      {
+        "name": "Gienah",
+        "relative_path": "Fixed Stars/Gienah.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Gienah.md"
+      },
+      {
+        "name": "Hamal",
+        "relative_path": "Fixed Stars/Hamal.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Hamal.md"
+      },
+      {
+        "name": "Kaus Australis",
+        "relative_path": "Fixed Stars/Kaus Australis.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Kaus Australis.md"
+      },
+      {
+        "name": "Kaus Borealis",
+        "relative_path": "Fixed Stars/Kaus Borealis.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Kaus Borealis.md"
+      },
+      {
+        "name": "Kaus Media",
+        "relative_path": "Fixed Stars/Kaus Media.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Kaus Media.md"
+      },
+      {
+        "name": "Lesath",
+        "relative_path": "Fixed Stars/Lesath.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Lesath.md"
+      },
+      {
+        "name": "Markab",
+        "relative_path": "Fixed Stars/Markab.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Markab.md"
+      },
+      {
+        "name": "Menkalinan",
+        "relative_path": "Fixed Stars/Menkalinan.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Menkalinan.md"
+      },
+      {
+        "name": "Menkar",
+        "relative_path": "Fixed Stars/Menkar.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Menkar.md"
+      },
+      {
+        "name": "Menkent",
+        "relative_path": "Fixed Stars/Menkent.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Menkent.md"
+      },
+      {
+        "name": "Metaphysical Codex of Fixed Stars",
+        "relative_path": "Fixed Stars/Metaphysical Codex of Fixed Stars.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Metaphysical Codex of Fixed Stars.md"
+      },
+      {
+        "name": "Mintaka",
+        "relative_path": "Fixed Stars/Mintaka.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Mintaka.md"
+      },
+      {
+        "name": "Mirach",
+        "relative_path": "Fixed Stars/Mirach.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Mirach.md"
+      },
+      {
+        "name": "Mirfak",
+        "relative_path": "Fixed Stars/Mirfak.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Mirfak.md"
+      },
+      {
+        "name": "Mirzam",
+        "relative_path": "Fixed Stars/Mirzam.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Mirzam.md"
+      },
+      {
+        "name": "Nihal",
+        "relative_path": "Fixed Stars/Nihal.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Nihal.md"
+      },
+      {
+        "name": "Phecda",
+        "relative_path": "Fixed Stars/Phecda.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Phecda.md"
+      },
+      {
+        "name": "Polaris",
+        "relative_path": "Fixed Stars/Polaris.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Polaris.md"
+      },
+      {
+        "name": "Pollux",
+        "relative_path": "Fixed Stars/Pollux.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Pollux.md"
+      },
+      {
+        "name": "Praesepe",
+        "relative_path": "Fixed Stars/Praesepe.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Praesepe.md"
+      },
+      {
+        "name": "Procyon",
+        "relative_path": "Fixed Stars/Procyon.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Procyon.md"
+      },
+      {
+        "name": "Ras Alhague",
+        "relative_path": "Fixed Stars/Ras Alhague.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Ras Alhague.md"
+      },
+      {
+        "name": "Rasalgethi",
+        "relative_path": "Fixed Stars/Rasalgethi.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Rasalgethi.md"
+      },
+      {
+        "name": "Rasalhague",
+        "relative_path": "Fixed Stars/Rasalhague.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Rasalhague.md"
+      },
+      {
+        "name": "Regulus",
+        "relative_path": "Fixed Stars/Regulus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Regulus.md"
+      },
+      {
+        "name": "Rigel",
+        "relative_path": "Fixed Stars/Rigel.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Rigel.md"
+      },
+      {
+        "name": "Sabik",
+        "relative_path": "Fixed Stars/Sabik.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sabik.md"
+      },
+      {
+        "name": "Sadalmelik",
+        "relative_path": "Fixed Stars/Sadalmelik.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sadalmelik.md"
+      },
+      {
+        "name": "Sadalsuud",
+        "relative_path": "Fixed Stars/Sadalsuud.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sadalsuud.md"
+      },
+      {
+        "name": "Sargas",
+        "relative_path": "Fixed Stars/Sargas.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sargas.md"
+      },
+      {
+        "name": "Schedar",
+        "relative_path": "Fixed Stars/Schedar.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Schedar.md"
+      },
+      {
+        "name": "Shaula",
+        "relative_path": "Fixed Stars/Shaula.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Shaula.md"
+      },
+      {
+        "name": "Sheliak",
+        "relative_path": "Fixed Stars/Sheliak.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sheliak.md"
+      },
+      {
+        "name": "Sirius",
+        "relative_path": "Fixed Stars/Sirius.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sirius.md"
+      },
+      {
+        "name": "Spica",
+        "relative_path": "Fixed Stars/Spica.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Spica.md"
+      },
+      {
+        "name": "Spiculum",
+        "relative_path": "Fixed Stars/Spiculum.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Spiculum.md"
+      },
+      {
+        "name": "Sualocin",
+        "relative_path": "Fixed Stars/Sualocin.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Sualocin.md"
+      },
+      {
+        "name": "Suhail",
+        "relative_path": "Fixed Stars/Suhail.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Suhail.md"
+      },
+      {
+        "name": "Tarazed",
+        "relative_path": "Fixed Stars/Tarazed.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Tarazed.md"
+      },
+      {
+        "name": "Tejat Posterior",
+        "relative_path": "Fixed Stars/Tejat Posterior.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Tejat Posterior.md"
+      },
+      {
+        "name": "Tejat Prior",
+        "relative_path": "Fixed Stars/Tejat Prior.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Tejat Prior.md"
+      },
+      {
+        "name": "Thuban",
+        "relative_path": "Fixed Stars/Thuban.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Thuban.md"
+      },
+      {
+        "name": "Unukalhai",
+        "relative_path": "Fixed Stars/Unukalhai.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Unukalhai.md"
+      },
+      {
+        "name": "Vega",
+        "relative_path": "Fixed Stars/Vega.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Vega.md"
+      },
+      {
+        "name": "Wasat",
+        "relative_path": "Fixed Stars/Wasat.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Wasat.md"
+      },
+      {
+        "name": "Yed Posterior",
+        "relative_path": "Fixed Stars/Yed Posterior.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Yed Posterior.md"
+      },
+      {
+        "name": "Yed Prior",
+        "relative_path": "Fixed Stars/Yed Prior.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Yed Prior.md"
+      },
+      {
+        "name": "Zosma",
+        "relative_path": "Fixed Stars/Zosma.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Zosma.md"
+      },
+      {
+        "name": "Zubenelgenubi",
+        "relative_path": "Fixed Stars/Zubenelgenubi.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Zubenelgenubi.md"
+      },
+      {
+        "name": "Zubeneschamali",
+        "relative_path": "Fixed Stars/Zubeneschamali.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Fixed Stars/Zubeneschamali.md"
+      }
+    ]
+  },
+  "Houses": {
+    "_files": [
+      {
+        "name": "10th House",
+        "relative_path": "Houses/10th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/10th House.md"
+      },
+      {
+        "name": "11th House",
+        "relative_path": "Houses/11th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/11th House.md"
+      },
+      {
+        "name": "12th House",
+        "relative_path": "Houses/12th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/12th House.md"
+      },
+      {
+        "name": "1st House",
+        "relative_path": "Houses/1st House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/1st House.md"
+      },
+      {
+        "name": "2nd House",
+        "relative_path": "Houses/2nd House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/2nd House.md"
+      },
+      {
+        "name": "3rd House",
+        "relative_path": "Houses/3rd House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/3rd House.md"
+      },
+      {
+        "name": "4th House",
+        "relative_path": "Houses/4th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/4th House.md"
+      },
+      {
+        "name": "5th House",
+        "relative_path": "Houses/5th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/5th House.md"
+      },
+      {
+        "name": "6th House",
+        "relative_path": "Houses/6th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/6th House.md"
+      },
+      {
+        "name": "7th House",
+        "relative_path": "Houses/7th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/7th House.md"
+      },
+      {
+        "name": "8th House",
+        "relative_path": "Houses/8th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/8th House.md"
+      },
+      {
+        "name": "9th House",
+        "relative_path": "Houses/9th House.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Houses/9th House.md"
+      }
+    ]
+  },
+  "Signs": {
+    "_files": [
+      {
+        "name": "Aquarius",
+        "relative_path": "Signs/Aquarius.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Aquarius.md"
+      },
+      {
+        "name": "Aries",
+        "relative_path": "Signs/Aries.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Aries.md"
+      },
+      {
+        "name": "Cancer",
+        "relative_path": "Signs/Cancer.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Cancer.md"
+      },
+      {
+        "name": "Capricorn",
+        "relative_path": "Signs/Capricorn.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Capricorn.md"
+      },
+      {
+        "name": "Gemini",
+        "relative_path": "Signs/Gemini.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Gemini.md"
+      },
+      {
+        "name": "Leo",
+        "relative_path": "Signs/Leo.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Leo.md"
+      },
+      {
+        "name": "Libra",
+        "relative_path": "Signs/Libra.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Libra.md"
+      },
+      {
+        "name": "Pisces",
+        "relative_path": "Signs/Pisces.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Pisces.md"
+      },
+      {
+        "name": "Sagittarius",
+        "relative_path": "Signs/Sagittarius.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Sagittarius.md"
+      },
+      {
+        "name": "Scorpio",
+        "relative_path": "Signs/Scorpio.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Scorpio.md"
+      },
+      {
+        "name": "Taurus",
+        "relative_path": "Signs/Taurus.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Taurus.md"
+      },
+      {
+        "name": "Virgo",
+        "relative_path": "Signs/Virgo.md",
+        "source_file": "/mnt/storage/Obsidian/My Obsidian Vault/Astrology-Arith-m-etic/Building Blocks/Signs/Virgo.md"
+      }
+    ]
+  }
+}

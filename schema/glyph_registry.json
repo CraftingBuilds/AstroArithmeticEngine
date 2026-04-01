@@ -1,0 +1,335 @@
+{
+  "Sun": {
+    "canonical_name": "Sun",
+    "display_name": "Sun",
+    "glyph": "☉",
+    "glyph_class": "standard_unicode",
+    "shortcode": "SUN"
+  },
+  "Moon": {
+    "canonical_name": "Moon",
+    "display_name": "Moon",
+    "glyph": "☽",
+    "glyph_class": "standard_unicode",
+    "shortcode": "MON"
+  },
+  "Mercury": {
+    "canonical_name": "Mercury",
+    "display_name": "Mercury",
+    "glyph": "☿",
+    "glyph_class": "standard_unicode",
+    "shortcode": "MER"
+  },
+  "Venus": {
+    "canonical_name": "Venus",
+    "display_name": "Venus",
+    "glyph": "♀",
+    "glyph_class": "standard_unicode",
+    "shortcode": "VEN"
+  },
+  "Earth": {
+    "canonical_name": "Earth",
+    "display_name": "Earth",
+    "glyph": "♁",
+    "glyph_class": "standard_unicode",
+    "shortcode": "EAR"
+  },
+  "Mars": {
+    "canonical_name": "Mars",
+    "display_name": "Mars",
+    "glyph": "♂",
+    "glyph_class": "standard_unicode",
+    "shortcode": "MAR"
+  },
+  "Jupiter": {
+    "canonical_name": "Jupiter",
+    "display_name": "Jupiter",
+    "glyph": "♃",
+    "glyph_class": "standard_unicode",
+    "shortcode": "JUP"
+  },
+  "Saturn": {
+    "canonical_name": "Saturn",
+    "display_name": "Saturn",
+    "glyph": "♄",
+    "glyph_class": "standard_unicode",
+    "shortcode": "SAT"
+  },
+  "Uranus": {
+    "canonical_name": "Uranus",
+    "display_name": "Uranus",
+    "glyph": "♅",
+    "glyph_class": "standard_unicode",
+    "shortcode": "URA"
+  },
+  "Neptune": {
+    "canonical_name": "Neptune",
+    "display_name": "Neptune",
+    "glyph": "♆",
+    "glyph_class": "standard_unicode",
+    "shortcode": "NEP"
+  },
+  "Pluto": {
+    "canonical_name": "Pluto",
+    "display_name": "Pluto",
+    "glyph": "♇",
+    "glyph_class": "standard_unicode",
+    "shortcode": "PLU"
+  },
+
+  "North Node": {
+    "canonical_name": "North Node",
+    "display_name": "North Node",
+    "glyph": "☊",
+    "glyph_class": "standard_unicode",
+    "shortcode": "NNO"
+  },
+  "South Node": {
+    "canonical_name": "South Node",
+    "display_name": "South Node",
+    "glyph": "☋",
+    "glyph_class": "standard_unicode",
+    "shortcode": "SNO"
+  },
+
+  "Ascendant": {
+    "canonical_name": "Ascendant",
+    "display_name": "Ascendant",
+    "glyph": "ASC",
+    "glyph_class": "shortcode",
+    "shortcode": "ASC"
+  },
+  "Descendant": {
+    "canonical_name": "Descendant",
+    "display_name": "Descendant",
+    "glyph": "DSC",
+    "glyph_class": "shortcode",
+    "shortcode": "DSC"
+  },
+  "Midheaven": {
+    "canonical_name": "Midheaven",
+    "display_name": "Midheaven",
+    "glyph": "MC",
+    "glyph_class": "shortcode",
+    "shortcode": "MC"
+  },
+  "Imum Coeli": {
+    "canonical_name": "Imum Coeli",
+    "display_name": "Imum Coeli",
+    "glyph": "IC",
+    "glyph_class": "shortcode",
+    "shortcode": "IC"
+  },
+  "Vertex": {
+    "canonical_name": "Vertex",
+    "display_name": "Vertex",
+    "glyph": "VTX",
+    "glyph_class": "shortcode",
+    "shortcode": "VTX"
+  },
+  "Anti-Vertex": {
+    "canonical_name": "Anti-Vertex",
+    "display_name": "Anti-Vertex",
+    "glyph": "AVX",
+    "glyph_class": "shortcode",
+    "shortcode": "AVX"
+  },
+  "Part of Fortune": {
+    "canonical_name": "Part of Fortune",
+    "display_name": "Part of Fortune",
+    "glyph": "POF",
+    "glyph_class": "shortcode",
+    "shortcode": "POF"
+  },
+  "Part of Spirit": {
+    "canonical_name": "Part of Spirit",
+    "display_name": "Part of Spirit",
+    "glyph": "POS",
+    "glyph_class": "shortcode",
+    "shortcode": "POS"
+  },
+  "Black Moon": {
+    "canonical_name": "Black Moon",
+    "display_name": "Black Moon",
+    "glyph": "BMO",
+    "glyph_class": "shortcode",
+    "shortcode": "BMO"
+  },
+  "Lilith": {
+    "canonical_name": "Lilith",
+    "display_name": "Lilith",
+    "glyph": "LIL",
+    "glyph_class": "shortcode",
+    "shortcode": "LIL"
+  },
+  "Black Moon Lilith": {
+    "canonical_name": "Black Moon Lilith",
+    "display_name": "Black Moon Lilith",
+    "glyph": "BML",
+    "glyph_class": "shortcode",
+    "shortcode": "BML"
+  },
+
+  "Ceres": {
+    "canonical_name": "Ceres",
+    "display_name": "Ceres",
+    "glyph": "⚳",
+    "glyph_class": "standard_unicode",
+    "shortcode": "CER"
+  },
+  "Pallas": {
+    "canonical_name": "Pallas",
+    "display_name": "Pallas",
+    "glyph": "PAL",
+    "glyph_class": "shortcode",
+    "shortcode": "PAL"
+  },
+  "Juno": {
+    "canonical_name": "Juno",
+    "display_name": "Juno",
+    "glyph": "JUN",
+    "glyph_class": "shortcode",
+    "shortcode": "JUN"
+  },
+  "Vesta": {
+    "canonical_name": "Vesta",
+    "display_name": "Vesta",
+    "glyph": "VES",
+    "glyph_class": "shortcode",
+    "shortcode": "VES"
+  },
+  "Hygiea": {
+    "canonical_name": "Hygiea",
+    "display_name": "Hygiea",
+    "glyph": "HYG",
+    "glyph_class": "shortcode",
+    "shortcode": "HYG"
+  },
+  "Chiron": {
+    "canonical_name": "Chiron",
+    "display_name": "Chiron",
+    "glyph": "CHI",
+    "glyph_class": "shortcode",
+    "shortcode": "CHI"
+  },
+  "Eris": {
+    "canonical_name": "Eris",
+    "display_name": "Eris",
+    "glyph": "⚴",
+    "glyph_class": "standard_unicode",
+    "shortcode": "ERI"
+  },
+  "Haumea": {
+    "canonical_name": "Haumea",
+    "display_name": "Haumea",
+    "glyph": "⚶",
+    "glyph_class": "standard_unicode",
+    "shortcode": "HAU"
+  },
+  "Makemake": {
+    "canonical_name": "Makemake",
+    "display_name": "Makemake",
+    "glyph": "⚵",
+    "glyph_class": "standard_unicode",
+    "shortcode": "MAK"
+  },
+  "Asbolus": {
+    "canonical_name": "Asbolus",
+    "display_name": "Asbolus",
+    "glyph": "ASB",
+    "glyph_class": "shortcode",
+    "shortcode": "ASB"
+  },
+  "Icarus": {
+    "canonical_name": "Icarus",
+    "display_name": "Icarus",
+    "glyph": "ICA",
+    "glyph_class": "shortcode",
+    "shortcode": "ICA"
+  },
+
+  "Aries": {
+    "canonical_name": "Aries",
+    "display_name": "Aries",
+    "glyph": "♈",
+    "glyph_class": "standard_unicode",
+    "shortcode": "ARI"
+  },
+  "Taurus": {
+    "canonical_name": "Taurus",
+    "display_name": "Taurus",
+    "glyph": "♉",
+    "glyph_class": "standard_unicode",
+    "shortcode": "TAU"
+  },
+  "Gemini": {
+    "canonical_name": "Gemini",
+    "display_name": "Gemini",
+    "glyph": "♊",
+    "glyph_class": "standard_unicode",
+    "shortcode": "GEM"
+  },
+  "Cancer": {
+    "canonical_name": "Cancer",
+    "display_name": "Cancer",
+    "glyph": "♋",
+    "glyph_class": "standard_unicode",
+    "shortcode": "CAN"
+  },
+  "Leo": {
+    "canonical_name": "Leo",
+    "display_name": "Leo",
+    "glyph": "♌",
+    "glyph_class": "standard_unicode",
+    "shortcode": "LEO"
+  },
+  "Virgo": {
+    "canonical_name": "Virgo",
+    "display_name": "Virgo",
+    "glyph": "♍",
+    "glyph_class": "standard_unicode",
+    "shortcode": "VIR"
+  },
+  "Libra": {
+    "canonical_name": "Libra",
+    "display_name": "Libra",
+    "glyph": "♎",
+    "glyph_class": "standard_unicode",
+    "shortcode": "LIB"
+  },
+  "Scorpio": {
+    "canonical_name": "Scorpio",
+    "display_name": "Scorpio",
+    "glyph": "♏",
+    "glyph_class": "standard_unicode",
+    "shortcode": "SCO"
+  },
+  "Sagittarius": {
+    "canonical_name": "Sagittarius",
+    "display_name": "Sagittarius",
+    "glyph": "♐",
+    "glyph_class": "standard_unicode",
+    "shortcode": "SAG"
+  },
+  "Capricorn": {
+    "canonical_name": "Capricorn",
+    "display_name": "Capricorn",
+    "glyph": "♑",
+    "glyph_class": "standard_unicode",
+    "shortcode": "CAP"
+  },
+  "Aquarius": {
+    "canonical_name": "Aquarius",
+    "display_name": "Aquarius",
+    "glyph": "♒",
+    "glyph_class": "standard_unicode",
+    "shortcode": "AQU"
+  },
+  "Pisces": {
+    "canonical_name": "Pisces",
+    "display_name": "Pisces",
+    "glyph": "♓",
+    "glyph_class": "standard_unicode",
+    "shortcode": "PIS"
+  }
+}

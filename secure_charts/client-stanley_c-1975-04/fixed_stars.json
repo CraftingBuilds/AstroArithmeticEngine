@@ -1,0 +1,146 @@
+[
+  {
+    "body": "Sun",
+    "star": "Alpheratz",
+    "constellation": "alf And",
+    "orb": "0N 01'"
+  },
+  {
+    "body": "Mars",
+    "star": "Sadalsuud",
+    "constellation": "bet Aqr",
+    "orb": "1N 18'"
+  },
+  {
+    "body": "Mars",
+    "star": "Deneb Algedi",
+    "constellation": "del Cap",
+    "orb": "1N 09'"
+  },
+  {
+    "body": "Jupiter",
+    "star": "Difda",
+    "constellation": "bet Cet",
+    "orb": "1N 48'"
+  },
+  {
+    "body": "Saturn",
+    "star": "Sirius",
+    "constellation": "alf CMa",
+    "orb": "1N 24'"
+  },
+  {
+    "body": "Saturn",
+    "star": "Canopus",
+    "constellation": "alf Car",
+    "orb": "2N 16'"
+  },
+  {
+    "body": "Neptune",
+    "star": "Rastaban",
+    "constellation": "bet Dra",
+    "orb": "0N 02'"
+  },
+  {
+    "body": "Neptune",
+    "star": "Antares",
+    "constellation": "alf Sco",
+    "orb": "2N 15'"
+  },
+  {
+    "body": "Pluto",
+    "star": "Vindemiatrix",
+    "constellation": "eps Vir",
+    "orb": "1N 53'"
+  },
+  {
+    "body": "Eris",
+    "star": "Alpheratz",
+    "constellation": "alf And",
+    "orb": "0N 38'"
+  },
+  {
+    "body": "Pallas",
+    "star": "Achernar",
+    "constellation": "alf Eri",
+    "orb": "1N 03'"
+  },
+  {
+    "body": "Icarus",
+    "star": "Dorsum",
+    "constellation": "tet Cap",
+    "orb": "0N 15'"
+  },
+  {
+    "body": "Icarus",
+    "star": "Armus",
+    "constellation": "eta Cap",
+    "orb": "0N 51'"
+  },
+  {
+    "body": "North Node",
+    "star": "Graffias",
+    "constellation": "bet01 Sco",
+    "orb": "0N 41'"
+  },
+  {
+    "body": "North Node",
+    "star": "Yed Prior",
+    "constellation": "del Oph",
+    "orb": "0N 13'"
+  },
+  {
+    "body": "North Node",
+    "star": "Dschubbha",
+    "constellation": "del Sco",
+    "orb": "0N 04'"
+  },
+  {
+    "body": "North Node",
+    "star": "Bungula",
+    "constellation": "alf Cen A",
+    "orb": "3N 00'"
+  },
+  {
+    "body": "Black Moon",
+    "star": "Deneb Adige",
+    "constellation": "alf Cyg",
+    "orb": "1N 30'"
+  },
+  {
+    "body": "Black Moon",
+    "star": "Fomalhaut",
+    "constellation": "alf PsA",
+    "orb": "2N 59'"
+  },
+  {
+    "body": "Ascendant",
+    "star": "Kaus Borealis",
+    "constellation": "lam Sgr",
+    "orb": "1N 10'"
+  },
+  {
+    "body": "Ascendant",
+    "star": "Facies",
+    "constellation": "M22",
+    "orb": "0N 57'"
+  },
+  {
+    "body": "Descendant",
+    "star": "Alhena",
+    "constellation": "gam Gem",
+    "orb": "1N 37'"
+  },
+  {
+    "body": "Imum Coeli",
+    "star": "Hamal",
+    "constellation": "alf Ari",
+    "orb": "0N 58'"
+  },
+  {
+    "body": "Imum Coeli",
+    "star": "Schedar",
+    "constellation": "alf Cas",
+    "orb": "0N 50'"
+  }
+]

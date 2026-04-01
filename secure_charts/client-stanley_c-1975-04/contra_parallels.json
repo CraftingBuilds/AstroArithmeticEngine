@@ -1,0 +1,58 @@
+[
+  {
+    "body_a": "Moon",
+    "body_b": "Venus",
+    "dec_a": "17S 22'",
+    "dec_b": "18N 09'",
+    "orb": "0N 47'"
+  },
+  {
+    "body_a": "Mercury",
+    "body_b": "Pallas",
+    "dec_a": "2S 06'",
+    "dec_b": "2N 44'",
+    "orb": "0N 37'"
+  },
+  {
+    "body_a": "Mars",
+    "body_b": "Imum Coeli",
+    "dec_a": "14S 36'",
+    "dec_b": "14N 16'",
+    "orb": "0N 20'"
+  },
+  {
+    "body_a": "Saturn",
+    "body_b": "Ascendant",
+    "dec_a": "22N 40'",
+    "dec_b": "23S 15'",
+    "orb": "0N 35'"
+  },
+  {
+    "body_a": "Neptune",
+    "body_b": "South Node",
+    "dec_a": "20S 37'",
+    "dec_b": "20N 36'",
+    "orb": "0N 01'"
+  },
+  {
+    "body_a": "Pluto",
+    "body_b": "Eris",
+    "dec_a": "12N 51'",
+    "dec_b": "13S 05'",
+    "orb": "0N 14'"
+  },
+  {
+    "body_a": "Vesta",
+    "body_b": "Imum Coeli",
+    "dec_a": "14S 48'",
+    "dec_b": "14N 16'",
+    "orb": "0N 32'"
+  },
+  {
+    "body_a": "Hygiea",
+    "body_b": "Icarus",
+    "dec_a": "18N 57'",
+    "dec_b": "19S 13'",
+    "orb": "0N 17'"
+  }
+]

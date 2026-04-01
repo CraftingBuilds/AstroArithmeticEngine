@@ -1,26 +1,3 @@
-## 2. Define the Unified Chart Schema
-- [x] Create one master chart-data schema that all inputs must resolve into
-- [x] Include chart metadata
-- [x] Include tropical zodiac data
-- [x] Include sidereal zodiac data
-- [x] Include heliocentric tropical data
-- [x] Include heliocentric sidereal data
-- [x] Include houses (tropical and sidereal)
-- [x] Include rulers of houses (tropical and sidereal)
-- [x] Include dignities (tropical and sidereal)
-- [x] Include triplicities / elements (tropical and sidereal)
-- [x] Include quadruplicities (tropical and sidereal)
-- [x] Include mutual receptions (tropical and sidereal)
-- [x] Include fixed star conjunctions
-- [x] Include parallels
-- [x] Include contra-parallels
-- [x] Include aspects
-- [x] Include raw-source text backup
-- [x] Include notes / parser warnings / unresolved values
-
-### Unified Chart Schema — Master Structure
-
-```json
 {
   "chart_id": "client-stanley_c-1975-04",
   "chart_folder": "/mnt/storage/AstroArithmeticEngine/secure_charts/client-stanley_c-1975-04",

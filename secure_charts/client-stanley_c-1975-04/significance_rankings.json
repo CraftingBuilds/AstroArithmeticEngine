@@ -296,220 +296,13 @@
   "aspects_ranked": [
     {
       "type": "aspect",
-      "body_a": "North Node",
-      "aspect_name": "Biquintile",
-      "body_b": "Descendant",
-      "orb": "1º 02'",
-      "score": 9,
-      "reasons": [
-        "involves angle",
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "South Node",
-      "aspect_name": "Biquintile",
-      "body_b": "Ascendant",
-      "orb": "1º 02'",
-      "score": 9,
-      "reasons": [
-        "involves angle",
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ascendant",
-      "aspect_name": "Biquintile",
-      "body_b": "South Node",
-      "orb": "1º 02'",
-      "score": 9,
-      "reasons": [
-        "involves angle",
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Descendant",
-      "aspect_name": "Biquintile",
-      "body_b": "North Node",
-      "orb": "1º 02'",
-      "score": 9,
-      "reasons": [
-        "involves angle",
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Moon",
-      "aspect_name": "Semisextile",
-      "body_b": "Mars",
-      "orb": "0º 33'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Moon",
-      "aspect_name": "Square",
-      "body_b": "Chiron",
-      "orb": "0º 27'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Moon",
-      "aspect_name": "Inconjunction",
-      "body_b": "Lilith",
-      "orb": "0º 37'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
       "body_a": "Sun",
       "aspect_name": "Conjunction",
       "body_b": "Eris",
       "orb": "0º 40'",
-      "score": 8,
+      "score": 14,
       "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Sun",
-      "aspect_name": "Semisextile",
-      "body_b": "Pallas",
-      "orb": "0º 04'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Sun",
-      "aspect_name": "Sextile",
-      "body_b": "Icarus",
-      "orb": "0º 45'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mars",
-      "aspect_name": "Semisextile",
-      "body_b": "Moon",
-      "orb": "0º 33'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pluto",
-      "aspect_name": "Square",
-      "body_b": "Ascendant",
-      "orb": "0º 35'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pluto",
-      "aspect_name": "Square",
-      "body_b": "Descendant",
-      "orb": "0º 35'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pluto",
-      "aspect_name": "Semisextile",
-      "body_b": "Midheaven",
-      "orb": "0º 33'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pluto",
-      "aspect_name": "Inconjunction",
-      "body_b": "Imum Coeli",
-      "orb": "0º 33'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Black Moon",
-      "aspect_name": "Sextile",
-      "body_b": "Ascendant",
-      "orb": "0º 39'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Black Moon",
-      "aspect_name": "Trine",
-      "body_b": "Descendant",
-      "orb": "0º 39'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Chiron",
-      "aspect_name": "Square",
-      "body_b": "Moon",
-      "orb": "0º 27'",
-      "score": 8,
-      "reasons": [
+        "aspect class (Conjunction)",
         "involves luminary",
         "very tight orb (<1°)"
       ]
@@ -520,21 +313,386 @@
       "aspect_name": "Conjunction",
       "body_b": "Sun",
       "orb": "0º 40'",
-      "score": 8,
+      "score": 14,
       "reasons": [
+        "aspect class (Conjunction)",
         "involves luminary",
         "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Semisextile",
-      "body_b": "Sun",
-      "orb": "0º 04'",
-      "score": 8,
+      "body_a": "Moon",
+      "aspect_name": "Square",
+      "body_b": "Chiron",
+      "orb": "0º 27'",
+      "score": 13,
       "reasons": [
+        "aspect class (Square)",
         "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pluto",
+      "aspect_name": "Square",
+      "body_b": "Ascendant",
+      "orb": "0º 35'",
+      "score": 13,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pluto",
+      "aspect_name": "Square",
+      "body_b": "Descendant",
+      "orb": "0º 35'",
+      "score": 13,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Chiron",
+      "aspect_name": "Square",
+      "body_b": "Moon",
+      "orb": "0º 27'",
+      "score": 13,
+      "reasons": [
+        "aspect class (Square)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ascendant",
+      "aspect_name": "Square",
+      "body_b": "Pluto",
+      "orb": "0º 35'",
+      "score": 13,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Descendant",
+      "aspect_name": "Square",
+      "body_b": "Pluto",
+      "orb": "0º 35'",
+      "score": 13,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Sun",
+      "aspect_name": "Square",
+      "body_b": "Saturn",
+      "orb": "1º 38'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Square)",
+        "involves luminary",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Sun",
+      "aspect_name": "Sextile",
+      "body_b": "Icarus",
+      "orb": "0º 45'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Saturn",
+      "aspect_name": "Square",
+      "body_b": "Sun",
+      "orb": "1º 38'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Square)",
+        "involves luminary",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Black Moon",
+      "aspect_name": "Sextile",
+      "body_b": "Ascendant",
+      "orb": "0º 39'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Black Moon",
+      "aspect_name": "Trine",
+      "body_b": "Descendant",
+      "orb": "0º 39'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Sextile",
+      "body_b": "Sun",
+      "orb": "0º 45'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ascendant",
+      "aspect_name": "Sextile",
+      "body_b": "Black Moon",
+      "orb": "0º 39'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Descendant",
+      "aspect_name": "Trine",
+      "body_b": "Black Moon",
+      "orb": "0º 39'",
+      "score": 12,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Black Moon",
+      "aspect_name": "Trine",
+      "body_b": "Midheaven",
+      "orb": "1º 47'",
+      "score": 11,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Black Moon",
+      "aspect_name": "Sextile",
+      "body_b": "Imum Coeli",
+      "orb": "1º 47'",
+      "score": 11,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Midheaven",
+      "aspect_name": "Trine",
+      "body_b": "Black Moon",
+      "orb": "1º 47'",
+      "score": 11,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Imum Coeli",
+      "aspect_name": "Sextile",
+      "body_b": "Black Moon",
+      "orb": "1º 47'",
+      "score": 11,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Moon",
+      "aspect_name": "Inconjunction",
+      "body_b": "Lilith",
+      "orb": "0º 37'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Inconjunction)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Venus",
+      "aspect_name": "Square",
+      "body_b": "Vertex",
+      "orb": "0º 37'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Square)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Trine",
+      "body_b": "North Node",
+      "orb": "1º 51'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Sextile",
+      "body_b": "South Node",
+      "orb": "1º 51'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Saturn",
+      "aspect_name": "Square",
+      "body_b": "Eris",
+      "orb": "0º 58'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Square)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pluto",
+      "aspect_name": "Inconjunction",
+      "body_b": "Imum Coeli",
+      "orb": "0º 33'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Inconjunction)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "North Node",
+      "aspect_name": "Trine",
+      "body_b": "Jupiter",
+      "orb": "1º 51'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "North Node",
+      "aspect_name": "Biquintile",
+      "body_b": "Descendant",
+      "orb": "1º 02'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "involves angle",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "South Node",
+      "aspect_name": "Sextile",
+      "body_b": "Jupiter",
+      "orb": "1º 51'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "South Node",
+      "aspect_name": "Biquintile",
+      "body_b": "Ascendant",
+      "orb": "1º 02'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "involves angle",
+        "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Eris",
+      "aspect_name": "Square",
+      "body_b": "Saturn",
+      "orb": "0º 58'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Square)",
         "very tight orb (<1°)"
       ]
     },
@@ -544,8 +702,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Imum Coeli",
       "orb": "0º 19'",
-      "score": 8,
+      "score": 10,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
         "very tight orb (<1°)"
       ]
@@ -556,106 +715,39 @@
       "aspect_name": "Inconjunction",
       "body_b": "Moon",
       "orb": "0º 37'",
-      "score": 8,
+      "score": 10,
       "reasons": [
+        "aspect class (Inconjunction)",
         "involves luminary",
         "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Sextile",
-      "body_b": "Sun",
-      "orb": "0º 45'",
-      "score": 8,
-      "reasons": [
-        "involves luminary",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
+      "body_a": "Ascendant",
       "aspect_name": "Biquintile",
-      "body_b": "Descendant",
-      "orb": "0º 06'",
-      "score": 8,
+      "body_b": "South Node",
+      "orb": "1º 02'",
+      "score": 10,
       "reasons": [
+        "aspect class (Biquintile)",
         "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ascendant",
-      "aspect_name": "Square",
-      "body_b": "Pluto",
-      "orb": "0º 35'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ascendant",
-      "aspect_name": "Sextile",
-      "body_b": "Black Moon",
-      "orb": "0º 39'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Descendant",
-      "aspect_name": "Square",
-      "body_b": "Pluto",
-      "orb": "0º 35'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Descendant",
-      "aspect_name": "Trine",
-      "body_b": "Black Moon",
-      "orb": "0º 39'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
+        "involves node",
+        "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Descendant",
       "aspect_name": "Biquintile",
-      "body_b": "Icarus",
-      "orb": "0º 06'",
-      "score": 8,
+      "body_b": "North Node",
+      "orb": "1º 02'",
+      "score": 10,
       "reasons": [
+        "aspect class (Biquintile)",
         "involves angle",
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Midheaven",
-      "aspect_name": "Semisextile",
-      "body_b": "Pluto",
-      "orb": "0º 33'",
-      "score": 8,
-      "reasons": [
-        "involves angle",
-        "very tight orb (<1°)"
+        "involves node",
+        "tight orb (<2°)"
       ]
     },
     {
@@ -664,8 +756,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Pluto",
       "orb": "0º 33'",
-      "score": 8,
+      "score": 10,
       "reasons": [
+        "aspect class (Inconjunction)",
         "involves angle",
         "very tight orb (<1°)"
       ]
@@ -676,9 +769,35 @@
       "aspect_name": "Quincunx",
       "body_b": "Vesta",
       "orb": "0º 19'",
-      "score": 8,
+      "score": 10,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vertex",
+      "aspect_name": "Square",
+      "body_b": "Venus",
+      "orb": "0º 37'",
+      "score": 10,
+      "reasons": [
+        "aspect class (Square)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Moon",
+      "aspect_name": "Semisextile",
+      "body_b": "Mars",
+      "orb": "0º 33'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves luminary",
         "very tight orb (<1°)"
       ]
     },
@@ -688,8 +807,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Jupiter",
       "orb": "1º 46'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves luminary",
         "tight orb (<2°)"
       ]
@@ -697,13 +817,52 @@
     {
       "type": "aspect",
       "body_a": "Sun",
-      "aspect_name": "Square",
-      "body_b": "Saturn",
-      "orb": "1º 38'",
-      "score": 7,
+      "aspect_name": "Trine",
+      "body_b": "Neptune",
+      "orb": "2º 19'",
+      "score": 9,
       "reasons": [
+        "aspect class (Trine)",
         "involves luminary",
-        "tight orb (<2°)"
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Sun",
+      "aspect_name": "Conjunction",
+      "body_b": "Ceres",
+      "orb": "3º 53'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "involves luminary"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Sun",
+      "aspect_name": "Semisextile",
+      "body_b": "Pallas",
+      "orb": "0º 04'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mars",
+      "aspect_name": "Semisextile",
+      "body_b": "Moon",
+      "orb": "0º 33'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves luminary",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -712,9 +871,22 @@
       "aspect_name": "Quincunx",
       "body_b": "Imum Coeli",
       "orb": "1º 55'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mars",
+      "aspect_name": "Opposition",
+      "body_b": "Lilith",
+      "orb": "1º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Opposition)",
         "tight orb (<2°)"
       ]
     },
@@ -724,34 +896,49 @@
       "aspect_name": "Quincunx",
       "body_b": "Moon",
       "orb": "1º 46'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves luminary",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Biquintile",
-      "body_b": "Midheaven",
-      "orb": "1º 45'",
-      "score": 7,
-      "reasons": [
-        "involves angle",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Saturn",
-      "aspect_name": "Square",
-      "body_b": "Sun",
-      "orb": "1º 38'",
-      "score": 7,
+      "aspect_name": "Sextile",
+      "body_b": "Juno",
+      "orb": "0º 46'",
+      "score": 9,
       "reasons": [
+        "aspect class (Sextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Neptune",
+      "aspect_name": "Trine",
+      "body_b": "Sun",
+      "orb": "2º 19'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Trine)",
         "involves luminary",
-        "tight orb (<2°)"
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pluto",
+      "aspect_name": "Semisextile",
+      "body_b": "Midheaven",
+      "orb": "0º 33'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves angle",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -760,8 +947,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Ceres",
       "orb": "0º 41'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "involves node",
         "very tight orb (<1°)"
       ]
@@ -772,8 +960,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Icarus",
       "orb": "0º 56'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves node",
         "very tight orb (<1°)"
       ]
@@ -784,34 +973,11 @@
       "aspect_name": "Semisquare",
       "body_b": "Ceres",
       "orb": "0º 41'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves node",
         "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Black Moon",
-      "aspect_name": "Trine",
-      "body_b": "Midheaven",
-      "orb": "1º 47'",
-      "score": 7,
-      "reasons": [
-        "involves angle",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Black Moon",
-      "aspect_name": "Sextile",
-      "body_b": "Imum Coeli",
-      "orb": "1º 47'",
-      "score": 7,
-      "reasons": [
-        "involves angle",
-        "tight orb (<2°)"
       ]
     },
     {
@@ -820,10 +986,47 @@
       "aspect_name": "Quincunx",
       "body_b": "Descendant",
       "orb": "1º 47'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Chiron",
+      "aspect_name": "Trine",
+      "body_b": "Lilith",
+      "orb": "0º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Trine)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Eris",
+      "aspect_name": "Sextile",
+      "body_b": "Icarus",
+      "orb": "0º 05'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Sextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ceres",
+      "aspect_name": "Conjunction",
+      "body_b": "Sun",
+      "orb": "3º 53'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "involves luminary"
       ]
     },
     {
@@ -832,8 +1035,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "North Node",
       "orb": "0º 41'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "involves node",
         "very tight orb (<1°)"
       ]
@@ -844,10 +1048,96 @@
       "aspect_name": "Semisquare",
       "body_b": "South Node",
       "orb": "0º 41'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves node",
         "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ceres",
+      "aspect_name": "Trine",
+      "body_b": "Vertex",
+      "orb": "0º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Trine)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pallas",
+      "aspect_name": "Semisextile",
+      "body_b": "Sun",
+      "orb": "0º 04'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves luminary",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Sextile",
+      "body_b": "Saturn",
+      "orb": "0º 46'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Sextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Conjunction",
+      "body_b": "Imum Coeli",
+      "orb": "3º 19'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Square",
+      "body_b": "Icarus",
+      "orb": "1º 39'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Square)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Hygiea",
+      "aspect_name": "Square",
+      "body_b": "Vertex",
+      "orb": "1º 45'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Square)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Lilith",
+      "aspect_name": "Opposition",
+      "body_b": "Mars",
+      "orb": "1º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Opposition)",
+        "tight orb (<2°)"
       ]
     },
     {
@@ -856,8 +1146,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Ascendant",
       "orb": "1º 03'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "involves angle",
         "tight orb (<2°)"
       ]
@@ -868,10 +1159,23 @@
       "aspect_name": "Semisquare",
       "body_b": "Descendant",
       "orb": "1º 03'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves angle",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Lilith",
+      "aspect_name": "Trine",
+      "body_b": "Chiron",
+      "orb": "0º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Trine)",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -880,10 +1184,48 @@
       "aspect_name": "Quincunx",
       "body_b": "North Node",
       "orb": "0º 56'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves node",
         "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Biquintile",
+      "body_b": "Descendant",
+      "orb": "0º 06'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "involves angle",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Sextile",
+      "body_b": "Eris",
+      "orb": "0º 05'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Sextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Square",
+      "body_b": "Juno",
+      "orb": "1º 39'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Square)",
+        "tight orb (<2°)"
       ]
     },
     {
@@ -892,8 +1234,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Lilith",
       "orb": "1º 03'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "involves angle",
         "tight orb (<2°)"
       ]
@@ -904,8 +1247,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Chiron",
       "orb": "1º 47'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
         "tight orb (<2°)"
       ]
@@ -916,34 +1260,37 @@
       "aspect_name": "Semisquare",
       "body_b": "Lilith",
       "orb": "1º 03'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves angle",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Midheaven",
+      "body_a": "Descendant",
       "aspect_name": "Biquintile",
-      "body_b": "Jupiter",
-      "orb": "1º 45'",
-      "score": 7,
+      "body_b": "Icarus",
+      "orb": "0º 06'",
+      "score": 9,
       "reasons": [
+        "aspect class (Biquintile)",
         "involves angle",
-        "tight orb (<2°)"
+        "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Midheaven",
-      "aspect_name": "Trine",
-      "body_b": "Black Moon",
-      "orb": "1º 47'",
-      "score": 7,
+      "aspect_name": "Semisextile",
+      "body_b": "Pluto",
+      "orb": "0º 33'",
+      "score": 9,
       "reasons": [
+        "aspect class (Semisextile)",
         "involves angle",
-        "tight orb (<2°)"
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -952,8 +1299,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Mars",
       "orb": "1º 55'",
-      "score": 7,
+      "score": 9,
       "reasons": [
+        "aspect class (Quincunx)",
         "involves angle",
         "tight orb (<2°)"
       ]
@@ -961,48 +1309,159 @@
     {
       "type": "aspect",
       "body_a": "Imum Coeli",
-      "aspect_name": "Sextile",
-      "body_b": "Black Moon",
-      "orb": "1º 47'",
-      "score": 7,
+      "aspect_name": "Conjunction",
+      "body_b": "Juno",
+      "orb": "3º 19'",
+      "score": 9,
       "reasons": [
+        "aspect class (Conjunction)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vertex",
+      "aspect_name": "Trine",
+      "body_b": "Ceres",
+      "orb": "0º 10'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Trine)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vertex",
+      "aspect_name": "Square",
+      "body_b": "Hygiea",
+      "orb": "1º 45'",
+      "score": 9,
+      "reasons": [
+        "aspect class (Square)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mercury",
+      "aspect_name": "Trine",
+      "body_b": "North Node",
+      "orb": "2º 24'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Trine)",
+        "involves node",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mercury",
+      "aspect_name": "Sextile",
+      "body_b": "South Node",
+      "orb": "2º 24'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves node",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mercury",
+      "aspect_name": "Conjunction",
+      "body_b": "Part of Fortune",
+      "orb": "2º 27'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Venus",
+      "aspect_name": "Conjunction",
+      "body_b": "Hygiea",
+      "orb": "2º 22'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mars",
+      "aspect_name": "Sextile",
+      "body_b": "Chiron",
+      "orb": "1º 00'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Sextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mars",
+      "aspect_name": "Conjunction",
+      "body_b": "Vesta",
+      "orb": "2º 14'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Square",
+      "body_b": "Ascendant",
+      "orb": "3º 07'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Square",
+      "body_b": "Descendant",
+      "orb": "3º 07'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Biquintile",
+      "body_b": "Midheaven",
+      "orb": "1º 45'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Biquintile)",
         "involves angle",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Jupiter",
+      "body_a": "Saturn",
       "aspect_name": "Trine",
-      "body_b": "North Node",
-      "orb": "1º 51'",
-      "score": 6,
+      "body_b": "Pallas",
+      "orb": "1º 34'",
+      "score": 8,
       "reasons": [
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Sextile",
-      "body_b": "South Node",
-      "orb": "1º 51'",
-      "score": 6,
-      "reasons": [
-        "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Uranus",
-      "aspect_name": "Semisextile",
-      "body_b": "North Node",
-      "orb": "1º 02'",
-      "score": 6,
-      "reasons": [
-        "involves node",
+        "aspect class (Trine)",
         "tight orb (<2°)"
       ]
     },
@@ -1012,9 +1471,34 @@
       "aspect_name": "Inconjunction",
       "body_b": "South Node",
       "orb": "1º 02'",
-      "score": 6,
+      "score": 8,
       "reasons": [
+        "aspect class (Inconjunction)",
         "involves node",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Neptune",
+      "aspect_name": "Trine",
+      "body_b": "Eris",
+      "orb": "1º 39'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Trine)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Neptune",
+      "aspect_name": "Sextile",
+      "body_b": "Icarus",
+      "orb": "1º 34'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Sextile)",
         "tight orb (<2°)"
       ]
     },
@@ -1022,36 +1506,26 @@
       "type": "aspect",
       "body_a": "North Node",
       "aspect_name": "Trine",
-      "body_b": "Jupiter",
-      "orb": "1º 51'",
-      "score": 6,
+      "body_b": "Mercury",
+      "orb": "2º 24'",
+      "score": 8,
       "reasons": [
+        "aspect class (Trine)",
         "involves node",
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "North Node",
-      "aspect_name": "Semisextile",
-      "body_b": "Uranus",
-      "orb": "1º 02'",
-      "score": 6,
-      "reasons": [
-        "involves node",
-        "tight orb (<2°)"
+        "moderate orb (<3°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "South Node",
       "aspect_name": "Sextile",
-      "body_b": "Jupiter",
-      "orb": "1º 51'",
-      "score": 6,
+      "body_b": "Mercury",
+      "orb": "2º 24'",
+      "score": 8,
       "reasons": [
+        "aspect class (Sextile)",
         "involves node",
-        "tight orb (<2°)"
+        "moderate orb (<3°)"
       ]
     },
     {
@@ -1060,10 +1534,144 @@
       "aspect_name": "Inconjunction",
       "body_b": "Uranus",
       "orb": "1º 02'",
-      "score": 6,
+      "score": 8,
       "reasons": [
+        "aspect class (Inconjunction)",
         "involves node",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Chiron",
+      "aspect_name": "Sextile",
+      "body_b": "Mars",
+      "orb": "1º 00'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Sextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Eris",
+      "aspect_name": "Trine",
+      "body_b": "Neptune",
+      "orb": "1º 39'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Trine)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pallas",
+      "aspect_name": "Trine",
+      "body_b": "Saturn",
+      "orb": "1º 34'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Trine)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Opposition",
+      "body_b": "Midheaven",
+      "orb": "3º 19'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Opposition)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vesta",
+      "aspect_name": "Conjunction",
+      "body_b": "Mars",
+      "orb": "2º 14'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Hygiea",
+      "aspect_name": "Conjunction",
+      "body_b": "Venus",
+      "orb": "2º 22'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Conjunction)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Sextile",
+      "body_b": "Neptune",
+      "orb": "1º 34'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Sextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ascendant",
+      "aspect_name": "Square",
+      "body_b": "Jupiter",
+      "orb": "3º 07'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Descendant",
+      "aspect_name": "Square",
+      "body_b": "Jupiter",
+      "orb": "3º 07'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Square)",
+        "involves angle"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Midheaven",
+      "aspect_name": "Biquintile",
+      "body_b": "Jupiter",
+      "orb": "1º 45'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "involves angle",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Midheaven",
+      "aspect_name": "Opposition",
+      "body_b": "Juno",
+      "orb": "3º 19'",
+      "score": 8,
+      "reasons": [
+        "aspect class (Opposition)",
+        "involves angle"
       ]
     },
     {
@@ -1072,22 +1680,35 @@
       "aspect_name": "Semisquare",
       "body_b": "Black Moon",
       "orb": "2º 19'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves luminary",
         "moderate orb (<3°)"
       ]
     },
     {
       "type": "aspect",
+      "body_a": "Moon",
+      "aspect_name": "Sextile",
+      "body_b": "Part of Fortune",
+      "orb": "3º 31'",
+      "score": 7,
+      "reasons": [
+        "aspect class (Sextile)",
+        "involves luminary"
+      ]
+    },
+    {
+      "type": "aspect",
       "body_a": "Sun",
       "aspect_name": "Trine",
-      "body_b": "Neptune",
-      "orb": "2º 19'",
-      "score": 5,
+      "body_b": "Vertex",
+      "orb": "4º 03'",
+      "score": 7,
       "reasons": [
-        "involves luminary",
-        "moderate orb (<3°)"
+        "aspect class (Trine)",
+        "involves luminary"
       ]
     },
     {
@@ -1096,21 +1717,11 @@
       "aspect_name": "Semisquare",
       "body_b": "Vesta",
       "orb": "2º 24'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves luminary",
         "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mercury",
-      "aspect_name": "Biquintile",
-      "body_b": "Lilith",
-      "orb": "0º 35'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
       ]
     },
     {
@@ -1119,8 +1730,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Jupiter",
       "orb": "0º 23'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
       ]
     },
@@ -1130,30 +1742,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Black Moon",
       "orb": "0º 10'",
-      "score": 5,
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Venus",
-      "aspect_name": "Square",
-      "body_b": "Vertex",
-      "orb": "0º 37'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Venus",
-      "aspect_name": "Semisextile",
-      "body_b": "Ceres",
-      "orb": "0º 47'",
-      "score": 5,
-      "reasons": [
+        "aspect class (Quincunx)",
         "very tight orb (<1°)"
       ]
     },
@@ -1163,8 +1754,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Neptune",
       "orb": "0º 41'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Quincunx)",
         "very tight orb (<1°)"
       ]
     },
@@ -1174,8 +1766,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Ascendant",
       "orb": "2º 13'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves angle",
         "moderate orb (<3°)"
       ]
@@ -1186,8 +1779,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Venus",
       "orb": "0º 23'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
       ]
     },
@@ -1197,30 +1791,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Neptune",
       "orb": "0º 41'",
-      "score": 5,
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Saturn",
-      "aspect_name": "Square",
-      "body_b": "Eris",
-      "orb": "0º 58'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Saturn",
-      "aspect_name": "Sextile",
-      "body_b": "Juno",
-      "orb": "0º 46'",
-      "score": 5,
-      "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
       ]
     },
@@ -1230,8 +1803,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Vesta",
       "orb": "0º 45'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "very tight orb (<1°)"
       ]
     },
@@ -1241,21 +1815,23 @@
       "aspect_name": "Inconjunction",
       "body_b": "Icarus",
       "orb": "0º 54'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Neptune",
-      "aspect_name": "Trine",
-      "body_b": "Sun",
-      "orb": "2º 19'",
-      "score": 5,
+      "body_a": "Uranus",
+      "aspect_name": "Semisextile",
+      "body_b": "North Node",
+      "orb": "1º 02'",
+      "score": 7,
       "reasons": [
-        "involves luminary",
-        "moderate orb (<3°)"
+        "aspect class (Semisextile)",
+        "involves node",
+        "tight orb (<2°)"
       ]
     },
     {
@@ -1264,8 +1840,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Mars",
       "orb": "0º 41'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Quincunx)",
         "very tight orb (<1°)"
       ]
     },
@@ -1275,9 +1852,22 @@
       "aspect_name": "Inconjunction",
       "body_b": "Saturn",
       "orb": "0º 41'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Neptune",
+      "aspect_name": "Square",
+      "body_b": "Pallas",
+      "orb": "2º 14'",
+      "score": 7,
+      "reasons": [
+        "aspect class (Square)",
+        "moderate orb (<3°)"
       ]
     },
     {
@@ -1286,8 +1876,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Juno",
       "orb": "0º 05'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
       ]
     },
@@ -1297,9 +1888,23 @@
       "aspect_name": "Semisquare",
       "body_b": "Lilith",
       "orb": "0º 28'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "North Node",
+      "aspect_name": "Semisextile",
+      "body_b": "Uranus",
+      "orb": "1º 02'",
+      "score": 7,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "involves node",
+        "tight orb (<2°)"
       ]
     },
     {
@@ -1308,8 +1913,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Moon",
       "orb": "2º 19'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves luminary",
         "moderate orb (<3°)"
       ]
@@ -1320,108 +1926,22 @@
       "aspect_name": "Quincunx",
       "body_b": "Venus",
       "orb": "0º 10'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Quincunx)",
         "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Chiron",
-      "aspect_name": "Trine",
-      "body_b": "Lilith",
-      "orb": "0º 10'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Eris",
+      "body_a": "Pallas",
       "aspect_name": "Square",
-      "body_b": "Saturn",
-      "orb": "0º 58'",
-      "score": 5,
+      "body_b": "Neptune",
+      "orb": "2º 14'",
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Eris",
-      "aspect_name": "Semisextile",
-      "body_b": "Pallas",
-      "orb": "0º 35'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Eris",
-      "aspect_name": "Sextile",
-      "body_b": "Icarus",
-      "orb": "0º 05'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ceres",
-      "aspect_name": "Semisextile",
-      "body_b": "Venus",
-      "orb": "0º 47'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ceres",
-      "aspect_name": "Trine",
-      "body_b": "Vertex",
-      "orb": "0º 10'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Semisextile",
-      "body_b": "Eris",
-      "orb": "0º 35'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Semisextile",
-      "body_b": "Icarus",
-      "orb": "0º 40'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
-      "aspect_name": "Sextile",
-      "body_b": "Saturn",
-      "orb": "0º 46'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
+        "aspect class (Square)",
+        "moderate orb (<3°)"
       ]
     },
     {
@@ -1430,8 +1950,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Neptune",
       "orb": "0º 05'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
       ]
     },
@@ -1441,8 +1962,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Part of Fortune",
       "orb": "0º 44'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
       ]
     },
@@ -1452,8 +1974,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Sun",
       "orb": "2º 24'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves luminary",
         "moderate orb (<3°)"
       ]
@@ -1464,30 +1987,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Saturn",
       "orb": "0º 45'",
-      "score": 5,
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vesta",
-      "aspect_name": "Semisextile",
-      "body_b": "Part of Fortune",
-      "orb": "0º 44'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Lilith",
-      "aspect_name": "Biquintile",
-      "body_b": "Mercury",
-      "orb": "0º 35'",
-      "score": 5,
-      "reasons": [
+        "aspect class (Sesquiquadrate)",
         "very tight orb (<1°)"
       ]
     },
@@ -1497,19 +1999,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Pluto",
       "orb": "0º 28'",
-      "score": 5,
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Lilith",
-      "aspect_name": "Trine",
-      "body_b": "Chiron",
-      "orb": "0º 10'",
-      "score": 5,
-      "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
       ]
     },
@@ -1519,8 +2011,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Saturn",
       "orb": "0º 54'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Inconjunction)",
         "very tight orb (<1°)"
       ]
     },
@@ -1530,30 +2023,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Part of Fortune",
       "orb": "0º 55'",
-      "score": 5,
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Sextile",
-      "body_b": "Eris",
-      "orb": "0º 05'",
-      "score": 5,
-      "reasons": [
-        "very tight orb (<1°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Semisextile",
-      "body_b": "Pallas",
-      "orb": "0º 40'",
-      "score": 5,
-      "reasons": [
+        "aspect class (Semisquare)",
         "very tight orb (<1°)"
       ]
     },
@@ -1563,8 +2035,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Mars",
       "orb": "2º 13'",
-      "score": 5,
+      "score": 7,
       "reasons": [
+        "aspect class (Semisquare)",
         "involves angle",
         "moderate orb (<3°)"
       ]
@@ -1572,23 +2045,24 @@
     {
       "type": "aspect",
       "body_a": "Vertex",
-      "aspect_name": "Square",
-      "body_b": "Venus",
-      "orb": "0º 37'",
-      "score": 5,
+      "aspect_name": "Trine",
+      "body_b": "Sun",
+      "orb": "4º 03'",
+      "score": 7,
       "reasons": [
-        "very tight orb (<1°)"
+        "aspect class (Trine)",
+        "involves luminary"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Vertex",
-      "aspect_name": "Trine",
-      "body_b": "Ceres",
-      "orb": "0º 10'",
-      "score": 5,
+      "body_a": "Mercury",
+      "aspect_name": "Conjunction",
+      "body_b": "Jupiter",
+      "orb": "4º 16'",
+      "score": 6,
       "reasons": [
-        "very tight orb (<1°)"
+        "aspect class (Conjunction)"
       ]
     },
     {
@@ -1597,33 +2071,10 @@
       "aspect_name": "Inconjunction",
       "body_b": "Uranus",
       "orb": "1º 23'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Inconjunction)",
         "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mercury",
-      "aspect_name": "Trine",
-      "body_b": "North Node",
-      "orb": "2º 24'",
-      "score": 4,
-      "reasons": [
-        "involves node",
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mercury",
-      "aspect_name": "Sextile",
-      "body_b": "South Node",
-      "orb": "2º 24'",
-      "score": 4,
-      "reasons": [
-        "involves node",
-        "moderate orb (<3°)"
       ]
     },
     {
@@ -1632,9 +2083,22 @@
       "aspect_name": "Semisquare",
       "body_b": "Hygiea",
       "orb": "1º 31'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Mercury",
+      "aspect_name": "Biquintile",
+      "body_b": "Lilith",
+      "orb": "0º 35'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -1643,9 +2107,22 @@
       "aspect_name": "Semisquare",
       "body_b": "Icarus",
       "orb": "1º 32'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Venus",
+      "aspect_name": "Semisextile",
+      "body_b": "Ceres",
+      "orb": "0º 47'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -1654,31 +2131,21 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Pluto",
       "orb": "1º 38'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Mars",
-      "aspect_name": "Sextile",
-      "body_b": "Chiron",
-      "orb": "1º 00'",
-      "score": 4,
+      "body_a": "Jupiter",
+      "aspect_name": "Conjunction",
+      "body_b": "Mercury",
+      "orb": "4º 16'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mars",
-      "aspect_name": "Opposition",
-      "body_b": "Lilith",
-      "orb": "1º 10'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Conjunction)"
       ]
     },
     {
@@ -1687,19 +2154,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Vertex",
       "orb": "1º 00'",
-      "score": 4,
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Saturn",
-      "aspect_name": "Trine",
-      "body_b": "Pallas",
-      "orb": "1º 34'",
-      "score": 4,
-      "reasons": [
+        "aspect class (Sesquiquadrate)",
         "tight orb (<2°)"
       ]
     },
@@ -1709,8 +2166,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Mercury",
       "orb": "1º 23'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Inconjunction)",
         "tight orb (<2°)"
       ]
     },
@@ -1720,30 +2178,9 @@
       "aspect_name": "Quincunx",
       "body_b": "Vertex",
       "orb": "1º 07'",
-      "score": 4,
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Neptune",
-      "aspect_name": "Trine",
-      "body_b": "Eris",
-      "orb": "1º 39'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Neptune",
-      "aspect_name": "Sextile",
-      "body_b": "Icarus",
-      "orb": "1º 34'",
-      "score": 4,
-      "reasons": [
+        "aspect class (Quincunx)",
         "tight orb (<2°)"
       ]
     },
@@ -1753,8 +2190,9 @@
       "aspect_name": "Sesquiquadrate",
       "body_b": "Mars",
       "orb": "1º 38'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Sesquiquadrate)",
         "tight orb (<2°)"
       ]
     },
@@ -1764,33 +2202,10 @@
       "aspect_name": "Inconjunction",
       "body_b": "Black Moon",
       "orb": "1º 14'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Inconjunction)",
         "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "North Node",
-      "aspect_name": "Trine",
-      "body_b": "Mercury",
-      "orb": "2º 24'",
-      "score": 4,
-      "reasons": [
-        "involves node",
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "South Node",
-      "aspect_name": "Sextile",
-      "body_b": "Mercury",
-      "orb": "2º 24'",
-      "score": 4,
-      "reasons": [
-        "involves node",
-        "moderate orb (<3°)"
       ]
     },
     {
@@ -1799,8 +2214,9 @@
       "aspect_name": "Inconjunction",
       "body_b": "Pluto",
       "orb": "1º 14'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Inconjunction)",
         "tight orb (<2°)"
       ]
     },
@@ -1810,19 +2226,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Chiron",
       "orb": "1º 52'",
-      "score": 4,
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Chiron",
-      "aspect_name": "Sextile",
-      "body_b": "Mars",
-      "orb": "1º 00'",
-      "score": 4,
-      "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
       ]
     },
@@ -1832,8 +2238,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Black Moon",
       "orb": "1º 52'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
       ]
     },
@@ -1843,31 +2250,33 @@
       "aspect_name": "Quincunx",
       "body_b": "Icarus",
       "orb": "1º 53'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Quincunx)",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Eris",
-      "aspect_name": "Trine",
-      "body_b": "Neptune",
-      "orb": "1º 39'",
-      "score": 4,
+      "aspect_name": "Conjunction",
+      "body_b": "Ceres",
+      "orb": "4º 32'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Conjunction)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Eris",
       "aspect_name": "Semisextile",
-      "body_b": "Juno",
-      "orb": "1º 44'",
-      "score": 4,
+      "body_b": "Pallas",
+      "orb": "0º 35'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -1876,8 +2285,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Vesta",
       "orb": "1º 44'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
       ]
     },
@@ -1885,44 +2295,106 @@
       "type": "aspect",
       "body_a": "Ceres",
       "aspect_name": "Semisextile",
-      "body_b": "Hygiea",
-      "orb": "1º 35'",
-      "score": 4,
+      "body_b": "Venus",
+      "orb": "0º 47'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ceres",
+      "aspect_name": "Conjunction",
+      "body_b": "Eris",
+      "orb": "4º 32'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Conjunction)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Pallas",
-      "aspect_name": "Trine",
-      "body_b": "Saturn",
-      "orb": "1º 34'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
       "aspect_name": "Semisextile",
       "body_b": "Eris",
-      "orb": "1º 44'",
-      "score": 4,
+      "orb": "0º 35'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pallas",
+      "aspect_name": "Sextile",
+      "body_b": "Juno",
+      "orb": "2º 20'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Sextile)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pallas",
+      "aspect_name": "Sextile",
+      "body_b": "Hygiea",
+      "orb": "2º 22'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Sextile)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pallas",
+      "aspect_name": "Semisextile",
+      "body_b": "Icarus",
+      "orb": "0º 40'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Juno",
-      "aspect_name": "Square",
-      "body_b": "Icarus",
-      "orb": "1º 39'",
-      "score": 4,
+      "aspect_name": "Sextile",
+      "body_b": "Pallas",
+      "orb": "2º 20'",
+      "score": 6,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Sextile)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Conjunction",
+      "body_b": "Hygiea",
+      "orb": "4º 42'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Conjunction)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vesta",
+      "aspect_name": "Semisextile",
+      "body_b": "Part of Fortune",
+      "orb": "0º 44'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
       ]
     },
     {
@@ -1931,8 +2403,9 @@
       "aspect_name": "Semisquare",
       "body_b": "Eris",
       "orb": "1º 44'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
       ]
     },
@@ -1942,20 +2415,174 @@
       "aspect_name": "Semisquare",
       "body_b": "Mercury",
       "orb": "1º 31'",
-      "score": 4,
+      "score": 6,
       "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
       "body_a": "Hygiea",
-      "aspect_name": "Square",
-      "body_b": "Vertex",
-      "orb": "1º 45'",
-      "score": 4,
+      "aspect_name": "Sextile",
+      "body_b": "Pallas",
+      "orb": "2º 22'",
+      "score": 6,
       "reasons": [
+        "aspect class (Sextile)",
+        "moderate orb (<3°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Hygiea",
+      "aspect_name": "Conjunction",
+      "body_b": "Juno",
+      "orb": "4º 42'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Conjunction)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Lilith",
+      "aspect_name": "Biquintile",
+      "body_b": "Mercury",
+      "orb": "0º 35'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Biquintile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Semisquare",
+      "body_b": "Mercury",
+      "orb": "1º 32'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Semisquare)",
         "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Quincunx",
+      "body_b": "Chiron",
+      "orb": "1º 53'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Quincunx)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Icarus",
+      "aspect_name": "Semisextile",
+      "body_b": "Pallas",
+      "orb": "0º 40'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "very tight orb (<1°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vertex",
+      "aspect_name": "Sesquiquadrate",
+      "body_b": "Jupiter",
+      "orb": "1º 00'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Sesquiquadrate)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vertex",
+      "aspect_name": "Quincunx",
+      "body_b": "Uranus",
+      "orb": "1º 07'",
+      "score": 6,
+      "reasons": [
+        "aspect class (Quincunx)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Jupiter",
+      "aspect_name": "Opposition",
+      "body_b": "Pluto",
+      "orb": "3º 41'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Pluto",
+      "aspect_name": "Opposition",
+      "body_b": "Jupiter",
+      "orb": "3º 41'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Eris",
+      "aspect_name": "Semisextile",
+      "body_b": "Juno",
+      "orb": "1º 44'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Ceres",
+      "aspect_name": "Semisextile",
+      "body_b": "Hygiea",
+      "orb": "1º 35'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Juno",
+      "aspect_name": "Semisextile",
+      "body_b": "Eris",
+      "orb": "1º 44'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Semisextile)",
+        "tight orb (<2°)"
+      ]
+    },
+    {
+      "type": "aspect",
+      "body_a": "Vesta",
+      "aspect_name": "Opposition",
+      "body_b": "Lilith",
+      "orb": "3º 25'",
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
       ]
     },
     {
@@ -1964,20 +2591,21 @@
       "aspect_name": "Semisextile",
       "body_b": "Ceres",
       "orb": "1º 35'",
-      "score": 4,
+      "score": 5,
       "reasons": [
+        "aspect class (Semisextile)",
         "tight orb (<2°)"
       ]
     },
     {
       "type": "aspect",
-      "body_a": "Lilith",
-      "aspect_name": "Opposition",
-      "body_b": "Mars",
-      "orb": "1º 10'",
-      "score": 4,
+      "body_a": "Hygiea",
+      "aspect_name": "Square",
+      "body_b": "Icarus",
+      "orb": "3º 02'",
+      "score": 5,
       "reasons": [
-        "tight orb (<2°)"
+        "aspect class (Square)"
       ]
     },
     {
@@ -1986,441 +2614,11 @@
       "aspect_name": "Biquintile",
       "body_b": "Part of Fortune",
       "orb": "1º 52'",
-      "score": 4,
+      "score": 5,
       "reasons": [
+        "aspect class (Biquintile)",
         "tight orb (<2°)"
       ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Semisquare",
-      "body_b": "Mercury",
-      "orb": "1º 32'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Sextile",
-      "body_b": "Neptune",
-      "orb": "1º 34'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Quincunx",
-      "body_b": "Chiron",
-      "orb": "1º 53'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Icarus",
-      "aspect_name": "Square",
-      "body_b": "Juno",
-      "orb": "1º 39'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vertex",
-      "aspect_name": "Sesquiquadrate",
-      "body_b": "Jupiter",
-      "orb": "1º 00'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vertex",
-      "aspect_name": "Quincunx",
-      "body_b": "Uranus",
-      "orb": "1º 07'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vertex",
-      "aspect_name": "Square",
-      "body_b": "Hygiea",
-      "orb": "1º 45'",
-      "score": 4,
-      "reasons": [
-        "tight orb (<2°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Moon",
-      "aspect_name": "Sextile",
-      "body_b": "Part of Fortune",
-      "orb": "3º 31'",
-      "score": 3,
-      "reasons": [
-        "involves luminary"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Sun",
-      "aspect_name": "Trine",
-      "body_b": "Vertex",
-      "orb": "4º 03'",
-      "score": 3,
-      "reasons": [
-        "involves luminary"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Sun",
-      "aspect_name": "Conjunction",
-      "body_b": "Ceres",
-      "orb": "3º 53'",
-      "score": 3,
-      "reasons": [
-        "involves luminary"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Square",
-      "body_b": "Ascendant",
-      "orb": "3º 07'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Square",
-      "body_b": "Descendant",
-      "orb": "3º 07'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ceres",
-      "aspect_name": "Conjunction",
-      "body_b": "Sun",
-      "orb": "3º 53'",
-      "score": 3,
-      "reasons": [
-        "involves luminary"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
-      "aspect_name": "Opposition",
-      "body_b": "Midheaven",
-      "orb": "3º 19'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
-      "aspect_name": "Conjunction",
-      "body_b": "Imum Coeli",
-      "orb": "3º 19'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ascendant",
-      "aspect_name": "Square",
-      "body_b": "Jupiter",
-      "orb": "3º 07'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Descendant",
-      "aspect_name": "Square",
-      "body_b": "Jupiter",
-      "orb": "3º 07'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Midheaven",
-      "aspect_name": "Opposition",
-      "body_b": "Juno",
-      "orb": "3º 19'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Imum Coeli",
-      "aspect_name": "Conjunction",
-      "body_b": "Juno",
-      "orb": "3º 19'",
-      "score": 3,
-      "reasons": [
-        "involves angle"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vertex",
-      "aspect_name": "Trine",
-      "body_b": "Sun",
-      "orb": "4º 03'",
-      "score": 3,
-      "reasons": [
-        "involves luminary"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mercury",
-      "aspect_name": "Conjunction",
-      "body_b": "Part of Fortune",
-      "orb": "2º 27'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Venus",
-      "aspect_name": "Conjunction",
-      "body_b": "Hygiea",
-      "orb": "2º 22'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mars",
-      "aspect_name": "Conjunction",
-      "body_b": "Vesta",
-      "orb": "2º 14'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Neptune",
-      "aspect_name": "Square",
-      "body_b": "Pallas",
-      "orb": "2º 14'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Square",
-      "body_b": "Neptune",
-      "orb": "2º 14'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Sextile",
-      "body_b": "Juno",
-      "orb": "2º 20'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pallas",
-      "aspect_name": "Sextile",
-      "body_b": "Hygiea",
-      "orb": "2º 22'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
-      "aspect_name": "Sextile",
-      "body_b": "Pallas",
-      "orb": "2º 20'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vesta",
-      "aspect_name": "Conjunction",
-      "body_b": "Mars",
-      "orb": "2º 14'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Hygiea",
-      "aspect_name": "Conjunction",
-      "body_b": "Venus",
-      "orb": "2º 22'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Hygiea",
-      "aspect_name": "Sextile",
-      "body_b": "Pallas",
-      "orb": "2º 22'",
-      "score": 2,
-      "reasons": [
-        "moderate orb (<3°)"
-      ]
-    },
-    {
-      "type": "aspect",
-      "body_a": "Mercury",
-      "aspect_name": "Conjunction",
-      "body_b": "Jupiter",
-      "orb": "4º 16'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Conjunction",
-      "body_b": "Mercury",
-      "orb": "4º 16'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Jupiter",
-      "aspect_name": "Opposition",
-      "body_b": "Pluto",
-      "orb": "3º 41'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Pluto",
-      "aspect_name": "Opposition",
-      "body_b": "Jupiter",
-      "orb": "3º 41'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Eris",
-      "aspect_name": "Conjunction",
-      "body_b": "Ceres",
-      "orb": "4º 32'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Ceres",
-      "aspect_name": "Conjunction",
-      "body_b": "Eris",
-      "orb": "4º 32'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Juno",
-      "aspect_name": "Conjunction",
-      "body_b": "Hygiea",
-      "orb": "4º 42'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Vesta",
-      "aspect_name": "Opposition",
-      "body_b": "Lilith",
-      "orb": "3º 25'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Hygiea",
-      "aspect_name": "Conjunction",
-      "body_b": "Juno",
-      "orb": "4º 42'",
-      "score": 0,
-      "reasons": []
-    },
-    {
-      "type": "aspect",
-      "body_a": "Hygiea",
-      "aspect_name": "Square",
-      "body_b": "Icarus",
-      "orb": "3º 02'",
-      "score": 0,
-      "reasons": []
     },
     {
       "type": "aspect",
@@ -2428,8 +2626,10 @@
       "aspect_name": "Opposition",
       "body_b": "Vesta",
       "orb": "3º 25'",
-      "score": 0,
-      "reasons": []
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
+      ]
     },
     {
       "type": "aspect",
@@ -2437,8 +2637,10 @@
       "aspect_name": "Opposition",
       "body_b": "Vertex",
       "orb": "4º 47'",
-      "score": 0,
-      "reasons": []
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
+      ]
     },
     {
       "type": "aspect",
@@ -2446,8 +2648,10 @@
       "aspect_name": "Square",
       "body_b": "Hygiea",
       "orb": "3º 02'",
-      "score": 0,
-      "reasons": []
+      "score": 5,
+      "reasons": [
+        "aspect class (Square)"
+      ]
     },
     {
       "type": "aspect",
@@ -2455,8 +2659,10 @@
       "aspect_name": "Opposition",
       "body_b": "Icarus",
       "orb": "4º 47'",
-      "score": 0,
-      "reasons": []
+      "score": 5,
+      "reasons": [
+        "aspect class (Opposition)"
+      ]
     }
   ]
 }

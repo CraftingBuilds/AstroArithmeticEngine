@@ -23,7 +23,6 @@ HOUSE_RULER_MAP = {
     "Capricorn": ["Saturn"],
     "Aquarius": ["Saturn", "Uranus"],
     "Pisces": ["Jupiter", "Neptune"],
-    # abbreviated signs from Time Nomad
     "Ari": ["Mars"],
     "Tau": ["Venus"],
     "Gem": ["Mercury"],
@@ -36,6 +35,27 @@ HOUSE_RULER_MAP = {
     "Cap": ["Saturn"],
     "Aqu": ["Saturn", "Uranus"],
     "Pis": ["Jupiter", "Neptune"],
+}
+
+# Major aspects should lead.
+ASPECT_BASE_WEIGHTS = {
+    "Conjunction": 6,
+    "Opposition": 5,
+    "Square": 5,
+    "Trine": 4,
+    "Sextile": 4,
+
+    "Quincunx": 2,
+    "Inconjunction": 2,
+    "Semisquare": 2,
+    "Semisextile": 1,
+    "Sesquiquadrate": 2,
+
+    "Quintile": 1,
+    "Biquintile": 1,
+
+    # fallback for anything else
+    "_default": 1
 }
 
 
@@ -64,10 +84,6 @@ def get_sidereal_houses(chart: dict) -> list:
     return chart.get("houses", {}).get("sidereal", [])
 
 
-def get_sidereal_house_rulers(chart: dict) -> list:
-    return chart.get("house_rulers", {}).get("sidereal", [])
-
-
 def build_house_lookup(houses: list) -> dict:
     lookup = {}
     for house in houses:
@@ -78,9 +94,6 @@ def build_house_lookup(houses: list) -> dict:
 
 
 def get_chart_ruler(chart: dict) -> list:
-    """
-    Uses the sidereal 1st house cusp sign.
-    """
     houses = get_sidereal_houses(chart)
     if not houses:
         return []
@@ -99,9 +112,6 @@ def get_chart_ruler(chart: dict) -> list:
 
 
 def parse_orb_to_float(orb_str: str) -> float | None:
-    """
-    Converts strings like '1º 38'' into float degrees.
-    """
     if not orb_str:
         return None
 
@@ -117,6 +127,10 @@ def parse_orb_to_float(orb_str: str) -> float | None:
         return degrees + (minutes / 60.0)
     except ValueError:
         return None
+
+
+def get_aspect_base_weight(aspect_name: str) -> int:
+    return ASPECT_BASE_WEIGHTS.get(aspect_name, ASPECT_BASE_WEIGHTS["_default"])
 
 
 def score_placements(chart: dict) -> list:
@@ -177,6 +191,11 @@ def score_aspects(aspects: list) -> list:
 
         score = 0
         reasons = []
+
+        # Base class weight first
+        base_weight = get_aspect_base_weight(aspect_name)
+        score += base_weight
+        reasons.append(f"aspect class ({aspect_name})")
 
         if body_a in LUMINARIES or body_b in LUMINARIES:
             score += 3

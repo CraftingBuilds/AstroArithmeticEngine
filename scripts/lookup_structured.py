@@ -59,15 +59,6 @@ def find_by_word(entries, query):
 
 
 def find_by_theme(entries, query):
-    """
-    Theme search is broader than word search.
-    It checks:
-    - entry name
-    - family
-    - relative path
-    - source file
-    - all parsed content
-    """
     q = query.strip().lower()
     matches = []
 
@@ -86,8 +77,11 @@ def find_by_theme(entries, query):
     return matches
 
 
-def pretty_print_entry(entry):
+def pretty_print_entry(entry, index=None, total=None):
     print("=" * 80)
+    if index is not None and total is not None:
+        print(f"RESULT {index} OF {total}")
+        print("-" * 80)
     print(f"NAME: {entry.get('name')}")
     print(f"FAMILY: {entry.get('family')}")
     print(f"RELATIVE PATH: {entry.get('relative_path')}")
@@ -96,6 +90,21 @@ def pretty_print_entry(entry):
     print(json.dumps(entry.get("parsed", {}), indent=2, ensure_ascii=False))
     print("=" * 80)
     print()
+
+
+def page_through_matches(matches):
+    total = len(matches)
+
+    for i, entry in enumerate(matches, start=1):
+        pretty_print_entry(entry, i, total)
+
+        if i < total:
+            user_input = input("Press Enter for next result, or type q to quit: ").strip().lower()
+            if user_input == "q":
+                print("Stopped.")
+                return
+
+    print("End of results.")
 
 
 def main():
@@ -127,9 +136,7 @@ def main():
         return
 
     print(f"\nFound {len(matches)} match(es) for [{mode}]: {query}\n")
-
-    for entry in matches:
-        pretty_print_entry(entry)
+    page_through_matches(matches)
 
 
 if __name__ == "__main__":

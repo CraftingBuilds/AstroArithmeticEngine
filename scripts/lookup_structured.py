@@ -11,15 +11,76 @@ def load_structured():
     return json.loads(STRUCTURED_FILE.read_text(encoding="utf-8"))
 
 
-def find_entries(entries, name_query):
-    q = name_query.strip().lower()
+def flatten_text(value):
+    """
+    Recursively flatten nested dict/list/string content into one lowercase text blob.
+    """
+    parts = []
+
+    if isinstance(value, dict):
+        for k, v in value.items():
+            parts.append(str(k))
+            parts.append(flatten_text(v))
+    elif isinstance(value, list):
+        for item in value:
+            parts.append(flatten_text(item))
+    elif value is None:
+        pass
+    else:
+        parts.append(str(value))
+
+    return " ".join(part for part in parts if part).lower()
+
+
+def find_by_name(entries, query):
+    q = query.strip().lower()
     matches = []
 
     for entry in entries:
         outer_name = entry.get("name", "").strip().lower()
         parsed_name = entry.get("parsed", {}).get("name", "").strip().lower()
 
-        if q == outer_name or q == parsed_name:
+        if q in outer_name or q in parsed_name:
+            matches.append(entry)
+
+    return matches
+
+
+def find_by_word(entries, query):
+    q = query.strip().lower()
+    matches = []
+
+    for entry in entries:
+        searchable = flatten_text(entry.get("parsed", {}))
+        if q in searchable:
+            matches.append(entry)
+
+    return matches
+
+
+def find_by_theme(entries, query):
+    """
+    Theme search is broader than word search.
+    It checks:
+    - entry name
+    - family
+    - relative path
+    - source file
+    - all parsed content
+    """
+    q = query.strip().lower()
+    matches = []
+
+    for entry in entries:
+        theme_blob = " ".join([
+            entry.get("name", ""),
+            entry.get("family", ""),
+            entry.get("relative_path", ""),
+            entry.get("source_file", ""),
+            flatten_text(entry.get("parsed", {})),
+        ]).lower()
+
+        if q in theme_blob:
             matches.append(entry)
 
     return matches
@@ -42,15 +103,30 @@ def main():
 
     print("Structured Lookup")
     print("-----------------")
-    query = input("Enter exact entry name: ").strip()
+    print("Search modes: name | word | theme")
+    mode = input("Enter search mode: ").strip().lower()
+    query = input("Enter search query: ").strip()
 
-    matches = find_entries(entries, query)
-
-    if not matches:
-        print(f"No matches found for: {query}")
+    if not query:
+        print("No query entered.")
         return
 
-    print(f"\nFound {len(matches)} match(es).\n")
+    if mode == "name":
+        matches = find_by_name(entries, query)
+    elif mode == "word":
+        matches = find_by_word(entries, query)
+    elif mode == "theme":
+        matches = find_by_theme(entries, query)
+    else:
+        print(f"Invalid mode: {mode}")
+        print("Use one of: name, word, theme")
+        return
+
+    if not matches:
+        print(f"No matches found for [{mode}]: {query}")
+        return
+
+    print(f"\nFound {len(matches)} match(es) for [{mode}]: {query}\n")
 
     for entry in matches:
         pretty_print_entry(entry)

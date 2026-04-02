@@ -35,7 +35,6 @@ LAYER_PHRASES = [
     "refines how the system operates",
 ]
 
-# Used to prevent full encyclopedic repeats across domains
 SEEN_PLACEMENTS = set()
 
 
@@ -74,29 +73,50 @@ def paragraph_count_from_complexity(dynamic_amount: int) -> int:
     return dynamic_amount
 
 
+def cut_at_markers(text: str) -> str:
+    if not isinstance(text, str):
+        return ""
+
+    markers = [
+        " - Soul Path:",
+        "- Soul Path:",
+        " - Transit Influence:",
+        "- Transit Influence:",
+        " - Progressed Expression:",
+        "- Progressed Expression:",
+        " - Mundane Astrology:",
+        "- Mundane Astrology:",
+        "This entry is part of Astrology Arith(m)etic",
+    ]
+
+    cut = text
+    for marker in markers:
+        idx = cut.find(marker)
+        if idx != -1:
+            cut = cut[:idx]
+
+    return cut.strip()
+
+
+def extract_labeled_value(text: str, label: str) -> str:
+    if not isinstance(text, str):
+        return ""
+
+    pattern = rf"{re.escape(label)}\s*:\s*(.*?)(?=(\s*-\s*[A-Z][A-Za-z ]+:)|$)"
+    m = re.search(pattern, text, flags=re.DOTALL)
+    if not m:
+        return ""
+    return m.group(1).strip()
+
+
 def scrub_text(text: str) -> str:
     if not isinstance(text, str):
         return ""
 
-    text = text.strip()
-    if not text:
-        return ""
-
-    # Remove boilerplate / non-synthesis content
-    kill_phrases = [
-        "This entry is part of Astrology Arith(m)etic",
-        "eventually used to train a personal AI assistant",
-        "- Transit Influence:",
-        "- Progressed Expression:",
-        "- Mundane Astrology:",
-        "- Soul Path:",
-    ]
-    for phrase in kill_phrases:
-        text = text.replace(phrase, " ")
-
-    # Collapse whitespace
+    text = text.replace("\n", " ").replace("\r", " ")
     text = re.sub(r"\s+", " ", text).strip()
-
+    text = cut_at_markers(text)
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
@@ -108,10 +128,7 @@ def split_sentences(text: str):
     return [p.strip() for p in parts if p.strip()]
 
 
-def compress_text(text: str, max_sentences: int = 3, max_chars: int = 420) -> str:
-    """
-    Keep only the most relevant early text. This avoids encyclopedia dumps.
-    """
+def compress_text(text: str, max_sentences: int = 2, max_chars: int = 240) -> str:
     text = scrub_text(text)
     if not text:
         return ""
@@ -130,25 +147,15 @@ def compress_text(text: str, max_sentences: int = 3, max_chars: int = 420) -> st
         kept.append(s)
         total += len(s)
 
-    out = " ".join(kept).strip()
-    return out
-
-
-def get_nested(d, *keys):
-    cur = d
-    for key in keys:
-        if not isinstance(cur, dict):
-            return ""
-        cur = cur.get(key)
-        if cur is None:
-            return ""
-    return cur if isinstance(cur, str) else ""
+    return " ".join(kept).strip()
 
 
 def collect_priority_text(d):
     """
-    This is the core fix:
-    prioritize natal-target fields, especially 'Use in Natal Charts'.
+    Priority:
+    1. Use in Natal Charts
+    2. Natal Chart
+    3. concise core meaning fallback
     """
     if not isinstance(d, dict):
         return {
@@ -161,41 +168,60 @@ def collect_priority_text(d):
             "keywords": [],
         }
 
-    candidates = [
-        get_nested(d, "Use in Natal Charts"),
-        get_nested(d, "Use in natal charts"),
-        get_nested(d, "Natal Chart"),
-        get_nested(d, "Natal Function"),
-        get_nested(d, "reading_modes", "natal_chart"),
-        get_nested(d, "natal_chart"),
-        get_nested(d, "natal_function"),
-        get_nested(d, "core_function"),
-        get_nested(d, "astrological_role"),
-        get_nested(d, "description"),
-        get_nested(d, "house_description"),
-        get_nested(d, "general_meaning"),
-        get_nested(d, "iam_statement"),
-        get_nested(d, "use_in_practice"),
-        get_nested(d, "metaphysical_layer"),
-    ]
+    raw_candidates = []
+
+    raw_candidates.append(d.get("Use in Natal Charts"))
+    raw_candidates.append(d.get("Use in natal charts"))
+    raw_candidates.append(d.get("Natal Chart"))
+    raw_candidates.append(d.get("Natal Function"))
+    raw_candidates.append(d.get("natal_chart"))
+    raw_candidates.append(d.get("natal_function"))
+
+    reading_modes = d.get("reading_modes", {})
+    if isinstance(reading_modes, dict):
+        raw_candidates.append(reading_modes.get("natal_chart"))
+
+    raw_candidates.append(d.get("core_function"))
+    raw_candidates.append(d.get("astrological_role"))
+    raw_candidates.append(d.get("description"))
+    raw_candidates.append(d.get("house_description"))
+    raw_candidates.append(d.get("general_meaning"))
+    raw_candidates.append(d.get("iam_statement"))
+    raw_candidates.append(d.get("use_in_practice"))
+    raw_candidates.append(d.get("metaphysical_layer"))
 
     primary = ""
-    for c in candidates:
-        c = compress_text(c, max_sentences=3, max_chars=420)
-        if c:
-            primary = c
+
+    for candidate in raw_candidates:
+        if not isinstance(candidate, str) or not candidate.strip():
+            continue
+
+        natal_use = extract_labeled_value(candidate, "Use in Natal Charts")
+        if natal_use:
+            primary = compress_text(natal_use, max_sentences=2, max_chars=240)
             break
+
+        natal_chart = extract_labeled_value(candidate, "Natal Chart")
+        if natal_chart:
+            primary = compress_text(natal_chart, max_sentences=2, max_chars=240)
+            break
+
+    if not primary:
+        for candidate in raw_candidates:
+            if isinstance(candidate, str) and candidate.strip():
+                primary = compress_text(candidate, max_sentences=2, max_chars=240)
+                if primary:
+                    break
 
     traits = ensure_list(d.get("core_traits")) or ensure_list(d.get("thematic_keywords")) or ensure_list(d.get("keywords"))
     strengths = ensure_list(d.get("strengths"))
     challenges = ensure_list(d.get("challenges"))
     keywords = ensure_list(d.get("keywords"))
 
-    # Trim noisy lists
-    traits = [str(x).strip() for x in traits[:5] if str(x).strip()]
-    strengths = [str(x).strip() for x in strengths[:4] if str(x).strip()]
-    challenges = [str(x).strip() for x in challenges[:4] if str(x).strip()]
-    keywords = [str(x).strip() for x in keywords[:3] if str(x).strip()]
+    traits = [str(x).strip() for x in traits[:4] if str(x).strip()]
+    strengths = [str(x).strip() for x in strengths[:3] if str(x).strip()]
+    challenges = [str(x).strip() for x in challenges[:3] if str(x).strip()]
+    keywords = [str(x).strip() for x in keywords[:2] if str(x).strip()]
 
     archetype = ""
     behavioral = d.get("behavioral_patterns", {})
@@ -213,8 +239,7 @@ def collect_priority_text(d):
                 if v:
                     bits.append(f"{k}: {v}")
             if bits:
-                spiritual = "; ".join(bits)
-                spiritual = compress_text(spiritual, max_sentences=2, max_chars=220)
+                spiritual = "; ".join(bits[:2])
                 break
 
     return {
@@ -283,61 +308,55 @@ def build_combined_meaning(u):
     challenges = u["sign"]["challenges"] or u["body"]["challenges"]
     archetype = u["sign"]["archetype"] or u["body"]["archetype"]
     spiritual = u["sign"]["spiritual"] or u["body"]["spiritual"] or u["house"]["spiritual"]
-    keywords = u["sign"]["keywords"] or u["body"]["keywords"]
 
     chunks = []
 
     chunks.append(
-        f"{body_name} in {sign_name} in the {house_name} must be read as a single fused natal pattern rather than as three unrelated symbolic ingredients."
+        f"{body_name} in {sign_name} in the {house_name} must be read as a single natal process rather than as three disconnected symbolic fragments."
     )
 
     if body_primary:
         chunks.append(
-            f"At the level of the body itself, {body_name} points toward {body_primary}"
+            f"In natal terms, {body_name} here shows {body_primary}"
         )
 
     if sign_primary:
         chunks.append(
-            f"When that force is filtered through {sign_name}, its tone changes accordingly: {sign_primary}"
+            f"Because this force is filtered through {sign_name}, it takes on a style marked by {sign_primary}"
         )
 
     if house_primary:
         chunks.append(
-            f"Placed in the {house_name}, the pattern becomes anchored in a specific field of lived experience: {house_primary}"
+            f"Because it is placed in the {house_name}, that same energy becomes visible in the life terrain of {house_primary}"
         )
 
     chunks.append(
-        f"Taken together, this means the native experiences {body_name} not abstractly, but through the style, rhythm, and demand of {sign_name} operating inside the life terrain of the {house_name}."
+        f"Taken together, this suggests that the native experiences {body_name} through the behavioral style of {sign_name} and through the concrete developmental arena of the {house_name}."
     )
 
     if traits:
         chunks.append(
-            f"In practical behavior, this often shows itself through qualities such as {list_to_sentence(traits)}."
+            f"In lived expression, this often appears through qualities such as {list_to_sentence(traits)}."
         )
 
     if strengths:
         chunks.append(
-            f"At its best, the placement can mature into {list_to_sentence(strengths)}."
+            f"At its strongest, the placement can mature into {list_to_sentence(strengths)}."
         )
 
     if challenges:
         chunks.append(
-            f"Its shadow, however, may emerge through {list_to_sentence(challenges)}, especially when the placement is overstimulated, defensive, or insufficiently integrated."
-        )
-
-    if keywords:
-        chunks.append(
-            f"Keywords such as {list_to_sentence(keywords)} further clarify the native’s lived experience of this pattern."
+            f"When strained, its shadow may emerge through {list_to_sentence(challenges)}."
         )
 
     if archetype:
         chunks.append(
-            f"Archetypally, the placement leans toward {archetype}, which gives the pattern a recognizable symbolic posture."
+            f"Archetypally, this pattern leans toward {archetype}."
         )
 
     if spiritual:
         chunks.append(
-            f"At the spiritual layer, it also carries implications summarized as follows: {spiritual}."
+            f"Spiritually, it also carries implications summarized as {spiritual}."
         )
 
     return " ".join(chunks)
@@ -461,7 +480,6 @@ def build_section(domain_name, units, aspects):
 
     paragraphs.append(write_field_paragraph(domain_name, units))
 
-    # Real meat: 3 to 6 fused placement paragraphs minimum
     placement_para_target = min(6, max(3, len(units[:6])))
     for idx, unit in enumerate(units[:placement_para_target]):
         paragraphs.append(write_fused_paragraph(unit, idx, domain_name))
@@ -471,7 +489,6 @@ def build_section(domain_name, units, aspects):
     paragraphs.append(write_integration_paragraph(domain_name))
     paragraphs.append(write_ritual_paragraph(domain_name))
 
-    # Dynamic count is a floor, not a target
     dynamic_amount = 1 + placement_para_target + 4
     target = paragraph_count_from_complexity(dynamic_amount)
 

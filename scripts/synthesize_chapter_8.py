@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import re
 from pathlib import Path
 
 BASE = Path("/mnt/storage/AstroArithmeticEngine/secure_charts")
@@ -25,6 +26,17 @@ TRANSITIONS = [
     "What complicates the matter is that",
     "As a result,",
 ]
+
+LAYER_PHRASES = [
+    "modifies the expression further",
+    "introduces a new behavioral dynamic",
+    "shifts the emphasis of the field",
+    "complicates the pattern in a meaningful way",
+    "refines how the system operates",
+]
+
+# Used to prevent full encyclopedic repeats across domains
+SEEN_PLACEMENTS = set()
 
 
 def load(path: Path):
@@ -54,7 +66,90 @@ def list_to_sentence(items):
     return f"{', '.join(items[:-1])}, and {items[-1]}"
 
 
-def get_priority_text(d):
+def paragraph_count_from_complexity(dynamic_amount: int) -> int:
+    if dynamic_amount < 3:
+        return 3
+    elif dynamic_amount > 17:
+        return 17
+    return dynamic_amount
+
+
+def scrub_text(text: str) -> str:
+    if not isinstance(text, str):
+        return ""
+
+    text = text.strip()
+    if not text:
+        return ""
+
+    # Remove boilerplate / non-synthesis content
+    kill_phrases = [
+        "This entry is part of Astrology Arith(m)etic",
+        "eventually used to train a personal AI assistant",
+        "- Transit Influence:",
+        "- Progressed Expression:",
+        "- Mundane Astrology:",
+        "- Soul Path:",
+    ]
+    for phrase in kill_phrases:
+        text = text.replace(phrase, " ")
+
+    # Collapse whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+
+    return text
+
+
+def split_sentences(text: str):
+    text = scrub_text(text)
+    if not text:
+        return []
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def compress_text(text: str, max_sentences: int = 3, max_chars: int = 420) -> str:
+    """
+    Keep only the most relevant early text. This avoids encyclopedia dumps.
+    """
+    text = scrub_text(text)
+    if not text:
+        return ""
+
+    sentences = split_sentences(text)
+    if not sentences:
+        return ""
+
+    kept = []
+    total = 0
+    for s in sentences:
+        if len(kept) >= max_sentences:
+            break
+        if total + len(s) > max_chars and kept:
+            break
+        kept.append(s)
+        total += len(s)
+
+    out = " ".join(kept).strip()
+    return out
+
+
+def get_nested(d, *keys):
+    cur = d
+    for key in keys:
+        if not isinstance(cur, dict):
+            return ""
+        cur = cur.get(key)
+        if cur is None:
+            return ""
+    return cur if isinstance(cur, str) else ""
+
+
+def collect_priority_text(d):
+    """
+    This is the core fix:
+    prioritize natal-target fields, especially 'Use in Natal Charts'.
+    """
     if not isinstance(d, dict):
         return {
             "primary": "",
@@ -66,60 +161,61 @@ def get_priority_text(d):
             "keywords": [],
         }
 
+    candidates = [
+        get_nested(d, "Use in Natal Charts"),
+        get_nested(d, "Use in natal charts"),
+        get_nested(d, "Natal Chart"),
+        get_nested(d, "Natal Function"),
+        get_nested(d, "reading_modes", "natal_chart"),
+        get_nested(d, "natal_chart"),
+        get_nested(d, "natal_function"),
+        get_nested(d, "core_function"),
+        get_nested(d, "astrological_role"),
+        get_nested(d, "description"),
+        get_nested(d, "house_description"),
+        get_nested(d, "general_meaning"),
+        get_nested(d, "iam_statement"),
+        get_nested(d, "use_in_practice"),
+        get_nested(d, "metaphysical_layer"),
+    ]
+
     primary = ""
-
-    reading_modes = d.get("reading_modes", {})
-    if isinstance(reading_modes, dict):
-        primary = first_nonempty(
-            reading_modes.get("natal_chart"),
-            reading_modes.get("soul_path"),
-        )
-
-    primary = first_nonempty(
-        primary,
-        d.get("Natal Chart"),
-        d.get("Natal Function"),
-        d.get("Use in Natal Charts"),
-        d.get("Use in natal charts"),
-        d.get("natal_chart"),
-        d.get("natal_function"),
-        d.get("core_function"),
-        d.get("astrological_role"),
-        d.get("description"),
-        d.get("house_description"),
-        d.get("general_meaning"),
-        d.get("iam_statement"),
-        d.get("use_in_practice"),
-        d.get("metaphysical_layer"),
-    )
+    for c in candidates:
+        c = compress_text(c, max_sentences=3, max_chars=420)
+        if c:
+            primary = c
+            break
 
     traits = ensure_list(d.get("core_traits")) or ensure_list(d.get("thematic_keywords")) or ensure_list(d.get("keywords"))
     strengths = ensure_list(d.get("strengths"))
     challenges = ensure_list(d.get("challenges"))
     keywords = ensure_list(d.get("keywords"))
 
+    # Trim noisy lists
+    traits = [str(x).strip() for x in traits[:5] if str(x).strip()]
+    strengths = [str(x).strip() for x in strengths[:4] if str(x).strip()]
+    challenges = [str(x).strip() for x in challenges[:4] if str(x).strip()]
+    keywords = [str(x).strip() for x in keywords[:3] if str(x).strip()]
+
     archetype = ""
     behavioral = d.get("behavioral_patterns", {})
     if isinstance(behavioral, dict):
-        archetype = first_nonempty(behavioral.get("Archetype"), behavioral.get("archetype"))
+        archetype = first_nonempty(
+            behavioral.get("Archetype"),
+            behavioral.get("archetype")
+        ).strip()
 
     spiritual = ""
-    spiritual_pathways = d.get("spiritual_pathways", {})
-    if isinstance(spiritual_pathways, dict):
-        bits = []
-        for k, v in spiritual_pathways.items():
-            if v:
-                bits.append(f"{k}: {v}")
-        spiritual = "; ".join(bits)
-
-    metaphysical = d.get("metaphysical_spiritual_layer", {})
-    if isinstance(metaphysical, dict):
-        bits = []
-        for k, v in metaphysical.items():
-            if v:
-                bits.append(f"{k}: {v}")
-        if bits and not spiritual:
-            spiritual = "; ".join(bits)
+    for block in [d.get("spiritual_pathways"), d.get("metaphysical_spiritual_layer")]:
+        if isinstance(block, dict):
+            bits = []
+            for k, v in block.items():
+                if v:
+                    bits.append(f"{k}: {v}")
+            if bits:
+                spiritual = "; ".join(bits)
+                spiritual = compress_text(spiritual, max_sentences=2, max_chars=220)
+                break
 
     return {
         "primary": primary,
@@ -153,14 +249,14 @@ def domain_aspects(aspects, allowed):
     return chosen
 
 
-def summarize_fused_unit(unit):
+def summarize_unit(unit):
     body_name = unit.get("body_name", "Unknown")
     sign_name = unit.get("sign_name", "Unknown")
     house_name = unit.get("house_name", "Unknown")
 
-    body = get_priority_text(unit.get("body_interpretation"))
-    sign = get_priority_text(unit.get("sign_interpretation"))
-    house = get_priority_text(unit.get("house_interpretation"))
+    body = collect_priority_text(unit.get("body_interpretation"))
+    sign = collect_priority_text(unit.get("sign_interpretation"))
+    house = collect_priority_text(unit.get("house_interpretation"))
 
     return {
         "body_name": body_name,
@@ -173,95 +269,116 @@ def summarize_fused_unit(unit):
     }
 
 
-def write_fused_paragraph(unit, idx=0):
-    u = summarize_fused_unit(unit)
-
+def build_combined_meaning(u):
     body_name = u["body_name"]
     sign_name = u["sign_name"]
     house_name = u["house_name"]
 
-    b = u["body"]
-    s = u["sign"]
-    h = u["house"]
+    body_primary = u["body"]["primary"]
+    sign_primary = u["sign"]["primary"]
+    house_primary = u["house"]["primary"]
 
-    body_primary = b["primary"]
-    sign_primary = s["primary"]
-    house_primary = h["primary"]
+    traits = u["sign"]["traits"] or u["body"]["traits"]
+    strengths = u["sign"]["strengths"] or u["body"]["strengths"]
+    challenges = u["sign"]["challenges"] or u["body"]["challenges"]
+    archetype = u["sign"]["archetype"] or u["body"]["archetype"]
+    spiritual = u["sign"]["spiritual"] or u["body"]["spiritual"] or u["house"]["spiritual"]
+    keywords = u["sign"]["keywords"] or u["body"]["keywords"]
 
-    traits = s["traits"] or b["traits"]
-    strengths = s["strengths"] or b["strengths"]
-    challenges = s["challenges"] or b["challenges"]
-    archetype = s["archetype"] or b["archetype"]
-    spiritual = s["spiritual"] or b["spiritual"] or h["spiritual"]
-    keywords = s["keywords"] or b["keywords"]
+    chunks = []
 
-    opener = (
-        f"{body_name} in {sign_name} in the {house_name} becomes one of the clearest ways this chapter’s domain takes shape."
-        if idx == 0 else
-        f"{TRANSITIONS[idx % len(TRANSITIONS)]} {body_name} in {sign_name} in the {house_name} adds another important layer to the same field."
+    chunks.append(
+        f"{body_name} in {sign_name} in the {house_name} must be read as a single fused natal pattern rather than as three unrelated symbolic ingredients."
     )
 
-    parts = [opener]
-
     if body_primary:
-        parts.append(
-            f"As a planetary or symbolic body, {body_name} carries the following core meaning: {body_primary}"
+        chunks.append(
+            f"At the level of the body itself, {body_name} points toward {body_primary}"
         )
 
     if sign_primary:
-        parts.append(
-            f"When this force is filtered through {sign_name}, its expression changes in tone and method. {sign_primary}"
+        chunks.append(
+            f"When that force is filtered through {sign_name}, its tone changes accordingly: {sign_primary}"
         )
 
     if house_primary:
-        parts.append(
-            f"Because it is placed in the {house_name}, the placement is directed into a specific life arena rather than remaining abstract. {house_primary}"
+        chunks.append(
+            f"Placed in the {house_name}, the pattern becomes anchored in a specific field of lived experience: {house_primary}"
         )
 
+    chunks.append(
+        f"Taken together, this means the native experiences {body_name} not abstractly, but through the style, rhythm, and demand of {sign_name} operating inside the life terrain of the {house_name}."
+    )
+
     if traits:
-        parts.append(
-            f"In lived behavior, this fusion tends to show itself through qualities such as {list_to_sentence(traits[:5])}."
+        chunks.append(
+            f"In practical behavior, this often shows itself through qualities such as {list_to_sentence(traits)}."
         )
 
     if strengths:
-        parts.append(
-            f"At its best, the placement can express through {list_to_sentence(strengths[:4])}, giving the native a usable strength rather than a merely symbolic trait."
+        chunks.append(
+            f"At its best, the placement can mature into {list_to_sentence(strengths)}."
         )
 
     if challenges:
-        parts.append(
-            f"At the same time, its shadow may appear through {list_to_sentence(challenges[:4])}, especially when the placement is overstimulated, poorly contained, or acting defensively."
+        chunks.append(
+            f"Its shadow, however, may emerge through {list_to_sentence(challenges)}, especially when the placement is overstimulated, defensive, or insufficiently integrated."
         )
 
     if keywords:
-        parts.append(
-            f"Keyword-wise, the placement resonates with {list_to_sentence(keywords[:5])}, which further clarifies its lived style."
+        chunks.append(
+            f"Keywords such as {list_to_sentence(keywords)} further clarify the native’s lived experience of this pattern."
         )
 
     if archetype:
-        parts.append(
-            f"Archetypally, this placement leans toward {archetype}, meaning it tends to organize experience around a recognizable symbolic posture."
+        chunks.append(
+            f"Archetypally, the placement leans toward {archetype}, which gives the pattern a recognizable symbolic posture."
         )
 
     if spiritual:
-        parts.append(
-            f"On the spiritual level, the placement also carries implications that can be summarized as follows: {spiritual}."
+        chunks.append(
+            f"At the spiritual layer, it also carries implications summarized as follows: {spiritual}."
         )
 
-    parts.append(
-        f"Taken together, this means the native does not simply ‘have’ {body_name} in {sign_name} in the {house_name}; the native lives that combination as a unified psychological and developmental pattern."
+    return " ".join(chunks)
+
+
+def write_fused_paragraph(unit, idx, domain_name):
+    u = summarize_unit(unit)
+
+    placement_key = f"{u['body_name']}-{u['sign_name']}-{u['house_name']}"
+
+    if placement_key in SEEN_PLACEMENTS:
+        phrase = LAYER_PHRASES[idx % len(LAYER_PHRASES)]
+        return (
+            f"{TRANSITIONS[idx % len(TRANSITIONS)]} {u['body_name']} in {u['sign_name']} in the {u['house_name']} {phrase}. "
+            f"Although this placement has already been established elsewhere in the chapter, it continues to shape the {domain_name} field specifically by redirecting the same pattern into this domain’s distinctive concerns."
+        )
+
+    SEEN_PLACEMENTS.add(placement_key)
+
+    opener = (
+        f"{u['body_name']} in {u['sign_name']} in the {u['house_name']} becomes one of the clearest expressions of the {domain_name} field."
+        if idx == 0 else
+        f"{TRANSITIONS[idx % len(TRANSITIONS)]} {u['body_name']} in {u['sign_name']} in the {u['house_name']} {LAYER_PHRASES[idx % len(LAYER_PHRASES)]}."
     )
 
-    return " ".join(parts)
+    combined = build_combined_meaning(u)
+
+    closing = (
+        f"This placement does not operate in isolation. It actively interacts with other dominant factors in the chart, shaping and being shaped by the broader structure of the {domain_name} field."
+    )
+
+    return " ".join([opener, combined, closing])
 
 
 def write_field_paragraph(domain_name, units):
     top_names = [f"{u.get('body_name')} in {u.get('sign_name')} in the {u.get('house_name')}" for u in units[:5]]
 
     return (
-        f"The {domain_name} field of the chart should be understood as a structured domain of life rather than a vague category. "
-        f"It is primarily shaped by {list_to_sentence(top_names)}, indicating that this part of the native’s system is built through recurring contact between identity, experience, and symbolic pressure. "
-        f"These placements do not simply sit beside one another. They cooperate, collide, and reinforce one another, creating a field that develops through lived reality."
+        f"The {domain_name} field of the chart should be understood as an active system rather than a loose theme. "
+        f"It is primarily shaped by {list_to_sentence(top_names)}, which means this domain develops through repeated contact between identity, circumstance, symbolic pressure, and adaptation. "
+        f"These placements do not merely coexist. They cooperate, intensify one another, and sometimes collide, creating a domain that must be interpreted as a living process."
     )
 
 
@@ -270,14 +387,13 @@ def write_tension_paragraph(domain_name, aspects):
 
     if not tension_aspects:
         return (
-            f"Tension is not absent from the {domain_name} field, but it is less concentrated in one dramatic line than distributed across the domain more subtly. "
-            f"That still matters, because subtle tension often works through repetition rather than spectacle."
+            f"Tension is not absent from the {domain_name} field, but it is less concentrated in one dramatic line than distributed more subtly across the domain. "
+            f"That still matters, because subtle pressure often works through repetition rather than spectacle."
         )
 
     return (
-        f"What complicates the {domain_name} field most directly is the presence of tensions such as {list_to_sentence([aspect_sentence(a) for a in tension_aspects])}. "
-        f"These aspects do not merely create difficulty; they create developmental friction. "
-        f"They show where the native is most likely to feel pulled between incompatible demands, where overcorrection may occur, and where conscious integration is needed if the field is to mature rather than fracture."
+        f"What most complicates the {domain_name} field is the presence of tensions such as {list_to_sentence([aspect_sentence(a) for a in tension_aspects])}. "
+        f"These do not merely signify difficulty. They show where the native is pulled between competing demands, where overcorrection may occur, and where conscious integration is required if the domain is to mature rather than fracture."
     )
 
 
@@ -290,15 +406,15 @@ def write_harmony_paragraph(domain_name, aspects):
         )
 
     return (
-        f"Yet the {domain_name} field is not governed by stress alone. Harmonizing structures such as {list_to_sentence([aspect_sentence(a) for a in harmony_aspects])} create channels of coherence within the same domain. "
-        f"These aspects indicate where the native can stabilize, regulate, and draw strength, offering ways of using the chart’s energy constructively rather than being driven by it unconsciously."
+        f"At the same time, the {domain_name} field is not governed by stress alone. Harmonizing structures such as {list_to_sentence([aspect_sentence(a) for a in harmony_aspects])} create channels of coherence within the same domain. "
+        f"These aspects show where the native can regulate, stabilize, and draw strength, making it possible to use the chart’s energy constructively rather than being driven by it unconsciously."
     )
 
 
 def write_integration_paragraph(domain_name):
     domain_map = {
         "mental": "disciplined thinking, structured reflection, speech ethics, and the conscious training of attention",
-        "emotional": "containment, truthfulness, emotional metabolizing, and practices that let feeling move without taking over the whole system",
+        "emotional": "containment, truthfulness, emotional metabolizing, and practices that let feeling move without flooding the whole system",
         "physical": "embodiment, movement, posture, regulated force, and somatic awareness of tension before it becomes crisis",
         "spiritual": "lived alignment, devotional seriousness, symbolic literacy, and the refusal to separate meaning from practice",
         "relational": "clear agreements, reciprocal honesty, boundary integrity, and the refusal to mistake intensity for depth",
@@ -326,7 +442,7 @@ def write_ritual_paragraph(domain_name):
     prescription = ritual_map.get(domain_name, "intentional ritual practice")
     return (
         f"Ceremonially, this domain responds well to {prescription}. "
-        f"These are not decorative add-ons to the interpretation. They are practical methods for converting symbolic pressure into deliberate change, allowing the native to participate consciously in the chart instead of being passively shaped by it."
+        f"These are not decorative additions to the reading. They are practical methods for converting symbolic pressure into deliberate participation, allowing the native to work with the chart rather than be passively shaped by it."
     )
 
 
@@ -335,30 +451,32 @@ def build_section(domain_name, units, aspects):
 
     if not units:
         paragraphs.append(
-            f"The {domain_name} domain does not collapse into one narrow center of gravity in this chart. Instead, it is distributed across several factors and must be read in relation to the whole."
+            f"The {domain_name} domain does not collapse into one narrow center of gravity within this chart. Instead, it is distributed across several factors and must be read in relation to the whole."
         )
         paragraphs.append(
-            f"This does not weaken the domain. It means the field emerges through interaction rather than through one dominant symbolic signature."
+            f"This does not weaken the domain. It indicates that the field emerges through layered interaction rather than one dominant symbolic signature."
         )
         paragraphs.append(write_integration_paragraph(domain_name))
         return paragraphs
 
     paragraphs.append(write_field_paragraph(domain_name, units))
 
-    # Meat: 3–6 fused placement paragraphs, not 0–1
+    # Real meat: 3 to 6 fused placement paragraphs minimum
     placement_para_target = min(6, max(3, len(units[:6])))
     for idx, unit in enumerate(units[:placement_para_target]):
-        paragraphs.append(write_fused_paragraph(unit, idx))
+        paragraphs.append(write_fused_paragraph(unit, idx, domain_name))
 
     paragraphs.append(write_tension_paragraph(domain_name, aspects))
     paragraphs.append(write_harmony_paragraph(domain_name, aspects))
     paragraphs.append(write_integration_paragraph(domain_name))
     paragraphs.append(write_ritual_paragraph(domain_name))
 
-    # Clamp section length to 17 max, but never reduce below the actual meat floor
-    if len(paragraphs) < 3:
-        while len(paragraphs) < 3:
-            paragraphs.append(write_integration_paragraph(domain_name))
+    # Dynamic count is a floor, not a target
+    dynamic_amount = 1 + placement_para_target + 4
+    target = paragraph_count_from_complexity(dynamic_amount)
+
+    while len(paragraphs) < target:
+        paragraphs.append(write_integration_paragraph(domain_name))
 
     return paragraphs[:17]
 
@@ -371,7 +489,7 @@ def build_cross_domain_section(mental_units, emotional_units, physical_units, sp
 
     return [
         f"No major domain in this chart operates independently. The mental field, shaped especially through {list_to_sentence(mental_names)}, influences how the native interprets experience before it is emotionally processed. The emotional field, strengthened through {list_to_sentence(emotional_names)}, then charges that interpretation with affect, memory, and reactivity.",
-        f"The physical field, marked by {list_to_sentence(physical_names)}, carries the result somatically, which means mental strain and emotional pressure rarely stay abstract for long. Meanwhile, the spiritual field, configured through {list_to_sentence(spiritual_names)}, continually attempts to reorganize the other systems by forcing them toward wider meaning, karmic perspective, and existential coherence.",
+        f"The physical field, marked by {list_to_sentence(physical_names)}, carries the result somatically, which means mental strain and emotional pressure rarely remain abstract for long. Meanwhile, the spiritual field, configured through {list_to_sentence(spiritual_names)}, continually attempts to reorganize the other systems by forcing them toward wider meaning, karmic perspective, and existential coherence.",
         "This creates a recursive system. Thought affects feeling, feeling affects embodiment, embodiment affects perception, and perception affects spiritual receptivity. Growth therefore cannot come from isolating one system and ignoring the rest. The native’s path depends on coordinated integration.",
     ]
 
